@@ -1,9 +1,8 @@
 let gameDisplay = document.querySelector('#game-display')
 
-//.trim() method https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 const game = {
-    time: document.querySelector('#time').innerHTML.trim(),
-    score: document.querySelector('#score').innerHTML.trim(),
+    time: document.querySelector('#time').innerHTML,
+    score: document.querySelector('#score').innerHTML,
     isOver: false
 }
 
