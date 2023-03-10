@@ -8,22 +8,18 @@ const game = {
 
     let gameDisplay = document.querySelector('#game-display')
 
-
-
     
     //Use Bullet
-    gameDisplay.addEventListener('click', function(e){
-        
+    function fireBullet(){
+        document.querySelector('#bullets').innerHTML = `${--game.bullets}`
         if(game.bullets === 0){
 
             game.isOver = true
-
-        } else {
-
-            document.querySelector('#bullets').innerHTML = `${--game.bullets}`
-            
+            //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
+            gameDisplay.removeEventListener('click', fireBullet)
         }
-    }, false)
+    }
+    gameDisplay.addEventListener('click', fireBullet)
 
     //Countdown
     //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
