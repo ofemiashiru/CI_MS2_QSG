@@ -17,13 +17,17 @@
 }
 
 #status-container div{
-    flex: 50%;
-    font-size: 1rem;
+    flex: 25%;
+    font-size: .7rem;
     padding: 5px 15px;
 }
 
 #bullets-container{
     text-align: right;
+}
+
+#points-container{
+    text-align: center;
 }
 
 .status-label{
