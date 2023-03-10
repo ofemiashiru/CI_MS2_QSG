@@ -2,7 +2,7 @@ let gameDisplay = document.querySelector('#game-display')
 
 const game = {
     time: document.querySelector('#time').innerHTML,
-    score: document.querySelector('#score').innerHTML,
+    score: 0,
     isOver: false
 }
 
@@ -12,7 +12,8 @@ function countDown(){
     
     if(!game.isOver){
         document.querySelector('#time').innerHTML = `${game.time--}`
-
+        document.querySelector('#score').innerHTML = `${game.score+= 2}`
+ 
         if(game.time === -1){ // changed to minus one as 0 displays 1 on timer 
             game.isOver = true
         }
