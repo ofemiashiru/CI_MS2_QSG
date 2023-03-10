@@ -13,27 +13,38 @@
 
 #status-container{
     display: flex;
-    flex-wrap: flex;
-    height: 10%;
+    height: auto;
 }
 
 #status-container div{
     flex: 50%;
     font-size: 1rem;
-    padding: 5px;
+    padding: 5px 15px;
 }
 
 #bullets-container{
     text-align: right;
 }
 
+.status-label{
+    font-weight: bold;
+}
+
 #game-display-container{
-    background-color: green;
+    background-color: #FFF;
     height: 95%;
     width: 100%;
+    padding: 10px;
     position: absolute;
     top: 5%;
     left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+#game-display{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
