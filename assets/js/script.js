@@ -1,15 +1,19 @@
 const game = {
-    time: document.querySelector('#time').innerHTML,
+    time: 10,
     score: 0,
-    bullets: document.querySelector('#bullets').innerHTML,
+    bullets: 3,
     isOver: false
 }
 // $(document).ready(function() {
 
     let gameDisplay = document.querySelector('#game-display')
 
-    
-    //Use Bullet
+    //Setup new Game --
+    document.querySelector('#time').innerHTML = game.time
+    document.querySelector('#score').innerHTML = game.score
+    document.querySelector('#bullets').innerHTML = game.bullets
+
+    //Use Bullet --
     function fireBullet(){
         document.querySelector('#bullets').innerHTML = `${--game.bullets}`
         if(game.bullets === 0){
@@ -21,7 +25,7 @@ const game = {
     }
     gameDisplay.addEventListener('click', fireBullet)
 
-    //Countdown
+    //Countdown --
     //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
     //clearInterval() function https://www.w3schools.com/jsref/met_win_clearinterval.asp
     function countDown(){
