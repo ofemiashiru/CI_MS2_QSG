@@ -3,7 +3,7 @@ const game = {
     score: 0,
     bullets: 3,
     isOver: false,
-    targets: ['good', 'bad', 'addBullet']
+    targets: ['good', 'bad', 'addBullet', 'nothing']
 };
 
 
@@ -14,8 +14,13 @@ document.querySelector('#time').innerHTML = game.time;
 document.querySelector('#score').innerHTML = game.score;
 document.querySelector('#bullets').innerHTML = game.bullets;
 
-let generatedTarget = game.targets[Math.floor(Math.random() * 3)]
-console.log(generatedTarget)
+//Generate random target
+function generateRandomTargets(){
+   let target =  game.targets[Math.floor(Math.random() * 4)]
+   console.log(target)
+}
+//setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
+let generatedTarget = setInterval(generateRandomTargets, 500)
 
 //Countdown -
 function countDown(){
@@ -56,6 +61,7 @@ gameDisplay.addEventListener('click', fireBullet);
 function gameOver(){
     //clearInterval() function https://www.w3schools.com/jsref/met_win_clearinterval.asp
     clearInterval(timer);
+    clearInterval(generatedTarget);
 
     //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
     gameDisplay.removeEventListener('click', fireBullet);
