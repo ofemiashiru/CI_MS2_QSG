@@ -4,45 +4,58 @@ const game = {
     bullets: 3,
     isOver: false
 }
-// $(document).ready(function() {
 
-    let gameDisplay = document.querySelector('#game-display')
 
-    //Setup new Game --
-    document.querySelector('#time').innerHTML = game.time
-    document.querySelector('#score').innerHTML = game.score
-    document.querySelector('#bullets').innerHTML = game.bullets
+let gameDisplay = document.querySelector('#game-display')
 
-    //Use Bullet --
-    function fireBullet(){
-        document.querySelector('#bullets').innerHTML = `${--game.bullets}`
-        if(game.bullets === 0){
+//Setup new Game --
+document.querySelector('#time').innerHTML = game.time
+document.querySelector('#score').innerHTML = game.score
+document.querySelector('#bullets').innerHTML = game.bullets
 
-            game.isOver = true
-            //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
-            gameDisplay.removeEventListener('click', fireBullet)
-        }
-    }
-    gameDisplay.addEventListener('click', fireBullet)
-
-    //Countdown --
-    //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
-    //clearInterval() function https://www.w3schools.com/jsref/met_win_clearinterval.asp
-    function countDown(){
-        
-        if(!game.isOver){
-            document.querySelector('#time').innerHTML = `${--game.time}`// moved -- before variable to action decrement first 
-            //document.querySelector('#score').innerHTML = `${game.score+= 2}`
+//Countdown -
+//setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
+function countDown(){
     
-            if(game.time === 0){ 
-                game.isOver = true
-            }
+    if(!game.isOver){
+        document.querySelector('#time').innerHTML = `${--game.time}`// moved -- before variable to action decrement first 
+        //document.querySelector('#score').innerHTML = `${game.score+= 2}`
 
-        } else {
-            clearInterval(timer)
-            console.log('game over')
+        if(game.time === 0){ 
+            game.isOver = true
         }
+
+    } else {
+
+        gameOver()
+
+    }
+}
+
+let timer = setInterval(countDown, 1000)
+
+//Use Bullet --
+function fireBullet(){
+    document.querySelector('#bullets').innerHTML = `${--game.bullets}`
+    if(game.bullets === 0){
+
+        game.isOver = true
+
     }
 
-    let timer = setInterval(countDown, 1000)
-// })
+    if(game.isOver){
+        gameOver()
+    }
+}
+gameDisplay.addEventListener('click', fireBullet)
+
+//Game Over --
+function gameOver(){
+    //clearInterval() function https://www.w3schools.com/jsref/met_win_clearinterval.asp
+    clearInterval(timer)
+
+    //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
+    gameDisplay.removeEventListener('click', fireBullet)
+
+    console.log('game over')
+}
