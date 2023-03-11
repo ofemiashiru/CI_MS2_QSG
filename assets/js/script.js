@@ -18,10 +18,19 @@ document.querySelector('#bullets').innerHTML = game.bullets;
 
 //Generate random target
 function generateRandomTargets(){
-   let target =  game.targets[Math.floor(Math.random() * 4)];
+   let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; //genrate the random target which correspnds to class in style.css
    let randomX = Math.floor(Math.random() * gameDisplayXAxis);
    let randomY = Math.floor(Math.random() * gameDisplayYAxis);
-   console.log(target, randomX, randomY);
+
+   console.log(randomTarget, randomX, randomY);
+
+   let newTarget = document.createElement('div');
+   newTarget.classList.add(`${randomTarget}`,'target'); //adds the target class from the generated randomTarget
+   
+   gameDisplay.appendChild(newTarget)
+
+   console.log(newTarget)
+
 }
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
 let generatedTarget = setInterval(generateRandomTargets, 500);
