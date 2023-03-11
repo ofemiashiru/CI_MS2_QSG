@@ -5,9 +5,9 @@ const game = {
     isOver: false,
     targets: ['good', 'bad', 'addBullet', 'nothing']
 };
-
+// get the gameDisplay and store it as a variable
 let gameDisplay = document.querySelector('#game-display');
-//Get X and Y axis totals for game display
+// Get X and Y axis totals for game display
 let gameDisplayXAxis = gameDisplay.clientWidth;
 let gameDisplayYAxis = gameDisplay.clientHeight;
 
@@ -18,24 +18,23 @@ document.querySelector('#bullets').innerHTML = game.bullets;
 
 //Generate random target
 function generateRandomTargets(){
-   let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; //genrate the random target which correspnds to class in style.css
-   let randomX = Math.floor(Math.random() * gameDisplayXAxis);
-   let randomY = Math.floor(Math.random() * gameDisplayYAxis);
+    //genrate the random game.target which correspnds to the class in style.css
+    let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; 
 
-   console.log(randomTarget, randomX, randomY);
+    //generate random x and y positions
+    let randomX = Math.floor(Math.random() * gameDisplayXAxis);
+    let randomY = Math.floor(Math.random() * gameDisplayYAxis);
 
-   let newTarget = document.createElement('div');
-   newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
-   newTarget.style.top = `${randomY}px`
-   newTarget.style.left = `${randomX}px`
-   
-   gameDisplay.appendChild(newTarget)
-
-   console.log(newTarget)
+    //Create physical target in DOM
+    let newTarget = document.createElement('div');
+    newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
+    newTarget.style.top = `${randomY}px`; // adds position Y to top style property
+    newTarget.style.left = `${randomX}px`; // adds position X to left style property
+    gameDisplay.appendChild(newTarget) // append newTarget to the DOM 
 
 }
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
-let generatedTarget = setInterval(generateRandomTargets, 500);
+let generatedTarget = setInterval(generateRandomTargets, 800);
 
 //Countdown -
 function countDown(){
