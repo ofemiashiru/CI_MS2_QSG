@@ -53,14 +53,23 @@
     border-radius: 10px;
 }
 
-.bad{
+.targets{
     width: 50px;
     height: 50px;
-    background-color: red;
 }
 
 .good{
-    width: 50px;
-    height: 50px;
     background-color: orange;
+}
+
+.bad{
+    background-color: red;
+}
+
+.addBullet{
+    background-color: brown;
+}
+
+.nothing{
+    background-color: darkkhaki;
 }

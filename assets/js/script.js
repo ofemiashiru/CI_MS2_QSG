@@ -6,8 +6,10 @@ const game = {
     targets: ['good', 'bad', 'addBullet', 'nothing']
 };
 
-
 let gameDisplay = document.querySelector('#game-display')
+//Get X and Y axis totals for game display
+let gameDisplayXAxis = gameDisplay.clientWidth
+let gameDisplayYAxis = gameDisplay.clientHeight
 
 //Setup new Game --
 document.querySelector('#time').innerHTML = game.time;
@@ -17,7 +19,9 @@ document.querySelector('#bullets').innerHTML = game.bullets;
 //Generate random target
 function generateRandomTargets(){
    let target =  game.targets[Math.floor(Math.random() * 4)]
-   console.log(target)
+   let x = Math.floor(Math.random() * gameDisplayXAxis)
+   let y = Math.floor(Math.random() * gameDisplayYAxis)
+   console.log(target, x, y)
 }
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
 let generatedTarget = setInterval(generateRandomTargets, 500)
