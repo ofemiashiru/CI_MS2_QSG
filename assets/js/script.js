@@ -25,7 +25,9 @@ function generateRandomTargets(){
    console.log(randomTarget, randomX, randomY);
 
    let newTarget = document.createElement('div');
-   newTarget.classList.add(`${randomTarget}`,'target'); //adds the target class from the generated randomTarget
+   newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
+   newTarget.style.top = `${randomX}px`
+   newTarget.style.left = `${randomY}px`
    
    gameDisplay.appendChild(newTarget)
 
