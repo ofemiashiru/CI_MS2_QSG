@@ -4,10 +4,8 @@
 }
 
 #main{
-    border:10px solid red;
     width: 100vw;
     height: 100vh;
-    border-radius: 20px;
     position: relative;
 }
 
@@ -42,8 +40,6 @@
     position: absolute;
     top: 5%;
     left: 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 #game-display{
@@ -119,7 +115,8 @@
 }
 
 .modal-content #restart-game{
-    margin-top: 15px;
+    min-width: 100px;
+    margin: 15px auto 0;
 }
 
 /* Media Queries */
