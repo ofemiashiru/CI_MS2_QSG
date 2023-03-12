@@ -50,7 +50,7 @@ function generateRandomTargets(){
         } else if(this.classList[1] === game.targets[2]) { //addBullet target is hit
             
             console.log('Add Bullet was clicked')
-            document.querySelector('#bullets').innerHTML = game.bullets += 1
+            document.querySelector('#bullets').innerHTML = game.bullets += 2
 
         } else if(this.classList[1] === game.targets[3]){ //A nothing target is hit
             
