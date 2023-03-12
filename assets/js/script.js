@@ -36,6 +36,7 @@ function generateRandomTargets(){
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
 let generatedTarget = setInterval(generateRandomTargets, 800);
 
+
 //Countdown -
 function countDown(){
     
