@@ -2,6 +2,7 @@ const game = {
     time: 10,
     score: 0,
     bullets: 5,
+    speed: 2000,
     isOver: false,
     targets: ['good', 'bad', 'addBullet', 'nothing']
 };
@@ -65,11 +66,11 @@ function generateRandomTargets(){
         document.querySelector('.target').classList.add('remove');
         document.querySelector('.target').classList.remove('target');
         newTarget.removeEventListener('click', hitTarget);
-    },2000)
+    }, game.speed)
 
 }
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
-let generatedTarget = setInterval(generateRandomTargets, 2000);
+let generatedTarget = setInterval(generateRandomTargets, game.speed);
 
 
 
