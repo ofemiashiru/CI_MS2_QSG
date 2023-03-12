@@ -34,24 +34,37 @@ function generateRandomTargets(){
     gameDisplay.appendChild(newTarget) // append newTarget to the DOM
     
     //Add event Listener to each target, when clicked each target will respond based on the class/game.targets
-    newTarget.addEventListener('click', function(){
+    function hitTarget(){
 
-        if(this.classList[1] === game.targets[0]){
+        if(this.classList[1] === game.targets[0]){ //good target is hit
+            
             console.log('Good was clicked')
-        } else if(this.classList[1] === game.targets[1]) {
+            document.querySelector('#time').innerHTML = game.time += 5
+            document.querySelector('#score').innerHTML = game.score += 5
+
+        } else if(this.classList[1] === game.targets[1]) { //bad target is hit
+            
             console.log('Bad was clicked')
-        } else if(this.classList[1] === game.targets[2]) {
+            document.querySelector('#score').innerHTML = game.score -= 2
+
+        } else if(this.classList[1] === game.targets[2]) { //addBullet target is hit
+            
             console.log('Add Bullet was clicked')
-        } else if(this.classList[1] === game.targets[3]){
+            document.querySelector('#bullets').innerHTML = game.bullets += 1
+
+        } else if(this.classList[1] === game.targets[3]){ //A nothing target is hit
+            
             console.log('A nothing was clicked')
+
         }
-    })
+    }
+    newTarget.addEventListener('click', hitTarget)
 
     //Remove target after specified time
     setTimeout(function(){
         document.querySelector('.target').classList.add('remove');
         document.querySelector('.target').classList.remove('target');
-
+        newTarget.removeEventListener('click', hitTarget)
     },2000)
 
 }
