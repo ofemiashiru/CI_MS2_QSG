@@ -61,6 +61,7 @@
     border: 1px solid black;
     position: absolute;
     border-radius: 50%;
+    transition: 0.5ms;
 }
 
 .good{
@@ -77,4 +78,8 @@
 
 .nothing{
     background-color: white;
+}
+
+.remove{
+    display: none;
 }

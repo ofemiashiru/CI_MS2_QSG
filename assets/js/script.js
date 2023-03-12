@@ -1,10 +1,11 @@
 const game = {
     time: 10,
     score: 0,
-    bullets: 3,
+    bullets: 5,
     isOver: false,
     targets: ['good', 'bad', 'addBullet', 'nothing']
 };
+
 // get the gameDisplay and store it as a variable
 let gameDisplay = document.querySelector('#game-display');
 // Get X and Y axis totals for game display
@@ -32,9 +33,16 @@ function generateRandomTargets(){
     newTarget.style.left = `${randomX}px`; // adds position X to left style property
     gameDisplay.appendChild(newTarget) // append newTarget to the DOM 
 
+    //Remove target after specified time
+    setTimeout(function(){
+        document.querySelector('.target').classList.add('remove');
+        document.querySelector('.target').classList.remove('target');
+    },600)
+
 }
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
-let generatedTarget = setInterval(generateRandomTargets, 800);
+let generatedTarget = setInterval(generateRandomTargets, 600);
+
 
 
 //Countdown -
