@@ -52,8 +52,8 @@
 }
 
 .target{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     border-radius: 50%;
     transition: 0.5ms;
@@ -85,7 +85,6 @@
 
 /* https://www.w3schools.com/howto/howto_css_modals.asp for modal */
 .modal{
-    /* display: none; */
     position: fixed; 
     z-index: 1; 
     left: 0;

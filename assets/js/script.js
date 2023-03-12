@@ -168,7 +168,7 @@ function openGameMenu(){
     
                 startNewGame();
     
-            } else if(this.id === ''){
+            } else if(this.id === 'how-to-play-btn'){
                 console.log('game instructions')
             }
         })
