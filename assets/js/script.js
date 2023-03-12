@@ -8,15 +8,16 @@ const game = {
     targets: ['good', 'bad', 'add-bullet', 'nothing']
 };
 
-// get the gameDisplay and store it as a variable
-let gameDisplay = document.querySelector('#game-display');
-
-// Get X and Y axis totals for game display
-let gameDisplayXAxis = gameDisplay.clientWidth - 20;
-let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 
 //Setup new Game --
 function startNewGame(){
+
+    // get the gameDisplay and store it as a variable
+    let gameDisplay = document.querySelector('#game-display');
+
+    // Get X and Y axis totals for game display
+    let gameDisplayXAxis = gameDisplay.clientWidth - 20;
+    let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 
     if(!game.isOver){
         game.time = 10;
@@ -47,7 +48,7 @@ function startNewGame(){
         newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
         newTarget.style.top = `${randomY}px`; // adds position Y to top style property
         newTarget.style.left = `${randomX}px`; // adds position X to left style property
-        gameDisplay.appendChild(newTarget) // append newTarget to the DOM
+        gameDisplay.appendChild(newTarget); // append newTarget to the DOM
         
         //Add event Listener to each target, when clicked each target will respond based on the class/game.targets
         function hitTarget(){
@@ -67,18 +68,18 @@ function startNewGame(){
 
             } else if(this.classList[1] === game.targets[3]){ //A nothing target is hit
                 
-                console.log('A nothing was clicked')
+                console.log('A nothing was clicked');
 
             }
         }
-        newTarget.addEventListener('click', hitTarget)
+        newTarget.addEventListener('click', hitTarget);
 
         //Remove target after specified time
         setTimeout(function(){
             document.querySelector('.target').classList.add('remove');
             document.querySelector('.target').classList.remove('target');
             newTarget.removeEventListener('click', hitTarget);
-        }, game.speed)
+        }, game.speed);
 
     }
     //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
@@ -91,7 +92,6 @@ function startNewGame(){
         
         if(!game.isOver){
             document.querySelector('#time').innerHTML = `${--game.time}`;// moved -- before variable to action decrement first 
-            //document.querySelector('#score').innerHTML = `${game.score+= 2}`
 
             if(game.time === 0){ 
                 game.isOver = true;
@@ -116,7 +116,9 @@ function startNewGame(){
         }
 
         if(game.isOver){
+
             gameOver();
+        
         }
     }
     gameDisplay.addEventListener('click', fireBullet);
@@ -124,11 +126,11 @@ function startNewGame(){
     //function to check reason for game over
     function gameOverReason(){
         let reason;
-        if(game.time === 0){
+        if(game.time < 1){
             reason = 'You ran out of time!'
-        } else if(game.bullets === 0){
+        } else if(game.bullets < 1){
             reason = 'You ran out of bullets!'
-        }
+        } 
         return reason
     }
 
@@ -153,30 +155,48 @@ function startNewGame(){
     }
 }
 
+function showHowToPlay(){
+    document.querySelector('#how-to-play-modal').classList.add('show');
+    let backBtn = document.querySelector('#back-btn');
+
+    backBtn.addEventListener('click', function(){
+        document.querySelector('#how-to-play-modal').classList.remove('show');
+        document.querySelector('#how-to-play-modal').classList.add('remove');
+
+        openGameMenu();
+    })
+}
+
 // Game Menu
 function openGameMenu(){
 
     document.querySelector('#start-game-modal').classList.add('show');
+    document.querySelector('#start-game-modal').classList.remove('remove');
     let gameMenuBtns = document.querySelectorAll('#start-game-content button');
     
     //create event listener for each button on Game Menu
     gameMenuBtns.forEach((btn) => {
         btn.addEventListener('click', function(){
             if(this.id === 'start-game-btn'){
+
                 document.querySelector('#start-game-modal').classList.remove('show');
                 document.querySelector('#start-game-modal').classList.add('remove');
     
                 startNewGame();
     
             } else if(this.id === 'how-to-play-btn'){
-                console.log('game instructions')
+                document.querySelector('#start-game-modal').classList.remove('show');
+                document.querySelector('#start-game-modal').classList.add('remove');
+
+                showHowToPlay()
             }
-        })
-    })
+        });
+    });
 
 }
 
 openGameMenu();
+
 
 //Restart the game
 document.querySelector('#restart-game-btn').addEventListener('click', function(){
