@@ -58,7 +58,6 @@
 .target{
     width: 40px;
     height: 40px;
-    border: 1px solid black;
     position: absolute;
     border-radius: 50%;
     transition: 0.5ms;
