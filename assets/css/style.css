@@ -52,12 +52,12 @@
     width: 95%;
     border-radius: 10px;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 .target{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     position: absolute;
     border-radius: 50%;
