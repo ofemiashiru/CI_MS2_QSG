@@ -31,17 +31,32 @@ function generateRandomTargets(){
     newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
     newTarget.style.top = `${randomY}px`; // adds position Y to top style property
     newTarget.style.left = `${randomX}px`; // adds position X to left style property
-    gameDisplay.appendChild(newTarget) // append newTarget to the DOM 
+    gameDisplay.appendChild(newTarget) // append newTarget to the DOM
+    
+    //Add event Listener to each target, when clicked each target will respond based on the class/game.targets
+    newTarget.addEventListener('click', function(){
+
+        if(this.classList[1] === game.targets[0]){
+            console.log('Good was clicked')
+        } else if(this.classList[1] === game.targets[1]) {
+            console.log('Bad was clicked')
+        } else if(this.classList[1] === game.targets[2]) {
+            console.log('Add Bullet was clicked')
+        } else if(this.classList[1] === game.targets[3]){
+            console.log('A nothing was clicked')
+        }
+    })
 
     //Remove target after specified time
     setTimeout(function(){
         document.querySelector('.target').classList.add('remove');
         document.querySelector('.target').classList.remove('target');
-    },600)
+
+    },2000)
 
 }
 //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
-let generatedTarget = setInterval(generateRandomTargets, 600);
+let generatedTarget = setInterval(generateRandomTargets, 2000);
 
 
 
