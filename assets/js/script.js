@@ -1,6 +1,6 @@
 // New game Object
 const game = {
-    time: 10,
+    time: 20,
     score: 0,
     bullets: 5,
     speed: 900,
@@ -20,7 +20,7 @@ function startNewGame(){
     let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 
     if(!game.isOver){
-        game.time = 10;
+        game.time = 20;
         game.score = 0;
         game.bullets = 5;
         
@@ -52,6 +52,8 @@ function startNewGame(){
         
         //Add event Listener to each target, when clicked each target will respond based on the class/game.targets
         function hitTarget(){
+
+            this.classList.add('remove'); // remove target when hit
 
             if(this.classList[1] === game.targets[0]){ //good target is hit
                 
@@ -155,17 +157,6 @@ function startNewGame(){
     }
 }
 
-function showHowToPlay(){
-    document.querySelector('#how-to-play-modal').classList.add('show');
-    let backBtn = document.querySelector('#back-btn');
-
-    backBtn.addEventListener('click', function(){
-        document.querySelector('#how-to-play-modal').classList.remove('show');
-        document.querySelector('#how-to-play-modal').classList.add('remove');
-
-        openGameMenu();
-    })
-}
 
 // Game Menu
 function openGameMenu(){
@@ -185,10 +176,15 @@ function openGameMenu(){
                 startNewGame();
     
             } else if(this.id === 'how-to-play-btn'){
-                document.querySelector('#start-game-modal').classList.remove('show');
-                document.querySelector('#start-game-modal').classList.add('remove');
+                
+               document.querySelector('#how-to-play').classList.remove('hide-instructions');
+               document.querySelector('#how-to-play').classList.add('show-instructions');
+               
+            } else if (this.id === 'back-btn'){
 
-                showHowToPlay()
+                document.querySelector('#how-to-play').classList.add('hide-instructions');
+                document.querySelector('#how-to-play').classList.remove('show-instructions');
+
             }
         });
     });
