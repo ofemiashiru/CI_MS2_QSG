@@ -108,6 +108,17 @@ function fireBullet(){
 }
 gameDisplay.addEventListener('click', fireBullet);
 
+//function to check reason for game over
+function gameOverReason(){
+    let reason;
+    if(game.time === 0){
+        reason = 'You ran out of time!'
+    } else if(game.bullets === 0){
+        reason = 'You ran out of bullets!'
+    }
+    return reason
+}
+
 //Game Over --
 function gameOver(){
     //clearInterval() function https://www.w3schools.com/jsref/met_win_clearinterval.asp
@@ -116,6 +127,9 @@ function gameOver(){
 
     //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
     gameDisplay.removeEventListener('click', fireBullet);
+
+    //run gameOverReason function
+    document.querySelector('#gameOverReason').innerHTML = gameOverReason();
 
     //show game over modal
     document.querySelector('#gameOverModal').classList.add('show');
