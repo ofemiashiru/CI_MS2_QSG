@@ -103,7 +103,7 @@
 
 .modal-content{
     background-color: #fefefe;
-    margin: 70% auto; 
+    margin: 60% auto 0; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -112,8 +112,8 @@
 
 /* Media Queries */
 
-@media screen and (min-width:768px){
+@media screen and (min-width:468px){
     .modal-content{
-        margin: 20% auto;
+        margin: 30% auto 0;
     }
 }
