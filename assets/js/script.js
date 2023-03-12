@@ -11,8 +11,8 @@ const game = {
 let gameDisplay = document.querySelector('#game-display');
 
 // Get X and Y axis totals for game display
-let gameDisplayXAxis = gameDisplay.clientWidth;
-let gameDisplayYAxis = gameDisplay.clientHeight;
+let gameDisplayXAxis = gameDisplay.clientWidth - 20;
+let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 
 //Setup new Game --
 function startNewGame(){
@@ -38,9 +38,9 @@ function startNewGame(){
         let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; 
 
         //generate random x and y positions
-        let randomX = Math.floor(Math.random() * gameDisplayXAxis);
-        let randomY = Math.floor(Math.random() * gameDisplayYAxis);
-
+        let randomX = Math.floor(Math.random() * (gameDisplayXAxis - 20) + 20); // numbers between 20 and x display width
+        let randomY = Math.floor(Math.random() * (gameDisplayYAxis - 20) + 20); // numbers between 20 and y display height
+        
         //Create physical target in DOM
         let newTarget = document.createElement('div');
         newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
