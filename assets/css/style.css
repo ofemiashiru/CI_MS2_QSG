@@ -134,6 +134,13 @@
     height: 0;
 }
 
+/* Grid display https://www.w3schools.com/css/css_grid.asp */
+#instruction-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+}
+
 /* Media Queries */
 
 @media screen and (min-width:468px){
