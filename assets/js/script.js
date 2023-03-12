@@ -16,6 +16,8 @@ let gameDisplayYAxis = gameDisplay.clientHeight;
 document.querySelector('#time').innerHTML = game.time;
 document.querySelector('#score').innerHTML = game.score;
 document.querySelector('#bullets').innerHTML = game.bullets;
+document.querySelector('#gameOverModal').classList.add('remove')
+document.querySelector('#gameOverModal').classList.remove('show')
 
 //Generate random target
 function generateRandomTargets(){
@@ -117,5 +119,7 @@ function gameOver(){
     //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
     gameDisplay.removeEventListener('click', fireBullet);
 
+    document.querySelector('#gameOverModal').classList.add('show')
+    document.querySelector('#gameOverModal').classList.remove('remove')
     console.log('game over');
 }
