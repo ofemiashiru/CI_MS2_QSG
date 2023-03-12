@@ -1,3 +1,4 @@
+// New game Object
 const game = {
     time: 10,
     score: 0,
@@ -18,9 +19,9 @@ let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 function startNewGame(){
 
     if(!game.isOver){
-        game.time = 10
-        game.score = 0
-        game.bullets = 5
+        game.time = 10;
+        game.score = 0;
+        game.bullets = 5;
         
         document.querySelector('#time').innerHTML = game.time;
         document.querySelector('#score').innerHTML = game.score;
@@ -152,10 +153,33 @@ function startNewGame(){
     }
 }
 
-startNewGame()
+// Game Menu
+function openGameMenu(){
+
+    document.querySelector('#start-game-modal').classList.add('show');
+    let gameMenuBtns = document.querySelectorAll('#start-game-content button');
+    
+    //create event listener for each button on Game Menu
+    gameMenuBtns.forEach((btn) => {
+        btn.addEventListener('click', function(){
+            if(this.id === 'start-game-btn'){
+                document.querySelector('#start-game-modal').classList.remove('show');
+                document.querySelector('#start-game-modal').classList.add('remove');
+    
+                startNewGame();
+    
+            } else if(this.id === ''){
+                console.log('game instructions')
+            }
+        })
+    })
+
+}
+
+openGameMenu();
 
 //Restart the game
-document.querySelector('#restart-game').addEventListener('click', function(){
-    game.isOver = false
-    startNewGame()
+document.querySelector('#restart-game-btn').addEventListener('click', function(){
+    game.isOver = false;
+    startNewGame();
 })
