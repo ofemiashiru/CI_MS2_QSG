@@ -10,6 +10,10 @@ const game = {
 // get the gameDisplay and store it as a variable
 let gameDisplay = document.querySelector('#game-display');
 
+// Get X and Y axis totals for game display
+let gameDisplayXAxis = gameDisplay.clientWidth;
+let gameDisplayYAxis = gameDisplay.clientHeight;
+
 //Setup new Game --
 function startNewGame(){
 
@@ -29,9 +33,6 @@ function startNewGame(){
 
     //Generate random target
     function generateRandomTargets(){
-        // Get X and Y axis totals for game display
-        let gameDisplayXAxis = gameDisplay.clientWidth;
-        let gameDisplayYAxis = gameDisplay.clientHeight;
 
         //genrate the random game.target which correspnds to the class in style.css
         let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; 
