@@ -13,15 +13,15 @@ let gameDisplay = document.querySelector('#game-display');
 document.querySelector('#time').innerHTML = game.time;
 document.querySelector('#score').innerHTML = game.score;
 document.querySelector('#bullets').innerHTML = game.bullets;
-document.querySelector('#gameOverModal').classList.add('remove')
-document.querySelector('#gameOverModal').classList.remove('show')
+document.querySelector('#gameOverModal').classList.add('remove');
+document.querySelector('#gameOverModal').classList.remove('show');
 
 //Generate random target
 function generateRandomTargets(){
     // Get X and Y axis totals for game display
     let gameDisplayXAxis = gameDisplay.clientWidth;
     let gameDisplayYAxis = gameDisplay.clientHeight;
-    
+
     //genrate the random game.target which correspnds to the class in style.css
     let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; 
 
@@ -41,19 +41,16 @@ function generateRandomTargets(){
 
         if(this.classList[1] === game.targets[0]){ //good target is hit
             
-            console.log('Good was clicked')
-            document.querySelector('#time').innerHTML = game.time += 5
-            document.querySelector('#score').innerHTML = game.score += 5
+            document.querySelector('#time').innerHTML = game.time += 5;
+            document.querySelector('#score').innerHTML = game.score += 5;
 
         } else if(this.classList[1] === game.targets[1]) { //bad target is hit
             
-            console.log('Bad was clicked')
-            document.querySelector('#score').innerHTML = game.score -= 2
+            document.querySelector('#score').innerHTML = game.score -= 2;
 
         } else if(this.classList[1] === game.targets[2]) { //addBullet target is hit
             
-            console.log('Add Bullet was clicked')
-            document.querySelector('#bullets').innerHTML = game.bullets += 2
+            document.querySelector('#bullets').innerHTML = game.bullets += 2;
 
         } else if(this.classList[1] === game.targets[3]){ //A nothing target is hit
             
@@ -67,7 +64,7 @@ function generateRandomTargets(){
     setTimeout(function(){
         document.querySelector('.target').classList.add('remove');
         document.querySelector('.target').classList.remove('target');
-        newTarget.removeEventListener('click', hitTarget)
+        newTarget.removeEventListener('click', hitTarget);
     },2000)
 
 }
@@ -120,7 +117,7 @@ function gameOver(){
     //removeEventListener https://www.w3schools.com/jsref/met_document_removeeventlistener.asp
     gameDisplay.removeEventListener('click', fireBullet);
 
-    document.querySelector('#gameOverModal').classList.add('show')
-    document.querySelector('#gameOverModal').classList.remove('remove')
-    console.log('game over');
+    //show game over modal
+    document.querySelector('#gameOverModal').classList.add('show');
+    document.querySelector('#gameOverModal').classList.remove('remove');
 }
