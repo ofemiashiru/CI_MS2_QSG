@@ -1,18 +1,23 @@
 // New game Object
 const game = {
-    time: 20,
-    score: 0,
-    bullets: 5,
-    speed: 1000,
     isOver: false,
     targets: ['good', 'bad', 'add-bullet', 'normal']
 };
 
-//Increase level
+//Increase level/hardness of game
 function increaseLevel(score){
-    if(score > 20){
-        game.speed--;
+    if(score > 59){
+        game.speed -= 20
+    } else if(score > 49){
+        game.speed -= 15;
+    } else if(score > 39){
+        game.speed -= 10;
+    } else if(score > 29){
+        game.speed -= 5;
+    } else if(score > 19){
+        game.speed --;
     }
+    console.log(game.speed)
 }
 
 
@@ -30,6 +35,7 @@ function startNewGame(){
         game.time = 20;
         game.score = 0;
         game.bullets = 5;
+        game.speed = 1000;
         
         document.querySelector('#time').innerHTML = game.time;
         document.querySelector('#score').innerHTML = game.score;
