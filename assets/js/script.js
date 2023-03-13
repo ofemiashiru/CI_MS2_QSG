@@ -3,10 +3,17 @@ const game = {
     time: 20,
     score: 0,
     bullets: 5,
-    speed: 900,
+    speed: 1000,
     isOver: false,
-    targets: ['good', 'bad', 'add-bullet', 'nothing']
+    targets: ['good', 'bad', 'add-bullet', 'normal']
 };
+
+//Increase level
+function increaseLevel(score){
+    if(score > 20){
+        game.speed--;
+    }
+}
 
 
 //Setup new Game --
@@ -68,9 +75,10 @@ function startNewGame(){
                 
                 document.querySelector('#bullets').innerHTML = game.bullets += 2;
 
-            } else if(this.classList[1] === game.targets[3]){ //A nothing target is hit
+            } else if(this.classList[1] === game.targets[3]){ //Normal target is hit
                 
-                console.log('A nothing was clicked');
+                document.querySelector('#time').innerHTML = game.time += 1;
+                document.querySelector('#score').innerHTML = game.score += 1;
 
             }
         }
@@ -91,7 +99,7 @@ function startNewGame(){
 
     //Countdown -
     function countDown(){
-        
+        increaseLevel(game.score);
         if(!game.isOver){
             document.querySelector('#time').innerHTML = `${--game.time}`;// moved -- before variable to action decrement first 
 
