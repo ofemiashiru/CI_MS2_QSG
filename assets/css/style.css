@@ -90,6 +90,48 @@
     padding-left: 30px;
 }
 
+/* Cross Hair */
+#cross-hair{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    cursor:none;
+}
+
+#cross-hair .dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+#cross-hair .h-line{
+    border: 1px dashed black;
+    width: 60px;
+    height: 0;
+    position: absolute;
+
+    top: 18px;
+    left: -10px;
+}
+
+#cross-hair .v-line{
+    border: 1px dashed black;
+    width: 0;
+    height: 60px;
+    position: absolute;
+
+    top: -10px;
+    left: 18px;
+}
+
+
+/* Targets */
 .target{
     width: 50px;
     height: 20px;
@@ -122,6 +164,9 @@
 .show{
     display: block;
 }
+
+
+/* Modals */
 
 /* https://www.w3schools.com/howto/howto_css_modals.asp for modal */
 .modal{
