@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: .8rem;
 }
 
 #main{
@@ -11,12 +13,11 @@
 
 #status-container{
     display: flex;
-    height: 15%;
+    height: 13%;
 }
 
 #status-container div{
     flex: 25%;
-    font-size: .7rem;
     padding: 5px 15px;
     text-align: center;
 }
@@ -38,17 +39,24 @@
 
 .status-label{
     font-weight: bold;
-    font-size: .8rem;
     text-transform: uppercase;
+}
+#timer-container .status-label,
+#score-container .status-label{
+    letter-spacing: 1px;
+}
+
+#bullets-container .status-label{
+    letter-spacing: -1px;
 }
 
 #game-display-container{
     background-color: green;
-    height: 85%;
+    height: 87%;
     width: 100%;
     padding: 10px;
     position: absolute;
-    top: 15%;
+    top: 13%;
     left: 0;
 
     border-right: 5px solid #fff;
