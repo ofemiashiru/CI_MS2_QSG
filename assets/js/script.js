@@ -17,7 +17,6 @@ function increaseLevel(score){
     } else if(score > 19){
         game.speed --;
     }
-    console.log(game.speed)
 }
 
 
@@ -212,4 +211,4 @@ openGameMenu();
 document.querySelector('#restart-game-btn').addEventListener('click', function(){
     game.isOver = false;
     startNewGame();
-})
+});
