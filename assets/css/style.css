@@ -87,11 +87,21 @@ button{
 
 /* Targets */
 .target{
-    width: 50px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     position: absolute;
     border-radius: 50%;
     transition: 0.5ms;
+}
+
+.target::after{
+    content: "\f140";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2.8rem;
+    position: absolute;
+    top: -9px;
+    left: 0;
 }
 
 .good{
@@ -108,7 +118,6 @@ button{
 
 .normal{
     background-color: white;
-    border: 1px solid #2e2e2e;
 }
 
 .remove{
@@ -169,7 +178,8 @@ button{
     grid-template-columns: auto auto;
     column-gap: 10px;
     row-gap: 20px;
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 100%;
 }
 
 .item{
@@ -178,6 +188,8 @@ button{
 
 .description{
     padding-left: 30px;
+    padding-top: 5px;
+    font-size: .7rem;
 }
 
 .show-instructions{
@@ -194,5 +206,12 @@ button{
 @media screen and (min-width:468px){
     .modal-content{
         margin: 20% auto 0;
+    }
+
+}
+
+@media screen and (min-width:650px){
+    #instruction-container{
+        max-width: 50%;
     }
 }
