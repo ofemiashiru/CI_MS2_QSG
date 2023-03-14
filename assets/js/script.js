@@ -196,15 +196,9 @@ function openGameMenu(){
     
             } else if(this.id === 'how-to-play-btn'){
                 
-               document.querySelector('#how-to-play').classList.remove('hide-instructions');
-               document.querySelector('#how-to-play').classList.add('show-instructions');
+               document.querySelector('#how-to-play').classList.toggle('show-instructions');
                
-            } else if (this.id === 'back-btn'){
-
-                document.querySelector('#how-to-play').classList.add('hide-instructions');
-                document.querySelector('#how-to-play').classList.remove('show-instructions');
-
-            }
+            } 
         });
     });
 
