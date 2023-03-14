@@ -4,6 +4,19 @@ const game = {
     targets: ['good', 'bad', 'add-bullet', 'normal']
 };
 
+// get the gameDisplay and store it as a variable
+let gameDisplay = document.querySelector('#game-display');
+
+// Get X and Y axis totals for game display
+let gameDisplayXAxis = gameDisplay.clientWidth - 20;
+let gameDisplayYAxis = gameDisplay.clientHeight - 20;
+
+//update window size when user resizes screen
+window.addEventListener('resize', function(){
+    gameDisplayXAxis = gameDisplay.clientWidth - 20;
+    gameDisplayYAxis = gameDisplay.clientHeight - 20;
+});
+
 //Increase level/hardness of game
 function increaseLevel(score){
     if(score > 59){
@@ -22,13 +35,6 @@ function increaseLevel(score){
 
 //Setup new Game --
 function startNewGame(){
-
-    // get the gameDisplay and store it as a variable
-    let gameDisplay = document.querySelector('#game-display');
-
-    // Get X and Y axis totals for game display
-    let gameDisplayXAxis = gameDisplay.clientWidth - 20;
-    let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 
     if(!game.isOver){
         game.time = 20;
