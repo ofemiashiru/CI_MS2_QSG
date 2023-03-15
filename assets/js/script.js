@@ -11,7 +11,7 @@ let gameDisplay = document.querySelector('#game-display');
 let gameDisplayXAxis = gameDisplay.clientWidth - 20;
 let gameDisplayYAxis = gameDisplay.clientHeight - 20;
 
-//update window size when user resizes screen
+//update gameDisplay size when user resizes screen
 window.addEventListener('resize', function(){
     gameDisplayXAxis = gameDisplay.clientWidth - 20;
     gameDisplayYAxis = gameDisplay.clientHeight - 20;
