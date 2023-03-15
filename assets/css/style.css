@@ -1,3 +1,9 @@
+:root{
+    --red: #DD3043;
+    --gold: #FFAC32;
+    --blue: #3B88C3;
+    --white: #CCD6DD;
+}
 * {
     margin: 0;
     padding: 0;
@@ -104,19 +110,19 @@ button{
 }
 
 .good{
-    background-color: orange;
+    background-color: var(--gold);
 }
 
 .bad{
-    background-color: red;
+    background-color: var(--red);
 }
 
 .add-bullet{
-    background-color: yellow;
+    background-color: var(--blue);
 }
 
 .normal{
-    background-color: white;
+    background-color: var(--white);
 }
 
 .remove{
