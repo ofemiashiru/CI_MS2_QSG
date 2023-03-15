@@ -214,3 +214,49 @@ button{
         max-width: 50%;
     }
 }
+
+
+@media screen and (min-width:768px){
+    .stats span:first-child{
+        font-size: 2.2rem;
+    }
+    
+    #status-container div span{
+        display: block;
+    }
+    
+    .status-label{
+        font-size: 1.5rem;
+    }
+
+    .modal-content p:first-child {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        padding-top: 15px;
+        font-size: 1rem;
+    }
+    .show-instructions{
+        height: 290px;
+    }
+
+    .item{
+        padding-bottom: 30px;
+    }
+
+    .target{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .target::after{
+        content: "\f140";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 3.8rem;
+        position: absolute;
+        top: -13px;
+        left: 0;
+    }
+}
