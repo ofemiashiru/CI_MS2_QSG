@@ -3,6 +3,7 @@
     --gold: #FFAC32;
     --blue: #3B88C3;
     --white: #CCD6DD;
+    --green: #76DD77;
 }
 * {
     margin: 0;
@@ -44,6 +45,7 @@ button{
 
 .stats span:first-child{
     font-size: 1.6rem;
+    transition: .6s;
 }
 
 #status-container div span{
@@ -54,6 +56,7 @@ button{
 .status-label{
     font-weight: bold;
     text-transform: uppercase;
+    transition: .6s;
 }
 #timer-container .status-label,
 #score-container .status-label{
@@ -65,7 +68,7 @@ button{
 }
 
 #game-display-container{
-    background-color: green;
+    background-color: var(--green);
     height: 87%;
     width: 100%;
     padding: 10px;
@@ -82,7 +85,7 @@ button{
 }
 
 #game-display{
-    background-color: green;
+    background-color: var(--green);
     height: 90%;
     width: 90%;
     border-radius: 10px;
@@ -163,6 +166,7 @@ button{
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 0;
+    transition: .6s;
 }
 
 .modal-content button{
@@ -242,7 +246,12 @@ button{
         font-size: 1rem;
     }
     .show-instructions{
-        height: 280px;
+        height: 290px;
+    }
+
+    .instruction-text{
+        font-size: 1rem;
+        transition: .6s;
     }
 
     .item{
