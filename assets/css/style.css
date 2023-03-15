@@ -37,7 +37,7 @@ button{
 }
 
 .stats span:first-child{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 #status-container div span{
@@ -204,7 +204,7 @@ button{
 
 @media screen and (min-width:468px){
     .modal-content{
-        margin: 20% auto 0;
+        margin: 15% auto 0;
     }
 
 }
@@ -218,7 +218,7 @@ button{
 
 @media screen and (min-width:768px){
     .stats span:first-child{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     #status-container div span{
@@ -226,7 +226,7 @@ button{
     }
     
     .status-label{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .modal-content p:first-child {
@@ -238,7 +238,7 @@ button{
         font-size: 1rem;
     }
     .show-instructions{
-        height: 290px;
+        height: 280px;
     }
 
     .item{
