@@ -3,13 +3,18 @@
     --gold: #FFAC32;
     --blue: #3B88C3;
     --white: #CCD6DD;
-    --green: #76DD77;
+    --green: #56AE57;
 }
 * {
     margin: 0;
     padding: 0;
     font-family: 'Press Start 2P', sans-serif;
     font-size: .8rem;
+    /* creating custom crosshair https://www.w3schools.com/cssref/pr_class_cursor.php
+     cross hair not showing https://stackoverflow.com/questions/6623769/css-custom-cursor-doesnt-work-in-ff-chrome 
+     centre cursor hotspot https://stackoverflow.com/questions/19560878/css-change-custom-cursor-image-origin-hotspot-to-center
+     <a href="https://www.flaticon.com/free-icons/crosshair" title="crosshair icons">Crosshair icons created by xnimrodx - Flaticon</a>*/
+    cursor: url('../images/crosshair.png') 16 16, auto;
 }
 
 /* Generics */
@@ -17,7 +22,9 @@
 button{
     padding: 2px;
 }
-
+button:hover{
+    cursor: url('../images/crosshair.png') 16 16, auto;
+}
 /* Main Screen */
 
 #main{
