@@ -41,7 +41,7 @@ button:hover{
 
 #status-container{
     display: flex;
-    height: 13%;
+    height: auto;
 }
 
 #status-container div{
@@ -83,19 +83,16 @@ button:hover{
 
 #game-display-container{
     background-color: var(--green);
-    height: 87%;
+    min-height: 85%;
     width: 100%;
     padding: 10px;
     position: absolute;
-    top: 13%;
+    top: auto;
     left: 0;
 
     border-right: 5px solid var(--white);
     border-left: 5px solid var(--white);
     border-bottom: 5px solid var(--white);
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;
-    
 }
 
 #game-display{
@@ -256,8 +253,12 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: var(--green);
     border-left: 5px solid var(--white);
     border-right: 5px solid var(--white);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 footer p{
@@ -291,7 +292,7 @@ footer p::after{
     height: 70px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    top: 400px;
+    top: 300px;
     left: 45px;
 }
 
