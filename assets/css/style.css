@@ -21,9 +21,14 @@
 
 button{
     padding: 2px;
+    cursor: url('../images/crosshair.png') 16 16, auto;
 }
+
 button:hover{
     cursor: url('../images/crosshair.png') 16 16, auto;
+    background-color: var(--green);
+    color: #fff;
+    transition: .4s;
 }
 /* Main Screen */
 
