@@ -35,7 +35,7 @@ button:hover{
 
 #main{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -83,7 +83,7 @@ button:hover{
 
 #game-display-container{
     background-color: var(--green);
-    height: 80%;
+    height: 100%;
     width: 100%;
     padding: 10px;
     position: absolute;
