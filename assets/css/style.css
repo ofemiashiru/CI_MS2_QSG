@@ -289,6 +289,8 @@ footer p::after{
     background-color: var(--brown);
     width: 25px;
     height: 70px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     top: 400px;
     left: 45px;
 }
@@ -300,7 +302,7 @@ footer p::after{
     background-color: var(--dark-green);
     border-radius: 30px;
     position: absolute;
-    top: -50px;
+    top: -45px;
     left: -35px;
 }
 
