@@ -1,7 +1,6 @@
 // New game Object
 const game = {
-    isOver: false,
-    targets: ['good', 'bad', 'add-bullet', 'normal']
+    isOver: false
 };
 
 // get the gameDisplay and store it as a variable
@@ -17,34 +16,22 @@ window.addEventListener('resize', function(){
     gameDisplayYAxis = gameDisplay.clientHeight - 20;
 });
 
-//Increase level/hardness of game
-function increaseLevel(score){
-    if(score > 59){
-        game.speed -= 20
-    } else if(score > 49){
-        game.speed -= 15;
-    } else if(score > 39){
-        game.speed -= 10;
-    } else if(score > 29){
-        game.speed -= 5;
-    } else if(score > 19){
-        game.speed --;
-    }
-}
-
 
 //Setup new Game --
 function startNewGame(){
+    const newGame = {
+      time: 20,
+      score: 0,
+      bullets: 5,
+      speed: 1000,
+      targets: ['good', 'bad', 'add-bullet', 'normal']
+    };
 
     if(!game.isOver){
-        game.time = 20;
-        game.score = 0;
-        game.bullets = 5;
-        game.speed = 1000;
-        
-        document.querySelector('#time').innerHTML = game.time;
-        document.querySelector('#score').innerHTML = game.score;
-        document.querySelector('#bullets').innerHTML = game.bullets;
+
+        document.querySelector('#time').innerHTML = newGame.time;
+        document.querySelector('#score').innerHTML = newGame.score;
+        document.querySelector('#bullets').innerHTML = newGame.bullets;
         document.querySelector('#game-over-modal').classList.add('remove');
         document.querySelector('#game-over-modal').classList.remove('show');
     }
@@ -55,7 +42,7 @@ function startNewGame(){
     function generateRandomTargets(){
 
         //genrate the random game.target which correspnds to the class in style.css
-        let randomTarget =  game.targets[Math.floor(Math.random() * 4)]; 
+        let randomTarget =  newGame.targets[Math.floor(Math.random() * 4)]; 
 
         //generate random x and y positions
         let randomX = Math.floor(Math.random() * (gameDisplayXAxis - 20) + 20); // numbers between 20 and x display width
@@ -73,23 +60,23 @@ function startNewGame(){
 
             this.classList.add('remove'); // remove target when hit
 
-            if(this.classList[1] === game.targets[0]){ //good target is hit
+            if(this.classList[1] === newGame.targets[0]){ //good target is hit
                 
-                document.querySelector('#time').innerHTML = game.time += 5;
-                document.querySelector('#score').innerHTML = game.score += 5;
+                document.querySelector('#time').innerHTML = newGame.time += 5;
+                document.querySelector('#score').innerHTML = newGame.score += 5;
 
-            } else if(this.classList[1] === game.targets[1]) { //bad target is hit
+            } else if(this.classList[1] === newGame.targets[1]) { //bad target is hit
                 
-                document.querySelector('#score').innerHTML = game.score -= 2;
+                document.querySelector('#score').innerHTML = newGame.score -= 2;
 
-            } else if(this.classList[1] === game.targets[2]) { //addBullet target is hit
+            } else if(this.classList[1] === newGame.targets[2]) { //addBullet target is hit
                 
-                document.querySelector('#bullets').innerHTML = game.bullets += 2;
+                document.querySelector('#bullets').innerHTML = newGame.bullets += 2;
 
-            } else if(this.classList[1] === game.targets[3]){ //Normal target is hit
+            } else if(this.classList[1] === newGame.targets[3]){ //Normal target is hit
                 
-                document.querySelector('#time').innerHTML = game.time += 1;
-                document.querySelector('#score').innerHTML = game.score += 1;
+                document.querySelector('#time').innerHTML = newGame.time += 1;
+                document.querySelector('#score').innerHTML = newGame.score += 1;
 
             }
         }
@@ -100,21 +87,34 @@ function startNewGame(){
             document.querySelector('.target').classList.add('remove');
             document.querySelector('.target').classList.remove('target');
             newTarget.removeEventListener('click', hitTarget);
-        }, game.speed);
+        }, newGame.speed);
 
     }
     //setInterval() function https://www.w3schools.com/jsref/met_win_setinterval.asp
-    let generatedTarget = setInterval(generateRandomTargets, game.speed);
+    let generatedTarget = setInterval(generateRandomTargets, newGame.speed);
 
-
+    //Increase level/hardness of game
+    function increaseLevel(score){
+        if(score > 59){
+            newGame.speed -= 20
+        } else if(score > 49){
+            newGame.speed -= 15;
+        } else if(score > 39){
+            newGame.speed -= 10;
+        } else if(score > 29){
+            newGame.speed -= 5;
+        } else if(score > 19){
+            newGame.speed --;
+        }
+    }
 
     //Countdown -
     function countDown(){
-        increaseLevel(game.score);
+        increaseLevel(newGame.score);
         if(!game.isOver){
-            document.querySelector('#time').innerHTML = `${--game.time}`;// moved -- before variable to action decrement first 
+            document.querySelector('#time').innerHTML = `${--newGame.time}`;// moved -- before variable to action decrement first 
 
-            if(game.time === 0){ 
+            if(newGame.time === 0){ 
                 game.isOver = true;
             }
 
@@ -129,8 +129,8 @@ function startNewGame(){
 
     //Use Bullet --
     function fireBullet(){
-        document.querySelector('#bullets').innerHTML = `${--game.bullets}`;
-        if(game.bullets === 0){
+        document.querySelector('#bullets').innerHTML = `${--newGame.bullets}`;
+        if(newGame.bullets === 0){
 
             game.isOver = true;
 
@@ -147,9 +147,9 @@ function startNewGame(){
     //function to check reason for game over
     function gameOverReason(){
         let reason;
-        if(game.time < 1){
+        if(newGame.time < 1){
             reason = 'You ran out of time!'
-        } else if(game.bullets < 1){
+        } else if(newGame.bullets < 1){
             reason = 'You ran out of bullets!'
         } else {
             reason = 'Try harder!'
@@ -174,7 +174,7 @@ function startNewGame(){
         document.querySelector('#game-over-reason').innerHTML = gameOverReason();
 
         //display final score
-        document.querySelector('#final-score span').innerHTML = game.score
+        document.querySelector('#final-score span').innerHTML = newGame.score
     }
 }
 
