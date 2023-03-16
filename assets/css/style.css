@@ -83,7 +83,7 @@ button:hover{
 
 #game-display-container{
     background-color: var(--green);
-    min-height: 85%;
+    min-height: 80%;
     width: 100%;
     padding: 10px;
     position: absolute;
@@ -92,7 +92,8 @@ button:hover{
 
     border-right: 5px solid var(--white);
     border-left: 5px solid var(--white);
-    border-bottom: 5px solid var(--white);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #game-display{
@@ -253,19 +254,15 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--green);
     border-left: 5px solid var(--white);
     border-right: 5px solid var(--white);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
 }
 
 footer p{
-    border: 3px solid var(--red);
+    border: 2px solid var(--red);
     width: fit-content;
     font-family: 'Oswald', sans-serif;
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 10px auto;
@@ -278,9 +275,9 @@ footer p{
 footer p::after{
     content: '®';
     position: absolute;
-    font-size: .4rem;
-    top: 3px;
-    right: 5px;
+    font-size: .3rem;
+    top: 4px;
+    right: 6px;
 }
 
 /* Game Display back ground */
