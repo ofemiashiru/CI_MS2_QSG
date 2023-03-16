@@ -83,7 +83,7 @@ button:hover{
 
 #game-display-container{
     background-color: var(--green);
-    min-height: 80%;
+    height: 80%;
     width: 100%;
     padding: 10px;
     position: absolute;
