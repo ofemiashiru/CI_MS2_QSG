@@ -151,7 +151,9 @@ function startNewGame(){
             reason = 'You ran out of time!'
         } else if(game.bullets < 1){
             reason = 'You ran out of bullets!'
-        } 
+        } else {
+            reason = 'Try harder!'
+        }
         return reason
     }
 
