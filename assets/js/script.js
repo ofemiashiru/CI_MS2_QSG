@@ -58,25 +58,51 @@ function startNewGame(){
         //Add event Listener to each target, when clicked each target will respond based on the class/game.targets
         function hitTarget(){
 
+            //function that displays feedback from a hit target
+            function hitTargetFeedback(feedback){
+
+                let label = document.createElement('div');
+                label.classList.add('label');
+                label.style.top = `${randomY}px`;
+                label.style.left = `${randomX}px`;
+                gameDisplay.appendChild(label);
+    
+                setTimeout(function(){
+                    label.classList.add('remove');
+                }, 800);
+
+                label.innerHTML = feedback
+            }
+
+
             this.classList.add('remove'); // remove target when hit
 
             if(this.classList[1] === newGame.targets[0]){ //good target is hit
                 
                 document.querySelector('#time').innerHTML = newGame.time += 5;
                 document.querySelector('#score').innerHTML = newGame.score += 5;
+                
+                hitTargetFeedback('+5');
 
             } else if(this.classList[1] === newGame.targets[1]) { //bad target is hit
                 
                 document.querySelector('#score').innerHTML = newGame.score -= 2;
 
+                hitTargetFeedback('-2');
+
             } else if(this.classList[1] === newGame.targets[2]) { //addBullet target is hit
                 
                 document.querySelector('#bullets').innerHTML = newGame.bullets += 2;
+
+                // use unicode for bullet https://www.compart.com/en/unicode/U+2022
+                hitTargetFeedback('+1&#8226;');
 
             } else if(this.classList[1] === newGame.targets[3]){ //Normal target is hit
                 
                 document.querySelector('#time').innerHTML = newGame.time += 1;
                 document.querySelector('#score').innerHTML = newGame.score += 1;
+
+                hitTargetFeedback('+1');
 
             }
         }

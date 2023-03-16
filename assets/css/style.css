@@ -112,7 +112,6 @@ button:hover{
     height: 35px;
     position: absolute;
     border-radius: 50%;
-    transition: 0.5ms;
 }
 
 .target::after{
@@ -147,6 +146,19 @@ button:hover{
 
 .show{
     display: block;
+}
+
+.label{
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    animation-name: forLabel;
+    animation-duration: .4s;
+}
+/* Using animation in CSS https://www.w3schools.com/css/css3_animations.asp */
+@keyframes forLabel {
+    from {color: transparent}
+    to {color: var(--black)}
 }
 
 
