@@ -2,7 +2,7 @@
     --red: #DD3043;
     --gold: #FFAC32;
     --blue: #3B88C3;
-    --white: #CCD6DD;
+    --white: #FFFFFF;
     --green: #56AE57;
     --brown: #B55736;
     --black: #212529;
@@ -27,7 +27,7 @@ button{
 button:hover{
     cursor: url('../images/crosshair.png') 16 16, auto;
     background-color: var(--green);
-    color: #fff;
+    color: var(--white);
     transition: .4s;
 }
 /* Main Screen */
@@ -89,9 +89,9 @@ button:hover{
     top: 13%;
     left: 0;
 
-    border-right: 5px solid #fff;
-    border-left: 5px solid #fff;
-    border-bottom: 5px solid #fff;
+    border-right: 5px solid var(--white);
+    border-left: 5px solid var(--white);
+    border-bottom: 5px solid var(--white);
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
     
@@ -215,10 +215,18 @@ button:hover{
     margin: 0 auto;
 }
 
+.instruction-text{
+    color: var(--white);
+}
 .description{
     padding-left: 30px;
     padding-top: 10px;
     font-size: .7rem;
+    color: var(--white);
+}
+
+#game-over-content p ~ p{
+    color: var(--white);
 }
 
 /* Footer */
@@ -228,8 +236,8 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    border-left: 5px solid #fff;
-    border-right: 5px solid #fff;
+    border-left: 5px solid var(--white);
+    border-right: 5px solid var(--white);
 }
 
 footer p{
