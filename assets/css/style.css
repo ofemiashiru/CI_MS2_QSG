@@ -150,7 +150,7 @@ button:hover{
 
 .label{
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-align: center;
     animation-name: forLabel;
     animation-duration: .4s;
