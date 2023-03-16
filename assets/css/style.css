@@ -6,8 +6,6 @@
     --green: #56AE57;
 }
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Press Start 2P', sans-serif;
     font-size: .8rem;
     /* creating custom crosshair https://www.w3schools.com/cssref/pr_class_cursor.php
