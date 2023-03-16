@@ -245,6 +245,9 @@ button:hover{
     color: var(--white);
 }
 
+#final-score span {
+    font-size: 1.4rem;
+}
 /* Footer */
 
 footer{
