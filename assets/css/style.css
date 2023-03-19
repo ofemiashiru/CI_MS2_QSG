@@ -20,29 +20,60 @@
 
 /* Home Page */
 nav{
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--brown);
+    border-bottom-left-radius: 10px;
 }
 
+#my-logo h1 img{
+    display: none;
+}
 
 #my-logo h1{
-    font-size: 2rem;
+    float: left;
     padding: 5px;
     margin: 0;
-    float: left;
+}
+
+#my-logo h1 a{
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+#my-logo h1 a:hover{
+    text-decoration: none;
 }
 
 #my-logo h1 span{
     display: block;
+    color: var(--white);
 }
 
 #nav-button{
     border: none;
     background-color: transparent;
     float: right;
+    color: var(--black);
+}
+
+#nav-button:hover{
+    color: var(--white);
+}
+
+#nav-button:active{
+    color: var(--brown);
 }
 
 #nav-button img{
     width: 55px;
+}
+
+#nav-button i{
+    font-size: 3rem;
+    padding: 5px;
 }
 
 
@@ -58,16 +89,29 @@ nav{
     height: 0;
     overflow: hidden;
     transition: .3s;
-    border-bottom-left-radius: 10px;
 }
 
 .show-nav{
-    height: 100px !important;
+    height: 140px !important;
 }
 
 
 #my-nav li{
+    padding: 3px;
+}
+
+#my-nav li a{
     font-size: 1.5rem;
+    color: var(--white);
+}
+#my-nav li a:hover{
+    text-decoration: none;
+    color: var(--black);
+    transition: .7s;
+}
+
+#my-nav li a:hover::before{
+    content: '>';
 }
 
 
