@@ -4,7 +4,9 @@ const game = {
 };
 
 // get the gameDisplay and store it as a variable
-let gameDisplay = document.querySelector('#game-display');
+const gameDisplay = document.querySelector('#game-display');
+//location of all targets on DOM
+const allTargets = document.querySelector('#all-targets');
 
 // Get X and Y axis totals for game display
 let gameDisplayXAxis = gameDisplay.clientWidth - 20;
@@ -53,7 +55,7 @@ function startNewGame(){
         newTarget.classList.add('target', `${randomTarget}`); //adds the target class from the generated randomTarget
         newTarget.style.top = `${randomY}px`; // adds position Y to top style property
         newTarget.style.left = `${randomX}px`; // adds position X to left style property
-        gameDisplay.appendChild(newTarget); // append newTarget to the DOM
+        allTargets.appendChild(newTarget); // append newTarget to the DOM
         
         //Add event Listener to each target, when clicked each target will respond based on the class/game.targets
         function hitTarget(){
@@ -65,17 +67,19 @@ function startNewGame(){
                 label.classList.add('label');
                 label.style.top = `${randomY}px`;
                 label.style.left = `${randomX}px`;
-                gameDisplay.appendChild(label);
+                allTargets.appendChild(label);
     
                 setTimeout(function(){
-                    label.classList.add('remove');
+                    // label.classList.add('remove');
+                    allTargets.removeChild(label)
                 }, 800);
 
                 label.innerHTML = feedback
             }
 
 
-            this.classList.add('remove'); // remove target when hit
+            // this.classList.add('remove'); 
+            allTargets.removeChild(this);// remove target when hit
 
             if(this.classList[1] === newGame.targets[0]){ //good target is hit
                 
@@ -110,8 +114,9 @@ function startNewGame(){
 
         //Remove target after specified time
         setTimeout(function(){
-            document.querySelector('.target').classList.add('remove');
-            document.querySelector('.target').classList.remove('target');
+            // document.querySelector('.target').classList.add('remove');
+            // document.querySelector('.target').classList.remove('target');
+            allTargets.removeChild(newTarget);
             newTarget.removeEventListener('click', hitTarget);
         }, newGame.speed);
 
