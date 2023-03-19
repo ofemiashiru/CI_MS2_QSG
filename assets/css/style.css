@@ -8,6 +8,11 @@
     --brown: #B55736;
     --black: #212529;
 }
+
+html{
+    /* used to get smooth scrolling https://www.w3schools.com/cssref/pr_scroll-behavior.php */
+    scroll-behavior: smooth;
+}
 * {
     font-family: 'Press Start 2P', sans-serif;
     font-size: .8rem;
@@ -18,7 +23,7 @@
     cursor: url('../images/crosshair.png') 16 16, auto;
 }
 
-/* Home Page */
+/* index.html */
 nav{
     position: fixed;
     top: 0;
@@ -50,6 +55,9 @@ nav{
 #my-logo h1 span{
     display: block;
     color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
 }
 
 #nav-button{
@@ -113,7 +121,48 @@ nav{
 #my-nav li a:hover::before{
     content: '>';
 }
+section {
+    padding-top:100px
+}
 
+section h2{
+    padding: 5px;
+}
+
+section p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+#hero-section{
+}
+
+#about-section{
+    
+}
+
+#leaderboard-section{
+    
+}
+
+#contact-section{
+    
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+}
+
+footer p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
 
 
 
@@ -346,38 +395,6 @@ button:hover{
 
 #final-score span {
     font-size: 1.4rem;
-}
-/* Footer */
-
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-left: 5px solid var(--white);
-    border-right: 5px solid var(--white);
-}
-
-footer p{
-    border: 2px solid var(--red);
-    width: fit-content;
-    font-family: 'Oswald', sans-serif;
-    font-size: .7rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 10px auto;
-    padding: 3px 10px;
-    border-radius: 30px;
-    color: var(--red);
-    position: relative;
-}
-
-footer p::after{
-    content: '®';
-    position: absolute;
-    font-size: .3rem;
-    top: 4px;
-    right: 6px;
 }
 
 /* Game Display back ground */
