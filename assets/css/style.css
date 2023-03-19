@@ -285,24 +285,62 @@ footer p::after{
 .trunk{
     position: absolute;
     background-color: var(--brown);
-    width: 25px;
-    height: 70px;
+    width: 20px;
+    height: 65px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: .3s;
+}
+
+.bush{
+    width: 70px;
+    height: 70px;
+    transform: rotate(42deg);
+    background-color: var(--dark-green);
+    border-radius: 20px;
+    position: absolute;
+    top: -25px;
+    left: -27px;
+    transition: .3s;
+}
+
+.tree-one{
     top: 300px;
     left: 45px;
 }
 
-.bush{
-    width: 90px;
-    height: 90px;
-    transform: rotate(42deg);
-    background-color: var(--dark-green);
-    border-radius: 30px;
-    position: absolute;
-    top: -45px;
-    left: -35px;
+.tree-two{
+    top: 68px;
+    right: 45px;
 }
+
+.tree-three{
+    bottom: 0;
+    right: 100px;
+}
+
+.tree-four{
+    top: 156px;
+    right: 50%;
+}
+
+.tree-five{
+    bottom: 30px;
+    left: 350px;
+    width: 0px;
+    height: 0px;
+}
+
+.tree-five .trunk{
+    width: 25px;
+    height: 0px;
+}
+
+#game-display .trunk:last-child .bush{
+    width: 0px;
+    height: 0px;
+}
+
 
 
 /* Media Queries */
@@ -361,4 +399,30 @@ footer p::after{
         font-size: 3.8rem;
         top: -13px;
     }
+
+    .trunk{
+        width: 25px;
+        height: 70px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .bush{
+        width: 90px;
+        height: 90px;
+        border-radius: 30px;
+        top: -45px;
+        left: -35px;
+    }
+
+    .tree-five{
+        bottom: 30px;
+        left: 350px;
+    }
+
+    #game-display .trunk:last-child .bush{
+        width: 90px;
+        height: 90px;
+    }
+
 }
