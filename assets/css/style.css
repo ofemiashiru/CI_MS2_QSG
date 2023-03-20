@@ -24,6 +24,11 @@ html{
 }
 
 /* index.html */
+
+.home-background{
+    background-color: var(--green);
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -64,29 +69,27 @@ nav{
     letter-spacing: 3px;
 }
 
-#nav-button{
+.nav-button{
     border: none;
     background-color: transparent;
     float: right;
     color: var(--black);
 }
 
-#nav-button:hover{
+.nav-button:hover{
     color: var(--white);
+    background-color: transparent;
 }
 
-#nav-button:active{
+.nav-button:active{
     color: var(--brown);
 }
 
-#nav-button img{
-    width: 55px;
-}
-
-#nav-button i{
+.nav-button i{
     font-size: 3rem;
     padding: 5px;
 }
+
 
 
 #nav-container{
@@ -98,19 +101,26 @@ nav{
     background-color: var(--brown);
     width: 100%;
     overflow: hidden;
-    transition: .3s;
     margin-bottom: 0;
     border-bottom-left-radius: 10px;
 }
 
 .hide-nav{
-    height: 0;
+    height: 0px;
 }
 
 .show-nav{
     height: 170px;
+    transition: .3s;
 }
 
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
 
 #my-nav li{
     padding: 3px;
@@ -137,6 +147,7 @@ section {
 
 section h2{
     padding: 5px;
+    text-align: center;
 }
 
 section p {
@@ -569,22 +580,18 @@ button:hover{
 
 }
 
-@media screen and (min-width:1094px){
+@media screen and (min-width:1109px){
 
-    #nav-button{
+    .nav-button{
         display: none;
     }
 
     #my-nav{
-        display: block;
         height: 100%;
         width: fit-content;
         float: right;
         margin-top: 20px;
-        animation-name: navBlock;
-        animation-duration: 0s;
     }
-
  
     #my-nav li {
         display: inline;
