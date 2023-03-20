@@ -33,19 +33,23 @@ nav{
     border-bottom-left-radius: 10px;
 }
 
-#my-logo h1 img{
-    display: none;
+#my-logo img{
+    width: 0px;
+    float: left;
+    transition: .7s;
 }
 
 #my-logo h1{
     float: left;
     padding: 5px;
     margin: 0;
+
 }
 
 #my-logo h1 a{
     font-size: 2.2rem;
     color: var(--black);
+    transition: .7s;
 }
 
 #my-logo h1 a:hover{
@@ -470,6 +474,21 @@ button:hover{
 
 
 @media screen and (min-width:768px){
+    /* Home page */
+
+    #my-logo img{
+        width: 70px;
+    }
+
+    #my-logo h1 a{
+        font-size: 3rem;
+    }
+
+    #my-logo h1 span{
+        font-size: 1.1rem;
+    }
+
+    /* Game */
     .stats span:first-child{
         font-size: 2rem;
     }
