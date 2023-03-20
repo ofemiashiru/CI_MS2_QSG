@@ -36,6 +36,7 @@ nav{
     width: 100%;
     background-color: var(--brown);
     border-bottom-left-radius: 10px;
+    z-index: 10;
 }
 
 #my-logo img{
@@ -141,9 +142,32 @@ nav{
 #my-nav li a:hover::before{
     content: '>';
 }
+
+
 section {
-    padding-top:100px
+    padding-top:80px
 }
+
+
+.home-target{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    z-index: -1;
+}
+
+.home-target::after{
+    content: "\f140";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 6rem;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
 
 section h2{
     padding: 5px;
@@ -158,6 +182,7 @@ section p {
 }
 
 #hero-section{
+
 }
 
 #about-section{
