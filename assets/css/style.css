@@ -26,7 +26,7 @@ html{
 /* index.html */
 
 .home-background{
-    background-color: var(--green);
+    background-color: var(--white);
 }
 
 nav{
@@ -143,8 +143,9 @@ nav{
 }
 
 
-section {
-    padding-top:80px
+section{
+    padding-top: 50px;
+    margin: 0 0 30px;
 }
 
 
@@ -154,7 +155,7 @@ section {
     position: relative;
     border-radius: 50%;
     margin: 0 auto 20px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .home-target::after{
@@ -167,18 +168,18 @@ section {
     left: 0;
 }
 
-section{
-    padding-top: 90px;
-    margin: 0 0 30px;
-}
 
 section h2{
-    padding: 5px;
+    padding: 30px 5px 10px;
     text-align: center;
+    margin-bottom: 0;
+    background-color: var(--dark-green);
+
 }
 
 section p {
     font-family: 'Oswald', sans-serif;
+    background-color: var(--green);
     font-size: 1rem;
     letter-spacing: 3px;
     padding: 5px;
@@ -189,7 +190,6 @@ section p {
     font-size: 2rem;
     line-height: 1.5;
     text-transform: uppercase;
-    background-color: var(--dark-green);
     text-align: center;
     margin: 0;
 }
@@ -207,7 +207,7 @@ section p {
 }
 
 #contact-section{
-    
+
 }
 
 #feedback-form {
@@ -216,6 +216,7 @@ section p {
     column-gap: 10px;
     row-gap: 5px;
     padding: 10px;
+    background-color: var(--green);
 }
 
 #feedback-form label{
@@ -230,8 +231,12 @@ section p {
     letter-spacing: 3px;
 }
 
+#feedback-form {
+    
+}
+
 #feedback-form textarea{
-    height: 200px;
+    height: 190px;
 }
 
 /* Footer */
@@ -258,12 +263,12 @@ footer p{
 
 /* Game Generics */
 
-button{
+button, input[type='submit']{
     padding: 2px;
     cursor: url('../images/crosshair.png') 16 16, auto;
 }
 
-button:hover{
+button:hover, input[type='submit']:hover{
     cursor: url('../images/crosshair.png') 16 16, auto;
     background-color: var(--green);
     color: var(--white);
