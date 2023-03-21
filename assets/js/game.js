@@ -71,14 +71,10 @@ function startNewGame(){
     
                 setTimeout(function(){
                     allTargets.removeChild(label)
-                }, 800);
+                }, 900);
 
                 label.innerHTML = feedback
             }
-
-
-            // this.classList.add('remove'); 
-            allTargets.removeChild(this);// remove target when hit
 
             if(this.classList[1] === newGame.targets[0]){ //good target is hit
                 
@@ -100,13 +96,13 @@ function startNewGame(){
                 // use unicode for bullet https://www.compart.com/en/unicode/U+2022
                 hitTargetFeedback('+1&#8226;');
 
+
             } else if(this.classList[1] === newGame.targets[3]){ //Normal target is hit
                 
                 document.querySelector('#time').innerHTML = newGame.time += 1;
                 document.querySelector('#score').innerHTML = newGame.score += 1;
 
                 hitTargetFeedback('+1');
-
             }
         }
         newTarget.addEventListener('click', hitTarget);
@@ -202,7 +198,8 @@ function startNewGame(){
         document.querySelector('#game-over-reason').innerHTML = gameOverReason();
 
         //display final score
-        document.querySelector('#final-score span').innerHTML = newGame.score
+        // document.querySelector('.final-score span').innerHTML = newGame.score;
+        document.querySelector('#final-score-form').elements.finalScore.value = newGame.score;
     }
 }
 
