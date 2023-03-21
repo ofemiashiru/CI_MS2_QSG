@@ -70,7 +70,6 @@ function startNewGame(){
                 allTargets.appendChild(label);
     
                 setTimeout(function(){
-                    // label.classList.add('remove');
                     allTargets.removeChild(label)
                 }, 800);
 
@@ -114,8 +113,6 @@ function startNewGame(){
 
         //Remove target after specified time
         setTimeout(function(){
-            // document.querySelector('.target').classList.add('remove');
-            // document.querySelector('.target').classList.remove('target');
             allTargets.removeChild(newTarget);
             newTarget.removeEventListener('click', hitTarget);
         }, newGame.speed);
