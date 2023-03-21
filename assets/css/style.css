@@ -502,11 +502,6 @@ button:hover, input[type='submit']:hover{
     font-size: 1.4rem;
 }
 
-#final-score-form .save-score{
-    width: 100px;
-    font-size: .8rem;
-}
-
 #final-score-form input[name='finalScore']{
     background-color: transparent;
     color: var(--white);

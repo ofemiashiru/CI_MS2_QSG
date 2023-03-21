@@ -100,8 +100,8 @@
                 <form id="final-score-form" onsubmit="return submitHighScore(this)">
                     <label for="gamer">You Scored</label>
                     <input id="final-score" type="text" name="finalScore" value="" disabled />
-                    <label for="gamer">Enter Name</label> <input type="text" name="gamer" id="gamer">
-                    <input type="submit" class="save-score" value="Save">
+                    <label for="gamer">Enter Name</label> <input type="text" name="gamer" id="gamer" autocomplete="off">
+                    <button type="submit">Save Score</button>
                 </form>
                 <button id="restart-game-btn">Restart</button>
             </div>
