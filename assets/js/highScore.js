@@ -7,12 +7,13 @@ const submitHighScore = (form) =>{
     highScores.push(newScore);
     localStorage.setItem("newScore", JSON.stringify(highScores));
 
+    // empty text box after save
     document.querySelector('#gamer').value = ''
 
     setTimeout(function(){
         // redirect to leaderboard https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
         window.location.replace('index.html#leaderboard-section')
-    },900)
+    }, 900)
     return false
 }
 
