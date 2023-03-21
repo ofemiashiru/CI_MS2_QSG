@@ -211,7 +211,7 @@ section p {
     background-color: var(--brown);
 }
 
-#leaderboard-section p>i {
+#leaderboard-section p > i {
     font-size: 3rem;
     transform: rotate(-18deg);
     padding: 5px;
