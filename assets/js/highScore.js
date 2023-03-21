@@ -6,6 +6,7 @@ const submitHighScore = (form) =>{
 
     // store it in the local storage without overwriting
     // https://stackoverflow.com/questions/40843773/localstorage-keeps-overwriting-my-data
+    // https://www.w3schools.com/jsref/prop_win_localstorage.asp
     let highScores = JSON.parse(localStorage.getItem("newScore")) || [];
     highScores.push(newScore);
     localStorage.setItem("newScore", JSON.stringify(highScores));
