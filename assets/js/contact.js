@@ -11,15 +11,23 @@ const sendMail = function(contactForm){
         "0Srwr_bwVJqHDTfFz"
     )
     .then(respsone => {
-        console.log('SUCCESS', respsone);
+        //feedback to user that message has been sent
+        document.querySelector('#feedback-form .message-feedback').innerHTML = 'Message Sent'
 
+        //empty all fields once the message has been sent
         document.querySelectorAll('.form-item').forEach((input)=>{
             input.value =''
         });
 
+        //remove the text from message feedback after 2 seconds
+        setTimeout(function(){
+            document.querySelector('#feedback-form .message-feedback').innerHTML = ''
+        }, 2000);        
+
     },(error) => {
         console.error('error:', error);
-    })
+        document.querySelector('#feedback-form .message-feedback').innerHTML = 'Something Went Wrong'
+    });
     
     return false // prevents page refreshing
 }
