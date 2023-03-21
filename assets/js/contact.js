@@ -1,3 +1,4 @@
+// Code for the contact form on the home page
 const sendMail = function(contactForm){
     emailjs.send(
         "service_g84hf2i", "template_afgnwq7", 
@@ -12,11 +13,13 @@ const sendMail = function(contactForm){
     .then(respsone => {
         console.log('SUCCESS', respsone);
 
+        document.querySelectorAll('.form-item').forEach((input)=>{
+            input.value =''
+        });
+
     },(error) => {
         console.error('error:', error);
     })
     
-
-
     return false // prevents page refreshing
 }
