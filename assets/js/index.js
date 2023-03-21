@@ -1,3 +1,22 @@
+// get all the high scores from local storage and parse as JSON
+const highScores = JSON.parse(localStorage.newScore);
+console.log(highScores)
+//generate High Scores
+
+let table = document.querySelector('#scoreboard-inner');
+
+const scoreRows = highScores.map(each => {
+    for(key of Object.keys(each)){
+        return (`
+                <div>${key}</div>
+                <div>${each[key]}</div>`
+        )
+    }
+});
+
+
+table.innerHTML += scoreRows.join('');
+
 // handles the burger menu on home page
 const openMenu = document.querySelector('#open-menu');
 const closeMenu = document.querySelector('#close-menu');

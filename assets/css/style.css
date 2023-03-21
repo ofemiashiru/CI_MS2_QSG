@@ -202,7 +202,7 @@ section p {
     
 }
 
-#leaderboard-section p{
+#leaderboard-section #scoreboard-outer{
     
     border: 5px solid var(--black);
     border-radius: 0.3rem;
@@ -211,10 +211,16 @@ section p {
     background-color: var(--brown);
 }
 
-#leaderboard-section p > i {
+#leaderboard-section #scoreboard-outer > i {
     font-size: 3rem;
     transform: rotate(-18deg);
     padding: 5px;
+}
+
+#scoreboard-inner{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 #feedback-form {
