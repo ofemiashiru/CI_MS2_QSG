@@ -296,7 +296,7 @@ button, input[type='submit']{
 
 button:hover, input[type='submit']:hover{
     cursor: url('../images/crosshair.png') 16 16, auto;
-    background-color: var(--green);
+    background-color: var(--dark-green);
     color: var(--white);
     transition: .4s;
 }
