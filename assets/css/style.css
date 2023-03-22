@@ -207,9 +207,12 @@ section p {
 
 
 #about-section p{
-    font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
+}
+
+.about-sub-head{
+    font-size: 1.3rem;
 }
 
 #about-images{
@@ -225,6 +228,14 @@ section p {
     top:0;
     left: 0;
     z-index: 5;
+}
+
+.about-middle-text{
+    display: none;
+}
+
+.about-bottom-text{
+    font-size: 1.5rem;
 }
 
 #about-images .about-corner-pic{
@@ -644,6 +655,21 @@ button:hover, input[type='submit']:hover{
     #instruction-container{
         max-width: 50%;
     }
+
+    .about-sub-head{
+        font-size: 1.5rem;
+    }
+
+    .about-middle-text{
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        font-size: 200%;
+    }
+
+    .about-bottom-text{
+        display: none;
+    }
 }
 
 
@@ -664,6 +690,13 @@ button:hover, input[type='submit']:hover{
 
     section {
         padding-top:100px
+    }
+
+    .about-middle-text{
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 40px;
+        font-size: 350%;
     }
 
     /* Game */
