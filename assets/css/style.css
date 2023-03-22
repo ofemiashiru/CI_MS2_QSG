@@ -201,6 +201,7 @@ section p {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    transition: .3s;
     /* box shadow https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
     box-shadow: 5px 8px 5px rgba(0,0,0,0.4);
 }
@@ -340,6 +341,7 @@ footer p{
     letter-spacing: 3px;
     padding: 10px;
     margin: 0;
+    transition: .3s;
 }
 
 
@@ -746,6 +748,11 @@ button:hover, input[type='submit']:hover{
         margin: 0 auto;
         padding-top: 40px;
         font-size: 310%;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+        transition: .3s;
     }
 
     /* Game */
