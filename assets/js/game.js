@@ -18,6 +18,12 @@ window.addEventListener('resize', function(){
     gameDisplayYAxis = gameDisplay.clientHeight - 20;
 });
 
+//setup back home buttons
+document.querySelectorAll('.back-home-btn').forEach((btn)=>{
+    btn.addEventListener('click', ()=>{
+        window.location.replace('index.html');
+    });
+});
 
 //Setup new Game --
 function startNewGame(){
@@ -229,7 +235,7 @@ function openGameMenu(){
                 //toggle class on instructions to show/hide instructions
                 document.querySelector('#how-to-play').classList.toggle('show-instructions');
                
-            } 
+            }
         });
     });
 
