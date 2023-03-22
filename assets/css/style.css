@@ -197,16 +197,36 @@ section p {
     width: 100%;
 }
 
+
 #about-section p{
     font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
 }
 
-#about-section img {
+#about-images{
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#about-images .game-display-pic{
     width: 150px;
     transform: rotate(33deg);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 5;
 }
+
+#about-images .about-corner-pic{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
 
 #leaderboard-section #scoreboard-outer{
     
