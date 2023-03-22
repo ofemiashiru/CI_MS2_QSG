@@ -10,7 +10,7 @@ const sendMail = function(contactForm){
         }, 
         "0Srwr_bwVJqHDTfFz"
     )
-    .then(respsone => {
+    .then( () => {
         //feedback to user that message has been sent
         document.querySelector('#feedback-form .message-feedback').innerHTML = 'Message Sent'
 
