@@ -17,7 +17,7 @@ const submitHighScore = (form) =>{
     // after saving redirect to the leaderboard on index.html
     setTimeout(function(){
         // redirect to leaderboard https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
-        window.location.replace('index.html#leaderboard-section');
+        window.location.href = 'index.html#leaderboard-section';
     }, 900)
 
     return false;

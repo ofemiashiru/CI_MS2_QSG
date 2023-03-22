@@ -1,23 +1,3 @@
-// get all the high scores from local storage and parse as JSON
-const highScores = JSON.parse(localStorage.newScore);
-
-//Sort the high Scores
-highScores.sort((a, b) => Object.values(b) - Object.values(a));
-
-//generate High Scores on the leader board
-const table = document.querySelector('#scoreboard-inner');
-
-const scoreRows = highScores.map(each => {
-    for(key of Object.keys(each)){
-        return (`
-                <div>${key}</div>
-                <div>${each[key]}</div>`
-        );
-    }
-});
-
-table.innerHTML += scoreRows.join('');
-
 // handles the burger menu on home page
 const openMenu = document.querySelector('#open-menu');
 const closeMenu = document.querySelector('#close-menu');
@@ -67,3 +47,29 @@ window.addEventListener('resize', () => {
 
     }
 });
+
+
+// add if statement to only generate highScore if the localStorage length is greater than 0
+if(localStorage.length > 0){
+
+    // get all the high scores from local storage and parse as JSON
+    const highScores = JSON.parse(localStorage.newScore);
+
+    //Sort the high Scores
+    highScores.sort((a, b) => Object.values(b) - Object.values(a));
+
+    //generate High Scores on the leader board
+    const table = document.querySelector('#scoreboard-inner');
+
+    const scoreRows = highScores.map(each => {
+        for(key of Object.keys(each)){
+            return (`
+                    <div>${key}</div>
+                    <div>${each[key]}</div>`
+            );
+        }
+    });
+
+    table.innerHTML += scoreRows.join('');
+
+}
