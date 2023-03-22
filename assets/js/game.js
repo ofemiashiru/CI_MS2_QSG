@@ -110,13 +110,14 @@ function startNewGame(){
 
                 hitTargetFeedback('+1');
             }
+
+            this.removeEventListener('click', hitTarget);
         }
         newTarget.addEventListener('click', hitTarget);
 
         //Remove target after specified time
         setTimeout(function(){
             allTargets.removeChild(newTarget);
-            newTarget.removeEventListener('click', hitTarget);
         }, newGame.speed);
 
     }
