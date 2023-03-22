@@ -18,7 +18,7 @@ const submitHighScore = (form) =>{
     setTimeout(function(){
         // redirect to leaderboard https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
         window.location.replace('index.html#leaderboard-section');
-    }, 900)
+    }, 500)
 
     return false;
 }
