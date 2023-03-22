@@ -67,7 +67,7 @@ if(localStorage.length > 0){
     const scoreRows = topTenScores.map(each => {
         for(key of Object.keys(each)){
             return (`
-                    <div>${key.length > 15 ? key.substring(0, 15)+'...' : key}</div>
+                    <div>${key.length > 10 ? key.substring(0, 10)+'...' : key}</div>
                     <div>${each[key]}</div>`
             );
         }
