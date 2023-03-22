@@ -156,6 +156,7 @@ section{
     border-radius: 50%;
     margin: 0 auto 20px;
     z-index: 0;
+    display: block;
 }
 
 .home-target::after{
@@ -318,7 +319,7 @@ section p {
     height: 180px;
 }
 
-#feedback-form .message-feedback{
+#contact-section .message-feedback{
     text-align: center;
     color: var(--red);
 }
@@ -697,6 +698,10 @@ button:hover, input[type='submit']:hover{
     #feedback-form input[type='submit'] {
         width: 50%;
         float: right;
+    }
+
+    #contact-section .message-feedback{
+        text-align: center;
     }
 
 }
