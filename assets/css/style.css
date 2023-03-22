@@ -221,7 +221,7 @@ section p {
     margin-bottom: 30px;
 }
 
-#about-images .game-display-pic{
+.game-display-pic{
     width: 150px;
     transform: rotate(33deg);
     position: absolute;
@@ -247,7 +247,7 @@ section p {
 }
 
 
-#leaderboard-section #scoreboard-outer{
+#scoreboard-outer{
     
     border: 5px solid var(--black);
     border-radius: 0.3rem;
@@ -651,6 +651,13 @@ button:hover, input[type='submit']:hover{
 
 /* Media Queries */
 
+@media screen and (min-width:500px){
+    #scoreboard-outer{
+        width: 470px;
+        margin: 10px auto 0;
+    }
+}
+
 @media screen and (min-width:650px){
     #instruction-container{
         max-width: 50%;
@@ -673,6 +680,26 @@ button:hover, input[type='submit']:hover{
 }
 
 
+@media screen and (min-width:680px){
+
+    #feedback-form {
+        grid-template-columns: 150px auto;
+        width: 660px;
+        margin: 0 auto;
+    }
+
+    #feedback-form label{
+        display: block;
+        font-size: 1.3rem;
+    }
+    #feedback-form input[type='submit'] {
+        width: 50%;
+        float: right;
+    }
+
+}
+
+
 @media screen and (min-width:768px){
     /* Home page */
 
@@ -689,14 +716,14 @@ button:hover, input[type='submit']:hover{
     }
 
     section {
-        padding-top:100px
+        padding-top: 70px
     }
 
     .about-middle-text{
         width: 50%;
         margin: 0 auto;
         padding-top: 40px;
-        font-size: 350%;
+        font-size: 310%;
     }
 
     /* Game */
