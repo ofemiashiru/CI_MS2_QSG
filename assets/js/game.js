@@ -222,8 +222,12 @@ function openGameMenu(){
                 startNewGame();
     
             } else if(this.id === 'how-to-play-btn'){
+                let howToPlayBtn = document.querySelector('#how-to-play-btn');
+                //change text of the button when clicked
+                howToPlayBtn.innerHTML === 'How to play' ? howToPlayBtn.innerHTML = 'Hide' : howToPlayBtn.innerHTML = 'How to play'
                 
-               document.querySelector('#how-to-play').classList.toggle('show-instructions');
+                //toggle class on instructions to show/hide instructions
+                document.querySelector('#how-to-play').classList.toggle('show-instructions');
                
             } 
         });
