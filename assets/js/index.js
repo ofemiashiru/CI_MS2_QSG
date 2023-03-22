@@ -58,10 +58,13 @@ if(localStorage.length > 0){
     //Sort the high Scores
     highScores.sort((a, b) => Object.values(b) - Object.values(a));
 
+    //get the top ten scores after they are sorted
+    const topTenScores = highScores.slice(0,10);
+
     //generate High Scores on the leader board
     const table = document.querySelector('#scoreboard-inner');
 
-    const scoreRows = highScores.map(each => {
+    const scoreRows = topTenScores.map(each => {
         for(key of Object.keys(each)){
             return (`
                     <div>${key}</div>
@@ -71,5 +74,4 @@ if(localStorage.length > 0){
     });
 
     table.innerHTML += scoreRows.join('');
-
 }
