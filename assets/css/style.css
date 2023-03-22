@@ -194,6 +194,14 @@ section p {
     margin: 0;
 }
 
+#hero-section p span{
+    display: none;
+}
+
+#hero-section p i{
+    display: none;
+}
+
 #hero-section img {
     width: 300px;
     object-fit: cover;
@@ -835,6 +843,25 @@ button:hover, input[type='submit']:hover{
     }
 
 }
+
+@media screen and (min-width:1034px){
+
+    #hero-section p span{
+        display: block;
+        font-size: 1.4rem;
+        margin: 50px 0 10px;
+    }
+
+    #hero-section p i{
+        display: inline;
+        font-size: 7rem;
+        padding: 10px;
+
+    }
+
+
+}
+
 
 @media screen and (min-width:1109px){
 
