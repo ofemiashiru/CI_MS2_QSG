@@ -180,7 +180,6 @@ section h2{
 section p {
     font-family: 'Oswald', sans-serif;
     background-color: var(--green);
-    font-size: 1rem;
     letter-spacing: 3px;
     padding: 5px;
 }
@@ -198,8 +197,15 @@ section p {
     width: 100%;
 }
 
-#about-section{
-    
+#about-section p{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#about-section img {
+    width: 150px;
+    transform: rotate(33deg);
 }
 
 #leaderboard-section #scoreboard-outer{
