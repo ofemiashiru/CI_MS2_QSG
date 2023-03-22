@@ -417,18 +417,19 @@ button:hover, input[type='submit']:hover{
     display: block;
 }
 
-.label{
+.hit-label{
     position: absolute;
     font-size: 1.4rem;
     text-align: center;
     animation-name: forLabel;
     animation-duration: .3s;
     z-index: 5;
+    color: var(--white);
 }
 /* Using animation in CSS https://www.w3schools.com/css/css3_animations.asp */
 @keyframes forLabel {
     from {color: transparent}
-    to {color: var(--black)}
+    to {color: var(--white)}
 }
 
 

@@ -63,17 +63,17 @@ function startNewGame(){
             //function that displays feedback from a hit target
             function hitTargetFeedback(feedback){
 
-                let label = document.createElement('div');
-                label.classList.add('label');
-                label.style.top = `${randomY}px`;
-                label.style.left = `${randomX}px`;
-                allTargets.appendChild(label);
+                let hitLabel = document.createElement('div');
+                hitLabel.classList.add('hit-label');
+                hitLabel.style.top = `${randomY}px`;
+                hitLabel.style.left = `${randomX}px`;
+                allTargets.appendChild(hitLabel);
     
                 setTimeout(function(){
-                    allTargets.removeChild(label)
+                    allTargets.removeChild(hitLabel)
                 }, 900);
 
-                label.innerHTML = feedback
+                hitLabel.innerHTML = feedback
             }
 
             if(this.classList[1] === newGame.targets[0]){ //good target is hit
