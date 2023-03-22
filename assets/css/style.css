@@ -269,7 +269,7 @@ section p {
     font-size: 1.1rem;
 }
 
-#scoreboard-inner div:nth-of-type(odd):first-child::before{
+#scoreboard-inner div:first-child::before{
     content: '\f5a2';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
