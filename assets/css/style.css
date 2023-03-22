@@ -209,11 +209,11 @@ section p {
     height: 350px;
     margin: 10px 10px 0;
     background-color: var(--brown);
+    text-align: center;
 }
 
 #leaderboard-section #scoreboard-outer > i {
     font-size: 3rem;
-    transform: rotate(-18deg);
     padding: 5px;
 }
 
@@ -223,11 +223,19 @@ section p {
     grid-template-columns: auto auto;
     row-gap: 10px;
     overflow-y: scroll;
+    text-align: left;
 }
 
 #scoreboard-inner div{
     color: var(--white);
     font-size: 1.1rem;
+}
+
+#scoreboard-inner div:nth-of-type(odd):first-child::before{
+    content: '\f5a2';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
 }
 
 #scoreboard-inner div:nth-of-type(even){
