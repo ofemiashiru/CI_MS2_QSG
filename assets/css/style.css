@@ -37,6 +37,7 @@ nav{
     background-color: var(--brown);
     border-bottom-left-radius: 10px;
     z-index: 10;
+    box-shadow: 10px 5px 3px rgba(0,0,0, 0.4);
 }
 
 #my-logo img{
@@ -344,7 +345,6 @@ footer{
 footer p{
     font-family: 'Oswald', sans-serif;
     font-size: .8rem;
-    font-weight: 600;
     text-align: center;
     color: var(--white);
     letter-spacing: 3px;
