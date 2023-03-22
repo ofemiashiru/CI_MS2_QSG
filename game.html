@@ -71,9 +71,9 @@
             
             <div id="start-game-content" class="modal-content">
                 <p><img src="assets/favicon/favicon-32x32.png"> QuickShot</p>
-                <button class="back-home-btn">Back Home</button>
-                <button id="start-game-btn">Start Game</button>
-                <button id="how-to-play-btn">How to play</button>
+                <button aria-label="Go back home" class="back-home-btn">Back Home</button>
+                <button aria-label="Start new game" id="start-game-btn">Start Game</button>
+                <button aria-label="Show how to play" id="how-to-play-btn">How to play</button>
                 <div id="how-to-play" class="hide-instructions">
                     <hr>
                     <span class="instruction-text">Test your reflexes and see how quickly you can hit the targets.</span>
@@ -101,10 +101,10 @@
                     <label for="gamer">You Scored</label>
                     <input id="final-score" type="text" name="finalScore" value="" disabled />
                     <label for="gamer">Enter Name</label> <input type="text" name="gamer" id="gamer" required autocomplete="off">
-                    <button type="submit">Save Score</button>
+                    <button aria-label="Save your score" type="submit">Save Score</button>
                 </form>
-                <button id="restart-game-btn">Restart</button>
-                <button class="back-home-btn">Back Home</button>
+                <button aria-label="Restart Game" id="restart-game-btn">Restart</button>
+                <button aria-label="Go back home" class="back-home-btn">Back Home</button>
             </div>
         </div> 
         <!-- All Scripts -->
