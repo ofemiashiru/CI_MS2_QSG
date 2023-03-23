@@ -336,6 +336,11 @@ section p {
     text-align: right;
 }
 
+#contact-section .fa-paper-plane, 
+#contact-section .fa-envelope{
+    display: none;
+}
+
 #feedback-form {
     display: grid;
     grid-template-columns: auto;
@@ -745,6 +750,32 @@ button:hover, input[type='submit']:hover{
         left: 200px;
     }
 
+    #contact-section{
+        position: relative;
+    }
+
+    #contact-section .fa-paper-plane,
+    #contact-section .fa-envelope{
+        display: block;
+        font-size: 8rem;
+        position: absolute;
+        z-index: -4;
+        background-color: var(--brown);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #contact-section .fa-paper-plane{
+        top: 300px;
+        left: 100px;
+        color: var(--black);
+    }
+
+    #contact-section .fa-envelope{
+        top: 300px;
+        right: 100px;
+    }
+
     #feedback-form {
         grid-template-columns: 150px auto;
         width: 660px;
@@ -794,12 +825,12 @@ button:hover, input[type='submit']:hover{
 
     #hero-body div{
         flex: 50%;
-        padding: 20px;
+        padding: 40px 0 0;
     }
 
     #hero-body p {
     
-        font-size: 4vw;
+        font-size: 3.9vw;
         font-weight: 600;
     }
 
@@ -825,11 +856,11 @@ button:hover, input[type='submit']:hover{
 
     #hero-body img {
 
-        width: 130%;
+        width: 100%;
         height: auto;
         border-radius: 1px;
-        object-position: -20px 0;
-        box-shadow: 10px 5px 3px rgba(0,0,0, 0.4);
+        object-position: 0 0;
+        
         transition: .3s;
     }
 
