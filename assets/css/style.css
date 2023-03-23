@@ -257,6 +257,39 @@ section p {
     z-index: 2;
 }
 
+#home-trees{
+    position: relative;
+    z-index: -1;
+}
+
+.tree-six{
+    top: 65px;
+    left: 50px;
+}
+
+ .tree-seven{
+    display: none;
+}
+
+.tree-eight{
+    display: none;
+}
+
+
+.tree-nine{
+    top: 100px;
+    right: 50px;
+}
+
+.tree-ten{
+    top: 380px;
+    right: 250px;
+} 
+
+.tree-eleven{
+    display: none;
+} 
+
 
 #scoreboard-outer{
     
@@ -693,6 +726,24 @@ button:hover, input[type='submit']:hover{
 
 @media screen and (min-width:680px){
 
+    .tree-eight{
+        display: block;
+        top: 130px;
+        left: 470px;
+    }
+
+    .tree-eleven{
+        display: block;
+        top: 100px;
+        right: 450px;
+    } 
+
+    .tree-seven{
+        display: block;
+        top: 320px;
+        left: 200px;
+    }
+
     #feedback-form {
         grid-template-columns: 150px auto;
         width: 660px;
@@ -711,6 +762,8 @@ button:hover, input[type='submit']:hover{
     #contact-section .message-feedback{
         text-align: center;
     }
+
+    
 
 }
 
