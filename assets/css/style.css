@@ -393,15 +393,18 @@ footer p{
 }
 
 
-
 /* Game Generics */
 
-button, input[type='submit']{
+button, 
+input[type='submit'], 
+#final-score-form button{
     padding: 2px;
     cursor: url('../images/crosshair.png') 16 16, auto;
 }
 
-button:hover, input[type='submit']:hover{
+button:hover, 
+input[type='submit']:hover,
+#final-score-form button:hover{
     cursor: url('../images/crosshair.png') 16 16, auto;
     background-color: var(--dark-green);
     color: var(--white);
