@@ -6,21 +6,37 @@ function hitTarget(){
     let targetHit = this.classList[1];
     let x = this.style.left;
     let y = this.style.top;
-    
+
+    let currentScore = parseInt(document.querySelector('#score').innerHTML);
+    let currentBullets = parseInt(document.querySelector('#bullets').innerHTML);
+    let cuurentTime = parseInt(document.querySelector('#time').innerHTML);
+    let showPoints;
 
     switch(targetHit){
         case 'good':
-            hitTargetFeedback(targetHit, x, y)
+            points = '+5'
+            hitTargetFeedback(points, x, y);
+            document.querySelector('#score').innerHTML = currentScore + 5;
             break;
+
         case 'bad':
-            hitTargetFeedback(targetHit, x, y)
+            points = '-2'
+            hitTargetFeedback(points, x, y);
+            document.querySelector('#score').innerHTML = currentScore - 2;
             break;
+
         case 'normal':
-            hitTargetFeedback(targetHit, x, y)
+            points = '+1'
+            hitTargetFeedback(points, x, y);
+            document.querySelector('#score').innerHTML = currentScore + 1;
             break;
+
         case 'add-bullet':
-            hitTargetFeedback(targetHit, x, y)
+            points = '+1&#8226;'
+            hitTargetFeedback(points, x, y);
+            document.querySelector('#bullets').innerHTML = currentBullets + 2;
             break;
+
         default:
             console.log('Error');
     }          
@@ -88,13 +104,14 @@ function countDown(){
 function startGame(){
 
     document.querySelector('#bullets').innerHTML = 5;
-    document.querySelector('#timer').innerHTML = 5;
+    document.querySelector('#timer').innerHTML = 20;
+    document.querySelector('#score').innerHTML = 0;
 
     timer = setInterval(countDown, 1000);
 
     theBody.addEventListener('click', useBullets);
     
-    moveTargets = setInterval(generateRandomTargets, 1000);
+    moveTargets = setInterval(generateRandomTargets, 2000);
     
 }
 
