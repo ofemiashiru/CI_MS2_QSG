@@ -5,7 +5,7 @@ let timer
 let speed
 
 /**
- * function that sets the speed of how quickly the targets move
+ * function that sets the speed of how quickly the targets move based on the playe score
  * */ 
 function setSpeed(score){
     speed = 1000;
@@ -24,7 +24,8 @@ function setSpeed(score){
 }
 
 /**
- * function which is an event called when a target is hit
+ * function which is the event called when a target is hit
+ * when hit the switch statement determines the outcome based on the targets class
  * */ 
 function hitTarget(){
     let targetHit = this.classList[1];
@@ -34,7 +35,6 @@ function hitTarget(){
     let currentScore = parseInt(document.querySelector('#score').innerHTML);
     let currentBullets = parseInt(document.querySelector('#bullets').innerHTML);
     let currentTime = parseInt(document.querySelector('#time').innerHTML);
-
 
     switch(targetHit){
         case 'good':
@@ -60,12 +60,13 @@ function hitTarget(){
             break;
 
         default:
-            console.log('Error');
+            console.log('Error - Something appears to have gone wrong');
     }          
 }
 
 /**
  * function used to display feedback to user when a target is hit
+ * each target will display something different based on what is passed in
  * */ 
 function hitTargetFeedback(feedback, x, y){
 
@@ -85,6 +86,7 @@ function hitTargetFeedback(feedback, x, y){
 
 /**
  * function used to generate the random targets on the display
+ * also adds event listenener and removes it based on setSpeed function
  * */ 
 function generateRandomTargets(){
 
@@ -103,6 +105,7 @@ function generateRandomTargets(){
     //add event listener to target
     newTarget.addEventListener('click', hitTarget);
 
+    //remove event listener and target after time based on setSpeed() function
     setTimeout(function(){
         allTargets.removeChild(newTarget);
         newTarget.removeEventListener('click', hitTarget);
@@ -132,13 +135,14 @@ function countDown(){
     } else {
         document.querySelector('#time').innerHTML -= 1;
     }
+
 }
 
 /**
  * function used to start all the elements in the game
  * */ 
 function startGame(){
-
+    // set game to default stat values
     document.querySelector('#bullets').innerHTML = 5;
     document.querySelector('#time').innerHTML = 20;
     document.querySelector('#score').innerHTML = 0;
@@ -153,7 +157,9 @@ function startGame(){
  * function used to show the reason a players game is over
  * */ 
 function gameOverReason(){
+
     let reason;
+    
     if(document.querySelector('#time').innerHTML == 0){
         reason = 'You ran out of time!';
     } else if(document.querySelector('#bullets').innerHTML == 0){
@@ -162,6 +168,7 @@ function gameOverReason(){
         reason = 'Try harder!';
     }
     return reason;
+    
 }
 
 /**
