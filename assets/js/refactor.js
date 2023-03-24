@@ -1,7 +1,35 @@
 const theBody = document.querySelector('body');
 let moveTargets
 let timer
+let speed
 
+/**
+ * function that sets the speed of how quickly the targets move
+ * */ 
+function setSpeed(score){
+    speed = 1000;
+    if(score > 59){
+        speed -= 500
+        console.log(speed)
+    } else if(score > 49){
+        speed -= 400;
+        console.log(speed)
+    } else if(score > 39){
+        speed -= 300;
+        console.log(speed)
+    } else if(score > 29){
+        speed -= 200;
+        console.log(speed)
+    } else if(score > 19){
+        speed -= 100;
+        console.log(speed)
+    }
+    return speed
+}
+
+/**
+ * function which is an event called when a target is hit
+ * */ 
 function hitTarget(){
     let targetHit = this.classList[1];
     let x = this.style.left;
@@ -9,31 +37,29 @@ function hitTarget(){
 
     let currentScore = parseInt(document.querySelector('#score').innerHTML);
     let currentBullets = parseInt(document.querySelector('#bullets').innerHTML);
-    let cuurentTime = parseInt(document.querySelector('#time').innerHTML);
-    let showPoints;
+    let currentTime = parseInt(document.querySelector('#timer').innerHTML);
+
 
     switch(targetHit){
         case 'good':
-            points = '+5'
-            hitTargetFeedback(points, x, y);
+            hitTargetFeedback('+5', x, y);
             document.querySelector('#score').innerHTML = currentScore + 5;
+            document.querySelector('#timer').innerHTML = currentTime + 5;
             break;
 
         case 'bad':
-            points = '-2'
-            hitTargetFeedback(points, x, y);
+            hitTargetFeedback('-2', x, y);
             document.querySelector('#score').innerHTML = currentScore - 2;
             break;
 
         case 'normal':
-            points = '+1'
-            hitTargetFeedback(points, x, y);
+            hitTargetFeedback('+1', x, y);
             document.querySelector('#score').innerHTML = currentScore + 1;
+            document.querySelector('#timer').innerHTML = currentTime + 1;
             break;
 
         case 'add-bullet':
-            points = '+1&#8226;'
-            hitTargetFeedback(points, x, y);
+            hitTargetFeedback('+1&#8226;', x, y);
             document.querySelector('#bullets').innerHTML = currentBullets + 2;
             break;
 
@@ -42,6 +68,9 @@ function hitTarget(){
     }          
 }
 
+/**
+ * function used to display feedback to user when a target is hit
+ * */ 
 function hitTargetFeedback(feedback, x, y){
 
     let hitLabel = document.createElement('div');
@@ -58,7 +87,9 @@ function hitTargetFeedback(feedback, x, y){
     hitLabel.innerHTML = feedback
 }
 
-
+/**
+ * function used to generate the random targets on the display
+ * */ 
 function generateRandomTargets(){
 
     const arr = ['good','bad','add-bullet','normal'];
@@ -79,9 +110,13 @@ function generateRandomTargets(){
     setTimeout(function(){
         theBody.removeChild(newTarget);
         newTarget.removeEventListener('click', hitTarget)
-    },1000)
+    }, setSpeed(document.querySelector('#score').innerHTML))
 }
 
+/**
+ * function used to deplete bullets when they are used
+ * if bullets hit zero then we call the gameOver() function
+ * */ 
 function useBullets(){
 
     document.querySelector('#bullets').innerHTML -= 1;
@@ -91,6 +126,9 @@ function useBullets(){
 
 }
 
+/**
+ * function used to create a countdown for the overall game
+ * */ 
 function countDown(){
     
     if(document.querySelector('#timer').innerHTML == 0){
@@ -100,21 +138,24 @@ function countDown(){
     }
 }
 
-
+/**
+ * function used to start all the elements in the game
+ * */ 
 function startGame(){
 
     document.querySelector('#bullets').innerHTML = 5;
     document.querySelector('#timer').innerHTML = 20;
     document.querySelector('#score').innerHTML = 0;
 
-    timer = setInterval(countDown, 1000);
-
     theBody.addEventListener('click', useBullets);
-    
-    moveTargets = setInterval(generateRandomTargets, 2000);
+    timer = setInterval(countDown, 1000);
+    moveTargets = setInterval(generateRandomTargets, setSpeed(document.querySelector('#score').innerHTML));
     
 }
 
+/**
+ * function to display gameOver modal and clear all intervals
+ * */ 
 function gameOver(){
     console.log(gameOverReason())
     theBody.removeEventListener('click', useBullets);
@@ -122,6 +163,9 @@ function gameOver(){
     clearInterval(timer);
 }
 
+/**
+ * function used to show the reason a players game is over
+ * */ 
 function gameOverReason(){
     let reason;
     if(document.querySelector('#timer').innerHTML == 0){
@@ -134,7 +178,9 @@ function gameOverReason(){
     return reason
 }
 
-
+/**
+ * function used to open the game menu
+ * */ 
 function openGameMenu(){
 
 }
