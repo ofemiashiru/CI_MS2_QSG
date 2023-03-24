@@ -181,8 +181,23 @@ function gameOver(){
     document.querySelector('#game-over-reason').innerHTML = gameOverReason();
 
     // display final score
-    let finalSscore = document.querySelector('#score').innerHTML
+    let finalSscore = document.querySelector('#score').innerHTML;
     document.querySelector('#final-score-form').elements.finalScore.value = finalSscore;
+
+    // get Restart and Back home buttons
+    let gameOverBtns = document.querySelectorAll('#game-over-content > button');
+    
+    gameOverBtns.forEach((btn)=>{
+        btn.addEventListener('click', function(){
+
+            if(this.id === 'restart-game-btn'){
+                window.location.replace('game.html');
+
+            } else if(this.id === 'game-over-back-home'){
+                window.location.replace('index.html');
+            }
+        });
+    });
     
 }
 
