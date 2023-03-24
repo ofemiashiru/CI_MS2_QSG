@@ -1,8 +1,8 @@
 const gameDisplay = document.querySelector('#game-display');
 const allTargets = document.querySelector('#all-targets');
-let moveTargets
-let timer
-let speed
+let moveTargets;
+let timer;
+let speed;
 
 /**
  * function that sets the speed of how quickly the targets move based on the playe score
@@ -168,7 +168,7 @@ function gameOverReason(){
         reason = 'Try harder!';
     }
     return reason;
-    
+
 }
 
 /**
