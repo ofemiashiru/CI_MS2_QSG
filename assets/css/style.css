@@ -132,6 +132,7 @@ nav{
 #my-nav li a{
     font-size: 1.5rem;
     color: var(--white);
+    margin-right: 10px;
 }
 #my-nav li a:hover{
     text-decoration: none;
