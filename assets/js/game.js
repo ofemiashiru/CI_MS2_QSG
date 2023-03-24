@@ -20,7 +20,7 @@ function setSpeed(score){
     } else if(score > 19){
         speed -= 100;
     }
-    return speed
+    return speed;
 }
 
 /**
@@ -72,15 +72,15 @@ function hitTargetFeedback(feedback, x, y){
     let hitLabel = document.createElement('div');
     hitLabel.classList.add('hit-label');
     hitLabel.style.position = 'absolute';
-    hitLabel.style.top = y
-    hitLabel.style.left = x
+    hitLabel.style.top = y;
+    hitLabel.style.left = x;
     allTargets.appendChild(hitLabel);
 
     setTimeout(function(){
-        allTargets.removeChild(hitLabel)
+        allTargets.removeChild(hitLabel);
     }, 900);
 
-    hitLabel.innerHTML = feedback
+    hitLabel.innerHTML = feedback;
 }
 
 /**
@@ -105,8 +105,8 @@ function generateRandomTargets(){
 
     setTimeout(function(){
         allTargets.removeChild(newTarget);
-        newTarget.removeEventListener('click', hitTarget)
-    }, setSpeed(document.querySelector('#score').innerHTML))
+        newTarget.removeEventListener('click', hitTarget);
+    }, setSpeed(document.querySelector('#score').innerHTML));
 }
 
 /**
@@ -130,7 +130,7 @@ function countDown(){
     if(document.querySelector('#time').innerHTML == 0){
         gameOver();
     } else {
-        document.querySelector('#time').innerHTML -= 1
+        document.querySelector('#time').innerHTML -= 1;
     }
 }
 
@@ -155,13 +155,13 @@ function startGame(){
 function gameOverReason(){
     let reason;
     if(document.querySelector('#time').innerHTML == 0){
-        reason = 'You ran out of time!'
+        reason = 'You ran out of time!';
     } else if(document.querySelector('#bullets').innerHTML == 0){
-        reason = 'You ran out of bullets!'
+        reason = 'You ran out of bullets!';
     } else {
-        reason = 'Try harder!'
+        reason = 'Try harder!';
     }
-    return reason
+    return reason;
 }
 
 /**
@@ -226,12 +226,12 @@ function openGameMenu(){
 
                 let howToPlayBtn = document.querySelector('#how-to-play-btn');
                 //toggle text of the button when clicked
-                howToPlayBtn.innerHTML === 'How to play' ? howToPlayBtn.innerHTML = 'Hide' : howToPlayBtn.innerHTML = 'How to play'
+                howToPlayBtn.innerHTML === 'How to play' ? howToPlayBtn.innerHTML = 'Hide' : howToPlayBtn.innerHTML = 'How to play';
                 
                 //Toggle aria-label when button is clicked
                 howToPlayBtn.getAttribute('aria-label') === 'Show how to play' ? 
                     howToPlayBtn.setAttribute('aria-label', 'Hide how to play') :
-                    howToPlayBtn.setAttribute('aria-label', 'Show how to play')
+                    howToPlayBtn.setAttribute('aria-label', 'Show how to play');
 
                 //toggle class on instructions to show/hide instructions
                 document.querySelector('#how-to-play').classList.toggle('show-instructions');
