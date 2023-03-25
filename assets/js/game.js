@@ -5,7 +5,7 @@ let timer;
 let speed;
 
 /**
- * function that sets the speed of how quickly the targets move based on the playe score
+ * function that sets the speed of how quickly the targets move based on the player score
  * */ 
 function setSpeed(score){
     speed = 1000;
