@@ -233,7 +233,9 @@ function openGameMenu(){
 
                 let howToPlayBtn = document.querySelector('#how-to-play-btn');
                 //toggle text of the button when clicked
-                howToPlayBtn.innerHTML === 'How to play' ? howToPlayBtn.innerHTML = 'Hide' : howToPlayBtn.innerHTML = 'How to play';
+                howToPlayBtn.innerHTML === 'How to play' ? 
+                    howToPlayBtn.innerHTML = 'Hide' : 
+                    howToPlayBtn.innerHTML = 'How to play';
                 
                 //Toggle aria-label when button is clicked
                 howToPlayBtn.getAttribute('aria-label') === 'Show how to play' ? 
