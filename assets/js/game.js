@@ -90,10 +90,10 @@ function hitTargetFeedback(feedback, x, y){
  * */ 
 function generateRandomTargets(){
 
-    const arr = ['good','bad','add-bullet','normal'];
-    const randomTarget = arr[Math.floor(Math.random() * arr.length)];
-    const y = Math.floor(Math.random() * gameDisplay.clientHeight);
-    const x = Math.floor(Math.random() * gameDisplay.clientWidth);
+    const targets = ['good','bad','add-bullet','normal'];
+    const randomTarget = targets[Math.floor(Math.random() * targets.length)];
+    const y = Math.floor(Math.random() * (gameDisplay.clientHeight - 40));
+    const x = Math.floor(Math.random() * (gameDisplay.clientWidth - 40));
 
     //generate random target
     let newTarget = document.createElement('div');
