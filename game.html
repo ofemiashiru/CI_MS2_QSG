@@ -98,10 +98,15 @@
                 <p>Game Over</p>
                 <p id="game-over-reason"></p>
                 <form id="final-score-form" onsubmit="return submitHighScore(this)">
-                    <label for="final-score">You Scored</label>
-                    <input type="text" id="final-score"  name="finalScore" value="" disabled>
-                    <label for="gamer">Enter Name</label> 
-                    <input type="text" id="gamer" name="gamer" required autocomplete="off">
+                    <div>
+                        <label for="final-score">You Scored</label>
+                        <input type="text" id="final-score"  name="finalScore" value="" disabled>
+                    </div>
+                    <div>
+                        <label for="gamer">Enter Name</label> 
+                        <input type="text" id="gamer" name="gamer" required autocomplete="off">
+                    </div>
+
                     <button aria-label="Save your score" type="submit">Save Score</button>
                 </form>
                 <button aria-label="Restart Game" id="restart-game-btn">Restart</button>
