@@ -130,12 +130,10 @@ function useBullets(){
  * */ 
 function countDown(){
     
+    document.querySelector('.time').innerHTML -= 1;
     if(document.querySelector('.time').innerHTML == 0){
         gameOver();
-    } else {
-        document.querySelector('.time').innerHTML -= 1;
     }
-
 }
 
 /**
