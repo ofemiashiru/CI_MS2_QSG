@@ -89,7 +89,7 @@
 10. I want users to be able to save their score to the leaderboard
 11. I want users to be able to see the top ten scores
 12. I want users to be able to contact us
-14. I do not want users to use browser back button if they are looking for a page that does not exist 
+13. I do not want users to use browser back button if they are looking for a page that does not exist 
 
 ## Scope
 
