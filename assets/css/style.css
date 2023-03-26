@@ -10,16 +10,11 @@
 }
 
 html{
-    /* used to get smooth scrolling https://www.w3schools.com/cssref/pr_scroll-behavior.php */
     scroll-behavior: smooth;
 }
 * {
     font-family: 'Press Start 2P', sans-serif;
     font-size: .8rem;
-    /* creating custom crosshair https://www.w3schools.com/cssref/pr_class_cursor.php
-     cross hair not showing https://stackoverflow.com/questions/6623769/css-custom-cursor-doesnt-work-in-ff-chrome 
-     centre cursor hotspot https://stackoverflow.com/questions/19560878/css-change-custom-cursor-image-origin-hotspot-to-center
-     <a href="https://www.flaticon.com/free-icons/crosshair" title="crosshair icons">Crosshair icons created by xnimrodx - Flaticon</a>*/
     cursor: url('../images/crosshair.png') 16 16, auto;
 }
 
@@ -216,7 +211,6 @@ section p {
     display: block;
     margin: 0 auto;
     transition: .3s;
-    /* box shadow https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
     box-shadow: 5px 8px 5px rgba(0,0,0,0.4);
 }
 
@@ -430,7 +424,6 @@ footer p{
     display: block;
     margin: 0 auto;
     transition: .3s;
-    /* drop shadow on PNGs https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css */
     filter: drop-shadow(5px 8px 5px rgba(0,0,0,0.4));
     -webkit-filter: drop-shadow(5px 8px 5px rgba(0,0,0,0.4)); 
     
@@ -582,7 +575,7 @@ input[type='submit']:hover,
     z-index: 5;
     color: var(--white);
 }
-/* Using animation in CSS https://www.w3schools.com/css/css3_animations.asp */
+
 @keyframes forLabel {
     from {color: transparent}
     to {color: var(--white)}
@@ -590,8 +583,6 @@ input[type='submit']:hover,
 
 
 /* Modals */
-
-/* https://www.w3schools.com/howto/howto_css_modals.asp for modal */
 .modal{
     position: fixed; 
     z-index: 1; 
@@ -630,7 +621,7 @@ input[type='submit']:hover,
     border-top: 1px solid var(--black);
 }
 
-/* Grid display https://www.w3schools.com/css/css_grid.asp */
+/* Grid display */
 #instruction-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -640,7 +631,7 @@ input[type='submit']:hover,
     width: 100%;
 }
 
-/* Transitions https://www.w3schools.com/css/css3_transitions.asp */
+/* Transitions */
 .hide-instructions{
     position: relative;
     left: 0;
@@ -843,8 +834,6 @@ input[type='submit']:hover,
     #contact-section .message-feedback{
         text-align: center;
     }
-
-    
 
 }
 
