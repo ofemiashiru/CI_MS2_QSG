@@ -174,9 +174,9 @@ The website consists of 6 main pages:
 ## Features
 
 ### Logo Navigation and Search bar
-- Navigation and Logo remains consistent on each page
+- Navigation and Logo remains consistent on each page apart from game page (link to main site on game)
 - Navigation is fully responsive and collapses when window is resized
-- Navigation allows users to easily navigate from page to page
+- Navigation allows users to easily navigate from section to section
 - Logo in Navigation takes user back to the home page
 - Navigation also contains a search bar which will be an additional feature in future iterations of the site
 - Navigation indicates to user what page they are currently on
