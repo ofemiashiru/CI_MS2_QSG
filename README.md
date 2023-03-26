@@ -294,45 +294,19 @@ The website consists of 6 main pages:
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. 
 
-index.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Findex.html) - No Errors Found
+index.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS2_QSG%2Findex.html) - No Errors Found
 
-artists.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fartists.html) - No Errors Found
+game.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS2_QSG%2Fgame.html) - No Errors Found
 
-genre.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fgenre.html) - No Errors Found
-
-events.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fevents.html) - No Errors Found
-
-news.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fnews.html) - No Errors Found
-
-article-one.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-one.html) - No Errors Found
-
-article-two.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-two.html) - No Errors Found
-
-article-three.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-three.html) - No Errors Found
-
-article-four.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-four.html) - No Errors Found
-
-article-five.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-five.html) - No Errors Found
-
-article-six.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-six.html) - No Errors Found
-
-article-seven.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Farticle-seven.html) - No Errors Found
-
-contact.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fcontact.html) - No Errors Found
-
-404.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2F404.html) - No Errors Found
-
-messagesent.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fmessagesent.html) - No Errors Found
-
-comingsoon.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fcomingsoon.html) - No Errors Found
+404.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS2_QSG%2F404.html) - No Errors Found
 
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
 After testing the whole sites CSS and my own custom CSS all pages passed with no errors, however, there were a number of warnings present that were related to the webkit css extensions used.
 
-whole site [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - No Errors Found
+whole site [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS2_QSG%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - No Errors Found
 
-custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS1_ABL%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - No Errors Found
+custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS2_QSG%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings) - No Errors Found
 
 
 ### Accessibility
@@ -340,36 +314,9 @@ The WAVE WebAIM web accessibility tool was used to ensure the website met access
 
 index.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/index.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
 
-artists.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/artists.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
+game.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/artists.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
 
-genre.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/genre.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-events.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/events.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-news.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/news.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-one.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-one.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-two.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-two.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-three.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-three.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-four.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-four.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-five.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-five.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-six.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-six.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-article-seven.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/article-seven.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-contact.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/contact.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-404.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/404.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-messagesent.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/messagesent.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
-comingsoon.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/comingsoon.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
-
+404.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/genre.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
 
 ### Performance 
 Google Lighthouse Tool was used to test the performance of the website. 
