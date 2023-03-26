@@ -379,7 +379,8 @@ section p {
 
 footer{
     width: 100%;
-    height: 100%;
+    bottom: 0;
+    right: 0;
     background-color: var(--brown);
     margin: 0;
 }
@@ -395,6 +396,48 @@ footer p{
     transition: .3s;
 }
 
+.fof-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* 404 */
+
+#fof-section p{
+    font-size: 2rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+#fof-section p span{
+    display: none;
+}
+
+#fof-body div:first-child span, 
+#fof-body div:first-child i{
+    display: none;
+}
+
+#fof-section img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    transition: .3s;
+    /* drop shadow on PNGs https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css */
+    filter: drop-shadow(5px 8px 5px rgba(0,0,0,0.4));
+    -webkit-filter: drop-shadow(5px 8px 5px rgba(0,0,0,0.4)); 
+    
+}
+
+
+/* The Game */
 
 /* Game Generics */
 
@@ -825,32 +868,37 @@ input[type='submit']:hover,
         padding-top: 70px
     }
 
-    #hero-body{
+    #hero-body, #fof-body{
         display: flex;
     }
 
-    #hero-body div{
+    #hero-body div,
+    #fof-body div{
         flex: 50%;
         padding: 40px 0 0;
     }
 
-    #hero-body p {
+    #hero-body p, 
+    #fof-body p {
     
         font-size: 3.9vw;
         font-weight: 600;
     }
 
-    #hero-body div:first-child{
+    #hero-body div:first-child, 
+    #fof-body div:first-child{
         text-align: center;
     }
 
-    #hero-body div:first-child span{
+    #hero-body div:first-child span, 
+    #fof-body div:first-child span{
         font-size: 1vw;
         display: block;    
         margin: 10px; 
     }
 
-    #hero-body div:first-child i {
+    #hero-body div:first-child i,
+    #fof-body div:first-child i {
         display: inline-block;
         font-size: 5vw;
         margin: 10px;
@@ -868,6 +916,14 @@ input[type='submit']:hover,
         object-position: 0 0;
         
         transition: .3s;
+    }
+
+    #fof-body img{
+        width: 60%;
+        height: auto;
+        border-radius: 1px;
+        object-position: 0 0;
+        box-shadow: none;
     }
 
     .about-middle-text{
@@ -959,13 +1015,15 @@ input[type='submit']:hover,
 
 @media screen and (min-width:1034px){
 
-    #hero-section p span{
+    #hero-section p span,
+    #fof-section p span{
         display: block;
         font-size: 1.4rem;
         margin: 50px 0 10px;
     }
 
-    #hero-section p i{
+    #hero-section p i,
+    #fof-section p i{
         display: inline;
         font-size: 7rem;
         padding: 10px;
