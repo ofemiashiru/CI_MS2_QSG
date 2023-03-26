@@ -117,9 +117,10 @@ function generateRandomTargets(){
  * if bullets hit zero then we call the gameOver() function
  * */ 
 function useBullets(){
+    let bullets = document.querySelector('.bullets').innerHTML;
+    document.querySelector('.bullets').innerHTML = --bullets;
 
-    document.querySelector('.bullets').innerHTML -= 1;
-    if(document.querySelector('.bullets').innerHTML == 0){
+    if(bullets === 0){
         gameOver();
     }
 
@@ -129,9 +130,10 @@ function useBullets(){
  * function used to create a countdown for the overall game
  * */ 
 function countDown(){
-    
-    document.querySelector('.time').innerHTML -= 1;
-    if(document.querySelector('.time').innerHTML == 0){
+    let time = document.querySelector('.time').innerHTML;
+    document.querySelector('.time').innerHTML = --time;
+
+    if(time === 0){
         gameOver();
     }
 }
