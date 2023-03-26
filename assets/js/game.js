@@ -32,31 +32,31 @@ function hitTarget(){
     let x = this.style.left;
     let y = this.style.top;
 
-    let currentScore = parseInt(document.querySelector('#score').innerHTML);
-    let currentBullets = parseInt(document.querySelector('#bullets').innerHTML);
-    let currentTime = parseInt(document.querySelector('#time').innerHTML);
+    let currentScore = parseInt(document.querySelector('.score').innerHTML);
+    let currentBullets = parseInt(document.querySelector('.bullets').innerHTML);
+    let currentTime = parseInt(document.querySelector('.time').innerHTML);
 
     switch(targetHit){
         case 'good':
             hitTargetFeedback('+5', x, y);
-            document.querySelector('#score').innerHTML = currentScore + 5;
-            document.querySelector('#time').innerHTML = currentTime + 5;
+            document.querySelector('.score').innerHTML = currentScore + 5;
+            document.querySelector('.time').innerHTML = currentTime + 5;
             break;
 
         case 'bad':
             hitTargetFeedback('-2', x, y);
-            document.querySelector('#score').innerHTML = currentScore - 2;
+            document.querySelector('.score').innerHTML = currentScore - 2;
             break;
 
         case 'normal':
             hitTargetFeedback('+1', x, y);
-            document.querySelector('#score').innerHTML = currentScore + 1;
-            document.querySelector('#time').innerHTML = currentTime + 1;
+            document.querySelector('.score').innerHTML = currentScore + 1;
+            document.querySelector('.time').innerHTML = currentTime + 1;
             break;
 
         case 'add-bullet':
             hitTargetFeedback('+1&#8226;', x, y);
-            document.querySelector('#bullets').innerHTML = currentBullets + 2;
+            document.querySelector('.bullets').innerHTML = currentBullets + 2;
             break;
 
         default:
@@ -109,7 +109,7 @@ function generateRandomTargets(){
     setTimeout(function(){
         allTargets.removeChild(newTarget);
         newTarget.removeEventListener('click', hitTarget);
-    }, setSpeed(document.querySelector('#score').innerHTML));
+    }, setSpeed(document.querySelector('.score').innerHTML));
 }
 
 /**
@@ -118,8 +118,8 @@ function generateRandomTargets(){
  * */ 
 function useBullets(){
 
-    document.querySelector('#bullets').innerHTML -= 1;
-    if(bullets.innerHTML == 0){
+    document.querySelector('.bullets').innerHTML -= 1;
+    if(document.querySelector('.bullets').innerHTML == 0){
         gameOver();
     }
 
@@ -130,10 +130,10 @@ function useBullets(){
  * */ 
 function countDown(){
     
-    if(document.querySelector('#time').innerHTML == 0){
+    if(document.querySelector('.time').innerHTML == 0){
         gameOver();
     } else {
-        document.querySelector('#time').innerHTML -= 1;
+        document.querySelector('.time').innerHTML -= 1;
     }
 
 }
@@ -143,13 +143,13 @@ function countDown(){
  * */ 
 function startGame(){
     // set game to default stat values
-    document.querySelector('#bullets').innerHTML = 5;
-    document.querySelector('#time').innerHTML = 20;
-    document.querySelector('#score').innerHTML = 0;
+    document.querySelector('.bullets').innerHTML = 5;
+    document.querySelector('.time').innerHTML = 20;
+    document.querySelector('.score').innerHTML = 0;
 
     gameDisplay.addEventListener('click', useBullets);
     timer = setInterval(countDown, 1000);
-    moveTargets = setInterval(generateRandomTargets, setSpeed(document.querySelector('#score').innerHTML));
+    moveTargets = setInterval(generateRandomTargets, setSpeed(document.querySelector('.score').innerHTML));
     
 }
 
@@ -160,9 +160,9 @@ function gameOverReason(){
 
     let reason;
     
-    if(document.querySelector('#time').innerHTML == 0){
+    if(document.querySelector('.time').innerHTML == 0){
         reason = 'You ran out of time!';
-    } else if(document.querySelector('#bullets').innerHTML == 0){
+    } else if(document.querySelector('.bullets').innerHTML == 0){
         reason = 'You ran out of bullets!';
     } else {
         reason = 'Try harder!';
@@ -188,7 +188,7 @@ function gameOver(){
     document.querySelector('#game-over-reason').innerHTML = gameOverReason();
 
     // display final score
-    let finalSscore = document.querySelector('#score').innerHTML;
+    let finalSscore = document.querySelector('.score').innerHTML;
     document.querySelector('#final-score-form').elements.finalScore.value = finalSscore;
 
     // get Restart and Back home buttons
