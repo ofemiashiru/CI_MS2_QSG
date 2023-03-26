@@ -266,6 +266,27 @@ custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%
 
 [JS Hint](https://jshint.com/) was used to validate the JavaScript of the website.
 
+<details><summary>index.js</summary>
+<img src="docs/validation/js/index_js.png" alt="index script">
+</details>
+
+<details><summary>highScore.js</summary>
+<img src="docs/validation/js/highScore_js.png" alt="highScore script">
+</details>
+
+<details><summary>getHighScore.js</summary>
+<img src="docs/validation/js/getHighScore_js.png" alt="gethighScore script">
+</details>
+
+<details><summary>game.js</summary>
+<img src="docs/validation/js/game_js.png" alt="game script">
+</details>
+
+<details><summary>contact.js</summary>
+<img src="docs/validation/js/contact_js.png" alt="contact script">
+</details>
+
+
 ### Accessibility
 The WAVE WebAIM web accessibility tool was used to ensure the website met accessibility standards. 
 
