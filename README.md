@@ -68,7 +68,7 @@
 - Appealing design that works well on both desktop and mobile devices.
 - Be able to play game on Mobile, tablet and desktop device.
 - Be able to contact QuickShot game site.
-- Accessibility .
+- Accessibility.
 
 ### User Stories
 
@@ -89,6 +89,7 @@
 10. I want users to be able to see the top ten scores.
 11. I want users to be able to contact us.
 12. I do not want users to use browser back button if they are looking for a page that does not exist.
+13. Inform users that the game will be coming to App store and Google Play soon
 
 ## Scope
 
@@ -195,24 +196,16 @@ The website consists of 6 main pages:
 
 ![Logo Navigation and Mobile (Open)](docs/features/feature-navigation-bar-4.png)
 
-### Login and Register Modals
-- Allow users to login and/or register to AfrobeatsLib (User story - 6)
-- This will be a feature that will be developed in future iterations
-
-![Login opens Login Modal](docs/features/feature-login-modal.png)
-![Register opens Register Modal](docs/features/feature-register-modal.png)
-
 ### Hero Section
-- Informs user of what the site is about
-- Allows user to download app on App store or Google Play store (User story - 5, 16)
+- Greets user on entering the site and displays game on different screen sizes
+- Shows user that QuickShot game will be coming soon on App store and Google Play (User story - 13)
 
 ![Hero Section](docs/features/feature-hero.png)
 
-### Featured Albums and Artists
-- Informs user of the latest feature albums and artists (User story - 9) 
+### About Section
+- Informs user of what the QuickShot game is about 
 
-![Featured Albums](docs/features/feature-featured-albums.png)
-![Featured Artists](docs/features/feature-featured-artists.png)
+![About Section](docs/features/feature-about.png)
 
 ### Subscriptions
 - Informs users of the subscription pricing (User story - 2, 6)
