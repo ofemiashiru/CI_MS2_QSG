@@ -218,7 +218,7 @@ The website consists of 6 main pages:
 ![Contact Section](docs/features/feature-contact.png)
 
 ### Footer
-- Features on main site 
+- Features on all pages
 ![Footer](docs/features/feature-footer.png)
 
 ### 404 Page
