@@ -44,77 +44,68 @@
 ## Project Goals 
 
 ### User Goals
-- Play QuickShot game
-- Save Score to the leaderboard
-- Contact Quickshot Site Owner
+- Play QuickShot game.
+- Save Score to the leaderboard.
+- Contact Quickshot Site Owner.
 
 ### Site Owner Goals
-- Allow users to play QuickShot game
-- Receive messages from QuickShot players
-- Show users the top ten QuickShot Players
+- Allow users to play QuickShot game.
+- Receive messages from QuickShot players.
+- Show users the top ten QuickShot Players.
 
 ## User Experience
 
 ### Target Audience
-- People who are fans of nostalgic 80s games 
-- People who are fans of games in general
-- People who are competitive and relish a challenge
+- People who are fans of nostalgic 80s games. 
+- People who are fans of shoot and aim games.
+- People who are competitive and relish a challenge.
 
 ### User Requrements and Expectations
 
-- Easy to use navigation that is responsive
-- Be able to easily browse between sections of the site and the game
-- All links to work as expected
-- Appealing design that works well on both desktop and mobile devices
-- Be able to play game on Mobile, tablet and desktop device
-- Be able to contact QuickShot game site
-- Accessibility 
+- Easy to use navigation that is responsive.
+- Be able to easily browse between sections of the site and the game.
+- All links to work as expected.
+- Appealing design that works well on both desktop and mobile devices.
+- Be able to play game on Mobile, tablet and desktop device.
+- Be able to contact QuickShot game site.
+- Accessibility .
 
 ### User Stories
 
 #### First-time User 
-1. I want to play the QuickShot game
-2. I want to save my score on the leaderboard
-3. I want to see the leaderboard
-4. I want to see the latest news
-5. I want to contact QuickShot
+1. I want to play the QuickShot game.
+2. I want to save my score on the leaderboard.
+3. I want to see the leaderboard.
+4. I want to contact QuickShot game site.
 
 #### Returning User
-6. I want to see all the top ten scores
-7. I want to be able to see if I can top the leaderboard
-8. I want to be able to contact QuickShot
+5. I want to see all the top ten scores.
+6. I want to be able to see if I can top the leaderboard.
+7. I want to be able to contact QuickShot game site.
 
 #### Site Owner 
-9. I want users to be able to play QuickShot game on mobile, tablet and desktop
-10. I want users to be able to save their score to the leaderboard
-11. I want users to be able to see the top ten scores
-12. I want users to be able to contact us
-13. I do not want users to use browser back button if they are looking for a page that does not exist 
+8. I want users to be able to play QuickShot game on mobile, tablet and desktop.
+9. I want users to be able to save their score to the leaderboard.
+10. I want users to be able to see the top ten scores.
+11. I want users to be able to contact us.
+12. I do not want users to use browser back button if they are looking for a page that does not exist.
 
 ## Scope
 
 The scope of the project in it’s first release is defined by the following features:
 
-- Simple navigation that clearly shows the user what page they are currently on.  
-- A footer on all pages that allows users to sign up to the mailing list and connect to social media platforms.
-- A detailed section on the home page (index.html) that shows the pricing for subscribing to the websites services.
-- Login and register links on all pages that display a modal to allow users to register or login.
-- Artist (artists.html) and genre (genre.html) page that allows users to browse artists by letter or genre.
-- Link to external YouTube site for each artists music, making sure that the page opens in a new tab/window. 
-- Contact page with form to allow users to send queries. The form is functional and will not submit unless all fields are filled out.
-- An error page (404.html) that directs users back to the previous page they were on if visiting a page that does not exist.
-- An Events page (events.html) that allows users to see the latest events and navigate to their respective pages.
-- A News page (news.html) that shows all the latest news.
-- Google map embedded to display the location of the sites business office.
+- Simple navigation that allows user to navigate between sections of the site and the game. 
+- Game page that allows user to play game, see how to play game, save score to the leaderboard and navigate back to main site.
+- Allow user to see their score on the leaderboard if they have reached the top ten.
+- Allow users to see the top ten players on the leaderboard.
+- Contact form to allow users to send queries. The form is fully functional using EmailJS and will not submit unless all fields are filled out.
+- An error page (404.html) that appears when visiting a page that does not exist with navigation above.
 - Clear and simple favicon icon to help users identify the site.
 
 Features to be built in future releases:
 
-- In house music player, which is currently disabled, will be developed so that artist links will trigger the player instead of navigating to a YouTube link.
-- Currently the comments form on each article navigates to a placeholder - this will be developed to display comments under each article.
-- Search bar on navigation will be developed to help users quickly explore the catalogue of music on website.
-- Develop login and register modals to store users details and subscription information in a database. This will also lead to a users account page being developed based on whether users are artists or fans.
-- Mailing list form will successfully store visitors emails within a database for future alerts.
+- Addition of social media links when QuickShot develop their social media platforms.
+- Active links to Apples App store and Google Plays store when the game becomes available on these platforms.
 
 ## Design
 
