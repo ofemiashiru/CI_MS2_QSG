@@ -224,8 +224,6 @@ The website consists of 6 main pages:
 ### 404 Page
 - Allow users to navigate back to site without the use of back button on browser when visiting a page that does not exist (User story - 12)
 
-### 
-
 ![404 page](docs/features/feature-404.png)
 
 ## Validation
