@@ -48,6 +48,9 @@ window.addEventListener('resize', () => {
     }
 });
 
-document.querySelector('.play-now-btn').addEventListener('click', function(){
-    window.location.href = 'game.html'
+// targets play now buttons to open the game link
+document.querySelectorAll('.play-now-btn').forEach((btn)=>{
+    btn.addEventListener('click', function(){
+        window.location.href = 'game.html'
+    });
 });
