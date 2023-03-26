@@ -226,6 +226,17 @@ The website consists of 6 main pages:
 
 ![404 page](docs/features/feature-404.png)
 
+### Game
+- Allow users to play the Quick Shot Game (User story 1, 6, 8)
+
+<p>Game Home screen</p>
+
+![Game Play - Home](docs/features/feature-game-home.png)
+
+<p>Game Play screen</p>
+
+![Game Play - Display](docs/features/feature-game-display.png)
+
 ## Validation
 
 ### HTML Validation
