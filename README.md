@@ -155,29 +155,21 @@ The website consists of 6 main pages:
 
 ### Wireframes
 
-<details><summary>Home</summary>
-<img src="docs/wireframes/home.png" alt="home wireframe">
+<details><summary>index.html</summary>
+<img src="docs/wireframes/index.png" alt="index wireframe">
 </details>
-<details><summary>Artists</summary>
-<img src="docs/wireframes/artists.png" alt="artists wireframe">
+<details><summary>game.html</summary>
+<p>Game Home</p>
+<img src="docs/wireframes/game_home.png" alt="game home wireframe">
+<p>How to play</p>
+<img src="docs/wireframes/how_to_play.png" alt="game how to play wireframe">
+<p>Game Display</p>
+<img src="docs/wireframes/game_display.png" alt="game display wireframe">
+<p>Game Over Screen</p>
+<img src="docs/wireframes/game_over_screen.png" alt="game over screen wireframe">
 </details>
-<details><summary>Genre</summary>
-<img src="docs/wireframes/genre.png" alt="genre wireframe"> 
-</details>
-<details><summary>Events</summary>
-<img src="docs/wireframes/events.png" alt="events wireframe">
-</details>
-<details><summary>News</summary>
-<img src="docs/wireframes/news.png" alt="news wireframe">
-</details>
-<details><summary>News - Each Article</summary>
-<img src="docs/wireframes/news-article-pages.png" alt="news - each article wireframe">
-</details>
-<details><summary>Contact</summary>
-<img src="docs/wireframes/contact.png" alt="contact wireframe">
-</details>
-<details><summary>404</summary>
-<img src="docs/wireframes/404.png" alt="404 wireframe">
+<details><summary>404.html</summary>
+<img src="docs/wireframes/404.png" alt="404 wireframe"> 
 </details>
 
 ## Technologies Used
@@ -321,13 +313,13 @@ game.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.i
 ### Performance 
 Google Lighthouse Tool was used to test the performance of the website. 
 <details><summary>Home</summary>
-<img src="docs/validation/performance/lighthouse-performance-index.png">
+<img src="docs/validation/performance/lighthouse-performance-index.png" alt="lighthouse for index">
 </details>
 <details><summary>Game</summary>
-<img src="docs/validation/performance/lighthouse-performance-game.png">
+<img src="docs/validation/performance/lighthouse-performance-game.png" alt="lighthouse for game">
 </details>
 <details><summary>404</summary>
-<img src="docs/validation/performance/lighthouse-performance-404.png">
+<img src="docs/validation/performance/lighthouse-performance-404.png" alt="lighthouse for 404">
 </details>
 
 ### Performing tests on various devices 
