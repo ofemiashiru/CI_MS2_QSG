@@ -207,60 +207,19 @@ The website consists of 6 main pages:
 
 ![About Section](docs/features/feature-about.png)
 
-### Subscriptions
-- Informs users of the subscription pricing (User story - 2, 6)
+### Leaderboard Section
+- Informs users of the top ten players (User story - 3, 10)
 
-![Subscription](docs/features/feature-subscriptions.png)
+![Leaderboard Section](docs/features/feature-leaderboard.png)
+
+### Contact Section
+- Allows users to send queries and messages to site owner (User story - 4, 7, 11)
+
+![Contact Section](docs/features/feature-contact.png)
 
 ### Footer
-- Features on all pages
-- Consists of two sections, mailing list and social media links
-- User story - 7, 11, 17
-
+- Features on main site 
 ![Footer](docs/features/feature-footer.png)
-
-### Music Player
-- Features on all pages
-- In house music player ready for development for future iterations of the site (currently disabled)
-- User story - 18
-
-![Music Player](docs/features/feature-music-player.png)
-
-### Artists
-- Allows users to browse artist by letter (User story - 1, 13)
-
-![Artists](docs/features/feature-artist-page.png)
-
-### Genre
-- Allows users to browse artust by genre (User story - 1, 13)
-
-![Genre](docs/features/feature-genre.png)
-
-### Events
-- Allow users to see latest events and navigate to their respective pages (User story - 3, 8, 14)
-
-![Events](docs/features/feature-events.png)
-
-### News and News - Each Article
-- Allow users to see the latest news (User story 4, 14)
-
-![News](docs/features/feature-news.png)
-![News - Each Article](docs/features/feature-news-each-article.png)
-
-### Comment on Article
-- Allow users to leave a comment on article (User story - 12)
-
-![Leave a Comment on Article](docs/features/feature-news-leave-comment.png)
-
-### Contact
-- Allow users to contact AfrobeatsLib (User story - 10, 15)
-
-![Contact](docs/features/feature-contact.png)
-
-### Map
-- Allow users to be able to locate the business office
-
-![Contact Map](docs/features/feature-contact-map.png)
 
 ### 404 Page
 - Allow users to navigate back to site without the use of back button on browser when visiting a page that does not exist (User story - 19)
