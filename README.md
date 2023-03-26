@@ -583,7 +583,7 @@ Deployed using GitHub Pages using the following steps:
 1. Whilst in GitHub repository navigate to the Settings tab
 2. On the left hand menu select Pages
 3. Scroll to "Branch" tap none to show the different options and select "main"
-4. Click save and the site will be published. You will see "Your site is live at "https://ofemiashiru.github.io/CI_MS2_QSG/"
+4. Click save and the site will be published. You will see "Your site is live at https://ofemiashiru.github.io/CI_MS2_QSG/"
 
 You can also fork the repository by:
 1. Navigating to the GitHub repository
