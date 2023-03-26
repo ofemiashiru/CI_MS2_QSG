@@ -392,23 +392,6 @@ footer p{
     transition: .3s;
 }
 
-footer #socials{
-    text-align: center;
-}
-
-footer #socials a{
-    color: var(--white);
-    text-decoration: none;
-}
-
-footer #socials a:hover{
-    color: var(--black);
-}
-
-footer #socials a i{
-    font-size: 2.5rem;
-}
-
 .fof-footer{
     position: fixed;
     bottom: 0;
