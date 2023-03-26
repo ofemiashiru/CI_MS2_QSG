@@ -194,7 +194,7 @@ function gameOver(){
     // get Restart and Back home buttons
     let gameOverBtns = document.querySelectorAll('#game-over-content > button');
     
-    gameOverBtns.forEach((btn)=>{
+    gameOverBtns.forEach( function(btn) {
         btn.addEventListener('click', function(){
 
             if(this.id === 'restart-game-btn'){
@@ -219,7 +219,7 @@ function openGameMenu(){
     let gameMenuBtns = document.querySelectorAll('#start-game-content button');
     
     //create event listener for each button on Game Menu
-    gameMenuBtns.forEach((btn) => {
+    gameMenuBtns.forEach( function(btn) {
         btn.addEventListener('click', function(){
 
             if(this.id === 'start-game-btn'){
