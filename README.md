@@ -114,7 +114,7 @@ QuickShot was designed to have an old school 80s game look that adopted some of 
 
 ### Colour
 
-For the colour scheme I opted for an army fatigue pallete of greens and browns to match the theme of the game.
+For the colour scheme I opted for an army fatigue palete of greens and browns to match the theme of the game.
 
 ![Colour Scheme](docs/features/colour-scheme.png)
 
