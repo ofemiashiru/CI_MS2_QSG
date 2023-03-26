@@ -185,6 +185,7 @@ The website consists of 6 main pages:
 - GitHub
 - Gitpod
 - Balsamiq
+- Ezgif.com
 - Google Fonts
 - Adobe Color
 - Font Awesome
@@ -338,8 +339,11 @@ The website was tested on the following browsers:
 ### Responsiveness
 The website is completely responsive and has been tested on mobile, tablet and desktop:
 
-<details><summary>Mobile</summary>
-<img src="docs/respsonsiveness/respsonsiveness-mobile.gif" alt="Mobile Responsiveness">
+<details><summary>Mobile, Tablet and Desktop</summary>
+<p>Part One</p>
+<img src="docs/respsonsiveness/respsonsiveness-part-one.gif" alt="Responsiveness Part One">
+<p>Part Two</p>
+<img src="docs/respsonsiveness/respsonsiveness-part-two.gif" alt="Responsiveness Part Two">
 </details>
 
 <details><summary>Tablet</summary>
