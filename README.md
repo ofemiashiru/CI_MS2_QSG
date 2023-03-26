@@ -44,63 +44,52 @@
 ## Project Goals 
 
 ### User Goals
-- Link to the latest music from their favourite Afrobeats artists
-- See the different options and costs for subscribing to AfrobeatsLib
-- Browse artists by letter or genre
-- Read latest news about everything relating to Afrobeats music
-- See the latest Afrobeats events and link to their corresponding pages
+- Play QuickShot game
+- Save Score to the leaderboard
+- Contact Quickshot Site Owner
 
 ### Site Owner Goals
-- Have fans and artist subscribe to AfrobeatsLib
-- Collect emails of visitors to grow AfrobeatsLib mailing list
-- Enable visitors to contact AfrobeatsLib with queries relating to sales, technical issues etc.
-- Provide a way for visitors to download the AfrobeatsLib app via the App store or Goolge Play store
-- Prepare site to implement it's own in house music player (currently disabled)
+- Allow users to play QuickShot game
+- Receive messages from QuickShot players
+- Show users the top ten QuickShot Players
 
 ## User Experience
 
 ### Target Audience
-- People who are fans of Afrobeat music 
-- Independent or major Artists who would like to upload their own music
-- People who would like to be kept up to date with the most recent Afrobeat news and events
+- People who are fans of nostalgic 80s games 
+- People who are fans of games in general
+- People who are competitive and relish a challenge
 
 ### User Requrements and Expectations
 
 - Easy to use navigation that is responsive
-- Be able to easily browse artists by genre or letter
+- Be able to easily browse between sections of the site and the game
 - All links to work as expected
 - Appealing design that works well on both desktop and mobile devices
-- Be able to connect easily with events and news
-- Be able to contact AfrobeatsLib in a simple way
-- Gain information about the different subscriptions quickly and easily
+- Be able to play game on Mobile, tablet and desktop device
+- Be able to contact QuickShot game site
 - Accessibility 
 
 ### User Stories
 
 #### First-time User 
-1. I want to locate favourite artists by letter or genre
-2. I want to know the different subscription prices
-3. I want to see the latest events 
+1. I want to play the QuickShot game
+2. I want to save my score on the leaderboard
+3. I want to see the leaderboard
 4. I want to see the latest news
-5. I want to be able to download the AfrobeatsLib app from the App store or Google Play store
-6. I want to be able to sign up to AfrobeatsLib
-7. I want to sign up to AfrobeatsLib Mailing list
+5. I want to contact QuickShot
 
 #### Returning User
-8. I want to see all the latest events and be able to visit their corresponding pages
-9. I want to see the latest featured albums and artists
-10. I want to be able to contact AfrobeatsLib
-11. I want to interact with AfrobeatsLib on their social media platform
-12. I want to leave a comment on the news articles
+6. I want to see all the top ten scores
+7. I want to be able to see if I can top the leaderboard
+8. I want to be able to contact QuickShot
 
 #### Site Owner 
-13. I want users to be able to find and listen to their favourite Afrobeats artists
-14. I want users to be able to be kept up to date with latest events and news
-15. I want users to be able to contact us
-16. I want users to be able to download our app on App store and Google Play store
-17. I want users to sign up to our mailing list
-18. I want our site to be prepared to launch our own in house music player
-19. I do not want users to use browser back button if they are looking for a page that does not exist 
+9. I want users to be able to play QuickShot game on mobile, tablet and desktop
+10. I want users to be able to save their score to the leaderboard
+11. I want users to be able to see the top ten scores
+12. I want users to be able to contact us
+14. I do not want users to use browser back button if they are looking for a page that does not exist 
 
 ## Scope
 
