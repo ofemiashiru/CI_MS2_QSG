@@ -227,7 +227,8 @@ The website consists of 6 main pages:
 ![404 page](docs/features/feature-404.png)
 
 ### Game
-- Allow users to play the Quick Shot Game (User story 1, 6, 8)
+- Allows users to play the Quick Shot Game (User story 1, 6, 8)
+- Allows users to save their score to the leaderboard, if it is a top ten score (User story 2, 6, 9)
 
 <p>Game Home screen</p>
 
@@ -236,6 +237,10 @@ The website consists of 6 main pages:
 <p>Game Play screen</p>
 
 ![Game Play - Display](docs/features/feature-game-display.png)
+
+<p>Game Over screen</p>
+
+![Game Play - Display](docs/features/feature-game-over.png)
 
 ## Validation
 
