@@ -134,7 +134,7 @@ QuickShot was designed to have an old school 80s game look that adopted some of 
 
 ### Colour
 
-For the colour scheme I opted for a simple shade of black and off white colour using a chalk tone for the majority of the body text. The bright pink was chosen to give familiarity to Apple Music and TikTok platforms as a way of aligning to them as potential competitors.
+For the colour scheme I opted for an army fatigue pallete of greens and browns to match the theme of the game.
 
 ![Colour Scheme](docs/features/colour-scheme.png)
 
