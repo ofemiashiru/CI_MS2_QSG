@@ -1,7 +1,9 @@
-const submitHighScore = (form) =>{
+const submitHighScore = function(e) {
+    e.preventDefault();
+
     // get all information from the form and store it in an object
-    let gamerName = form.gamer.value;
-    let gamerScore = form.finalScore.value;
+    let gamerName = e.target.elements.gamer.value;
+    let gamerScore = e.target.elements['final-score'].value;
     let newScore = {[gamerName]:gamerScore};
 
     // store it in the local storage without overwriting
@@ -10,14 +12,14 @@ const submitHighScore = (form) =>{
     localStorage.setItem("newScore", JSON.stringify(highScores));
 
     // empty text box after save
-    document.querySelector('#gamer').value = ''
+    document.querySelector('#gamer').value = '';
 
     // after saving redirect to the leaderboard on index.html
     setTimeout(function(){
         // redirect to leaderboard after half a second
         window.location.replace('index.html#leaderboard-section');
-    }, 500)
+    }, 500);
 
-    return false;
-}
+};
 
+document.querySelector('#final-score-form').addEventListener('submit', submitHighScore);

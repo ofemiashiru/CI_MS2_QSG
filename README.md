@@ -29,16 +29,17 @@
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Responsiveness](#responsiveness)
-    6. [Device testing](#performing-tests-on-various-devices)
-    7. [Browser compatibility](#browser-compatability)
-    8. [Testing user stories](#testing-user-stories) 
-8. [Bugs](#Bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+    3. [JS Validation](#JS-Validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Responsiveness](#responsiveness)
+    7. [Device testing](#performing-tests-on-various-devices)
+    8. [Browser compatibility](#browser-compatability)
+    9. [Testing user stories](#testing-user-stories) 
+7. [Bugs](#Bugs)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
 
 
 ## Project Goals 
@@ -261,6 +262,9 @@ whole site [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%
 
 custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fofemiashiru.github.io%2FCI_MS2_QSG%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - No Errors Found
 
+### JS Validation
+
+[JS Hint](https://jshint.com/) was used to validate the JavaScript of the website.
 
 ### Accessibility
 The WAVE WebAIM web accessibility tool was used to ensure the website met accessibility standards. 

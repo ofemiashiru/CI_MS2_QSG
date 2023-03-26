@@ -4,7 +4,7 @@ const closeMenu = document.querySelector('#close-menu');
 
 
 //when burger menu clicked show menu and show close button
-openMenu.addEventListener('click', () => {
+openMenu.addEventListener('click', function() {
     document.querySelector('#my-nav').classList.add('show-nav');
     openMenu.classList.remove('show');
     openMenu.classList.add('hide');
@@ -14,7 +14,7 @@ openMenu.addEventListener('click', () => {
 });
 
 // when close is clicked close menu and show burger menu
-closeMenu.addEventListener('click', () => {
+closeMenu.addEventListener('click', function() {
     document.querySelector('#my-nav').classList.remove('show-nav');
     openMenu.classList.remove('hide');
     openMenu.classList.add('show');
@@ -26,8 +26,8 @@ closeMenu.addEventListener('click', () => {
 // closes menu when individual link is clicked
 const allNavLinks = document.querySelectorAll('#my-nav a');
 
-allNavLinks.forEach((link) => {
-    link.addEventListener('click', () => {
+allNavLinks.forEach( function(link) {
+    link.addEventListener('click', function() {
         document.querySelector('#my-nav').classList.remove('show-nav');
         openMenu.classList.remove('hide');
         openMenu.classList.add('show');
@@ -37,7 +37,7 @@ allNavLinks.forEach((link) => {
 });
 
 // closes menu when on a bigger screen and resets to burger menu
-window.addEventListener('resize', () => {
+window.addEventListener('resize', function() {
     if(window.screen.width > 1093){
         document.querySelector('#my-nav').classList.remove('show-nav');
         openMenu.classList.remove('hide');
@@ -49,8 +49,8 @@ window.addEventListener('resize', () => {
 });
 
 // targets play now buttons to open the game link
-document.querySelectorAll('.play-now-btn').forEach((btn)=>{
-    btn.addEventListener('click', function(){
-        window.location.href = 'game.html'
+document.querySelectorAll('.play-now-btn').forEach( function(btn) {
+    btn.addEventListener('click', function() {
+        window.location.href = 'game.html';
     });
 });
