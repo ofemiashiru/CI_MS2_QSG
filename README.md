@@ -140,7 +140,7 @@ For the colour scheme I opted for an army fatigue pallete of greens and browns t
 
 ### Fonts
 
-The main body of the text uses Roboto with a fallback of sans-serif, however the brand text adopts the Bebas Neue font also with a fallback of sans-serif. The headings use a heavier font weight of Roboto throughout the site. Both fonts were imported using Google Fonts API.
+The main headings of the site and game use Press Start 2P with a fallback of sans-serif to mimick the look of 80s games. This font is also used on the navigation. For the body text of the site I opted for the Oswald font which also has a fallback of sans-serif. Both fonts were imported using Google Fonts API.
 
 ### Structure
 The website is structured to mimick the style of high end magazines with a simple top down, left to right flow of information. It is user friendly and has recognisable elements such as a fixed navigation bar along the top that consists of the business brand logo, menu for each page, search bar and login & register buttons. Each page is responsive in nature and has been tested on the industry standard width of 320px.
