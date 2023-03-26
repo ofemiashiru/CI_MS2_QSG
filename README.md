@@ -1,7 +1,8 @@
 # QuickShot Game
 (Developer: Femi Ashiru)
 
-![AfrobeatsLib Responsive Image](docs/am-i-responsive.png)
+![QuickShot Website Responsive Image](docs/am-i-responsive-1.png)
+![QuickShot Game Responsive Image](docs/am-i-responsive-2.png)
 
 [Live Project](https://ofemiashiru.github.io/CI_MS2_QSG/)
 
