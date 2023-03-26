@@ -130,7 +130,7 @@ Features to be built in future releases:
 ## Design
 
 ### Design Choices
-AfrobeatsLib was designed to have a simple and sleek modern look that is able to compete with other streaming platforms on the market. It has modern edges with a simple colour scheme which also makes it easy for users to navigate throughout the site. As the site adopts the usage of a lot of images, it was important to make sure not to introduce too many colours for the scheme as it could potentially clash. The look of the site resembles high end music magazines with large images and minimal amounts of text.
+QuickShot was designed to have an old school 80s game look that adopted some of the layout from 80s game displays creating a sense of nostalgia. The site is a simple scrolling page as it didn't need to be too complex and is simply made to advertise the game, display the leaderboard and give user the facility to send messages. The game design has a similar look to an old Nintendo game as I was looking to show how modern technology can still give users a sense of nostalgia while playing.
 
 ### Colour
 
