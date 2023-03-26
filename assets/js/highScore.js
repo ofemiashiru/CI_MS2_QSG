@@ -1,4 +1,4 @@
-const submitHighScore = function(e) {
+function submitHighScore(e) {
     e.preventDefault();
 
     // get all information from the form and store it in an object
@@ -20,6 +20,6 @@ const submitHighScore = function(e) {
         window.location.replace('index.html#leaderboard-section');
     }, 500);
 
-};
+}
 
 document.querySelector('#final-score-form').addEventListener('submit', submitHighScore);
