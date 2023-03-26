@@ -123,7 +123,7 @@ For the colour scheme I opted for an army fatigue pallete of greens and browns t
 The main headings of the site and game use Press Start 2P with a fallback of sans-serif to mimick the look of 80s games. This font is also used on the navigation. For the body text of the site I opted for the Oswald font which also has a fallback of sans-serif. Both fonts were imported using Google Fonts API.
 
 ### Structure
-The website is structured to mimick the style of high end magazines with a simple top down, left to right flow of information. It is user friendly and has recognisable elements such as a fixed navigation bar along the top that consists of the business brand logo, menu for each page, search bar and login & register buttons. Each page is responsive in nature and has been tested on the industry standard width of 320px.
+The main site is structured with different sections for each page . Both main site and game are responsive in nature and have been tested on the industry standard width of 320px.
 
 The website consists of 6 main pages:
 - Home page which shows what the site is about, featured albums, and the various subscription options
@@ -321,18 +321,11 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 <details><summary>Mobile, Tablet and Desktop</summary>
 <p>Part One</p>
-<img src="docs/respsonsiveness/respsonsiveness-part-one.gif" alt="Responsiveness Part One">
+<img src="docs/responsiveness/respsonsiveness-part-one.gif" alt="Responsiveness Part One">
 <p>Part Two</p>
-<img src="docs/respsonsiveness/respsonsiveness-part-two.gif" alt="Responsiveness Part Two">
+<img src="docs/responsiveness/respsonsiveness-part-two.gif" alt="Responsiveness Part Two">
 </details>
 
-<details><summary>Tablet</summary>
-<img src="docs/respsonsiveness/respsonsiveness-tablet.gif" alt="Tablet Responsiveness">
-</details>
-
-<details><summary>Desktop</summary>
-<img src="docs/respsonsiveness/respsonsiveness-desktop.gif" alt="Desktop Responsiveness">
-</details>
 
 
 
