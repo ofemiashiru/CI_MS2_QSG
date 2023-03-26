@@ -311,218 +311,141 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 ### Testing user stories
 
-1. I want to locate favourite artists by letter or genre
+1. I want to play the QuickShot game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Artists and Genre Page | Navigate to Artists or Genre page and use letter or genre links to locate artist | Page opens and links successfully narrow down location of desired artist | Works as expected |
+| Nav and Game Page | Click play game on Nav in index.html and start game on game.html | Game.html page opens and game should start when start game is clicked | Works as expected |
 
-<details><summary>Screenshots</summary>
-<p>Artists</p>
-<img src="docs/user-story-testing/user-story-1-13-artists.png">
-<p>Genre</p>
-<img src="docs/user-story-testing/user-story-1-13-genre.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-1-6-8.gif">
 </details>
 
-2. I want to know the different subscription prices
+2. I want to save my score on the leaderboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home Page | Scroll down to the subscriptions section and observe prices | Page scrolls to desired section and prices clearly visible | Works as expected |
+| Game Page | When game over screen appears, enter name and click save | Main page should open and smooth scroll to leaderboard section showing newly added score if it is in the top ten | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-2.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-2-6-9.gif">
 </details>
 
-3. I want to see the latest events
+3. I want to see the leaderboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Events Page | Navigate to Events page and hover over desired events revealing information | Page opens and each event reveals information when hovered over | Works as expected |
+| Nav | Click leaderboard on Nav in index.html | Main page should smooth scroll to leaderboard section | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-3-5-10.gif">
 </details>
 
-4. I want to see the latest news
+4. I want to contact QuickShot game site
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| News Page | Navigate to News page and click article box | Page opens and shows all news, each article box navigates to relevant article when clicked | Works as expected |
+| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are enetered. On clicking send a message should apper beneath informing user of whether or not the message was sent successfully | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-4p1-14.png">
-<img src="docs/user-story-testing/user-story-4p2-14.png">
+<details><summary>Screen recording/ Screenshot</summary>
+<img src="docs/user-story-testing/user-story-4-7-11.gif">
+<img src="docs/user-story-testing/user-story-4-7-11.png">
 </details>
 
 
-5. I want to be able to download the AfrobeatsLib app from the App store or Google Play store
+5. I want to see all the top ten scores.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Hero Section | Click on App store and Google Play buttons | Buttons should open new tab with relevant store | Works as expected |
+| Nav | Click leaderboard on Nav in index.html | Main page should smooth scroll to leaderboard section | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-5.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-3-5-10.gif">
 </details>
 
-6. I want to be able to sign up to AfrobeatsLib
+6. I want to be able to see if I can top the leaderboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Navigation Bar | Click on Login or Register buttons| Buttons should open up modals for Login and Register | Works as expected |
+| Nav and Game Page | Click play game on Nav in index.html and start game on game.html | Game.html page opens and game should start when start game is clicked | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-6.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-1-6-8.gif">
 </details>
 
-7. I want to sign up to AfrobeatsLib Mailing list
+7. I want to be able to contact QuickShot game site.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Stay Connected section on all pages(Footer)| Fill in input boxes and click submit| Input boxes submitted only when all are filled in and opens response page | Works as expected |
+| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are enetered. On clicking send a message should apper beneath informing user of whether or not the message was sent successfully | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-7-17.png">
-</details>
-
-
-8. I want to see all the latest events and be able to visit their corresponding pages
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Events Page| Click on each event| Each event should open a new tab with connected event | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-8.png">
-</details>
-
-9. I want to see the latest featured albums and artists
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Home Page and Artists Page| Click on page link to reveal featured albums and artists at top of page| Featured albums and artists should appear and be able to be clicked to navigate to corresponding album/artist | Works as expected |
-
-<details><summary>Screenshots</summary>
-<p>Featured Albums</p>
-<img src="docs/user-story-testing/user-story-9p1.png">
-<p>Featured Artists</p>
-<img src="docs/user-story-testing/user-story-9p2.png">
-</details>
-
-10. I want to be able to contact AfrobeatsLib
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Contact Page| Click on contact page link enter information and click send message| Input boxes submitted only when all are filled in and opens response page | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-10.png">
-</details>
-
-11. I want to interact with AfrobeatsLib on their social media platform
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Stay Connected section on all pages (Footer)| Click on social media links in Stay Connected section| Social media links should open new tabs with relevant pages | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-11.png">
-</details>
-
-12. I want to leave a comment on the news articles
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| News - Each article page| Click link to view artcle, scroll down, enter information and click post comment| Input boxes submitted only when all are filled in and opens response page | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-12p1.png">
-<img src="docs/user-story-testing/user-story-12p2.png">
+<details><summary>Screen recording/ Screenshot</summary>
+<img src="docs/user-story-testing/user-story-4-7-11.gif">
+<img src="docs/user-story-testing/user-story-4-7-11.png">
 </details>
 
 
-13. I want users to be able to find and listen to their favourite Afrobeats artists
+8. I want users to be able to play QuickShot game on mobile, tablet and desktop.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Artists and Genre Page | Navigate to Artists or Genre page and use letter or genre links to locate artist | Page opens and links successfully narrow down location of desired artist | Works as expected |
+| Nav and Game Page | Click play game on Nav in index.html and start game on game.html | Game.html page opens and game should start when start game is clicked | Works as expected |
 
-<details><summary>Screenshots</summary>
-<p>Artists</p>
-<img src="docs/user-story-testing/user-story-1-13-artists.png">
-<p>Genre</p>
-<img src="docs/user-story-testing/user-story-1-13-genre.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-1-6-8.gif">
 </details>
 
-14. I want users to be able to be kept up to date with latest events and news
+9. I want users to be able to save their score to the leaderboard.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| News Page | Navigate to News page and click article | Page opens and shows all news, each article navigates to relevant article | Works as expected |
+| Game Page | When game over screen appears, enter name and click save | Main page should open and smooth scroll to leaderboard section showing newly added score if it is in the top ten | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-4p1-14.png">
-<img src="docs/user-story-testing/user-story-4p2-14.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-2-6-9.gif">
+</details>
+
+10. I want users to be able to see the top ten scores.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Nav | Click leaderboard on Nav in index.html | Main page should smooth scroll to leaderboard section | Works as expected |
+
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-3-5-10.gif">
+</details>
+
+11. I want users to be able to contact us.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are enetered. On clicking send a message should apper beneath informing user of whether or not the message was sent successfully | Works as expected |
+
+<details><summary>Screen recording/ Screenshot</summary>
+<img src="docs/user-story-testing/user-story-4-7-11.gif">
+<img src="docs/user-story-testing/user-story-4-7-11.png">
 </details>
 
 
+12. I do not want users to use browser back button if they are looking for a page that does not exist.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Events Page | Navigate to Events page and hover over desired events revealing information | Page opens and each event reveals information when hovered over | Works as expected |
+| 404 Page| Enter incorrect URI in address bar| 404 page should appear with Header and footer allowing user to navigate to a different page | Works as expected |
 
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3.png">
+<details><summary>Screen recording</summary>
+<img src="docs/user-story-testing/user-story-12.gif">
 </details>
 
-15. I want users to be able to contact us
+
+13. Inform users that the game will be coming to App store and Google Play soon
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact Page| Click on contact page link enter information and click send message| Input boxes submitted only when all are filled in and opens response page | Works as expected |
+| Nav and Hero Section | Click Home on Nav in index.html | Page should smooth scroll to home section show users that QuickShot will be coming to App Store and Google Play store soon (Desktop only) | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-10.png">
-</details>
-
-16. I want users to be able to download our app on App store and Google Play store
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Hero Section | Click on App store and Google Play buttons | Buttons should open new tab with relevant store | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-5.png">
-</details>
-
-17. I want users to sign up to our mailing list
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Stay Connected section on all pages/Footer| Fill in input boxes and click submit| Input boxes submitted only when all are filled in and opens response page | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-7-17.png">
-</details>
-
-18. I want our site to be prepared to launch our own in house music player 
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Music Player fixed at the bottom on all pages| Check all pages to see if Music player is present| All pages should have the Music Player present but disabled ready for future implementation | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-18.png">
-</details>
-
-19. I do not want users to use browser back button if they are looking for a page that does not exist 
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| 404 Page| Enter incorrect URI in address bar|404 page should appear with Header and footer as well as a button that prompts user to go back to previous page | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-19.png">
+<img src="docs/user-story-testing/user-story-13.gif">
 </details>
 
 
