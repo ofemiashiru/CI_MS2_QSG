@@ -476,10 +476,13 @@ input[type='submit']:hover,
     background-color: var(--brown);
 }
 
+.stats span{
+    color: var(--white);
+}
+
 .stats span:first-child{
     font-size: 1.6rem;
     transition: .6s;
-    color: var(--white);
 }
 
 #status-container div span{

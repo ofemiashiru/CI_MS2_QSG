@@ -312,11 +312,11 @@ custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%
 ### Accessibility
 The WAVE WebAIM web accessibility tool was used to ensure the website met accessibility standards. 
 
-index.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/index.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
+index.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS2_QSG/index.html) - No Errors Found.
 
-game.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/artists.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
+game.html [results]() - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
 
-404.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS1_ABL/genre.html) - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
+404.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS2_QSG/404.html) - No Errors Found.
 
 ### Performance 
 Google Lighthouse Tool was used to test the performance of the website. 
