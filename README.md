@@ -314,7 +314,7 @@ The WAVE WebAIM web accessibility tool was used to ensure the website met access
 
 index.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS2_QSG/index.html) - No Errors Found.
 
-game.html [results]() - No Errors Found, 1 Alert due to index.html being referenced twice on logo and home link.
+game.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS2_QSG/game.html) - No Errors Found.
 
 404.html [results](https://wave.webaim.org/report#/https://ofemiashiru.github.io/CI_MS2_QSG/404.html) - No Errors Found.
 
