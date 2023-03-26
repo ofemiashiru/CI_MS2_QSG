@@ -10,7 +10,7 @@ let speed;
 function setSpeed(score){
     speed = 1000;
     if(score > 59){
-        speed -= 500
+        speed -= 500;
     } else if(score > 49){
         speed -= 400;
     } else if(score > 39){
