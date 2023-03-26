@@ -221,14 +221,9 @@ The website consists of 6 main pages:
 - Features on all pages
 ![Footer](docs/features/feature-footer.png)
 
-### 404 Page
-- Allow users to navigate back to site without the use of back button on browser when visiting a page that does not exist (User story - 12)
-
-![404 page](docs/features/feature-404.png)
-
 ### Game
 - Allows users to play the Quick Shot Game (User story 1, 6, 8)
-- Allows users to save their score to the leaderboard, if it is a top ten score (User story 2, 6, 9)
+- Allows users to save their score to the leaderboard, if it is a top ten score it will appear on the board (User story 2, 6, 9)
 
 <p>Game Home screen</p>
 
@@ -241,6 +236,11 @@ The website consists of 6 main pages:
 <p>Game Over screen</p>
 
 ![Game Play - Display](docs/features/feature-game-over.png)
+
+### 404 Page
+- Allow users to navigate back to site without the use of back button on browser when visiting a page that does not exist (User story - 12)
+
+![404 page](docs/features/feature-404.png)
 
 ## Validation
 
