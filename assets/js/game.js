@@ -6,6 +6,7 @@ let speed;
 
 /**
  * function that sets the speed of how quickly the targets move based on the player score
+ * @param {number} score - the current score of the player.
  * */ 
 function setSpeed(score){
     speed = 1000;
@@ -26,6 +27,7 @@ function setSpeed(score){
 /**
  * function which is the event called when a target is hit
  * when hit the switch statement determines the outcome based on the targets class
+ * function takes no parameters
  * */ 
 function hitTarget(){
     let targetHit = this.classList[1];
@@ -67,6 +69,9 @@ function hitTarget(){
 /**
  * function used to display feedback to user when a target is hit
  * each target will display something different based on what is passed in
+ * @param {string} feedback - message displayed when target is hit.
+ * @param {string} x - x position in pixels to display message.
+ * @param {string} y - y position in pixels to display message.
  * */ 
 function hitTargetFeedback(feedback, x, y){
 
@@ -87,6 +92,7 @@ function hitTargetFeedback(feedback, x, y){
 /**
  * function used to generate the random targets on the display
  * also adds event listenener and removes it based on setSpeed function
+ * function takes no parameters
  * */ 
 function generateRandomTargets(){
 
@@ -115,6 +121,7 @@ function generateRandomTargets(){
 /**
  * function used to deplete bullets when they are used
  * if bullets hit zero then we call the gameOver() function
+ * function takes no parameters
  * */ 
 function useBullets(){
     let bullets = document.querySelector('.bullets').innerHTML;
@@ -128,6 +135,7 @@ function useBullets(){
 
 /**
  * function used to create a countdown for the overall game
+ * function takes no parameters
  * */ 
 function countDown(){
     let time = document.querySelector('.time').innerHTML;
@@ -140,6 +148,7 @@ function countDown(){
 
 /**
  * function used to start all the elements in the game
+ * function takes no parameters
  * */ 
 function startGame(){
     // set game to default stat values
@@ -149,12 +158,15 @@ function startGame(){
 
     gameDisplay.addEventListener('click', useBullets);
     timer = setInterval(countDown, 1000);
+    
+    // takes a callback to generatedRandomTargets and sets speed using the setSpeed() function
     moveTargets = setInterval(generateRandomTargets, setSpeed(document.querySelector('.score').innerHTML));
     
 }
 
 /**
  * function used to show the reason a players game is over
+ * function takes no parameters
  * */ 
 function gameOverReason(){
 
@@ -173,6 +185,7 @@ function gameOverReason(){
 
 /**
  * function to display gameOver modal and clear all intervals
+ * function takes no parameters
  * */ 
 function gameOver(){
 
@@ -211,6 +224,7 @@ function gameOver(){
 
 /**
  * function used to open the game menu
+ * function takes no parameters
  * */ 
 function openGameMenu(){
 

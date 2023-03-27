@@ -1,3 +1,8 @@
+
+/**
+ * function that saves the score of the current user
+ * @param {event} e - the event passed into the function when submit event occurs
+ * */ 
 function submitHighScore(e) {
     e.preventDefault();
 

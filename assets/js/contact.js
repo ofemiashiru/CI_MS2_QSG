@@ -1,6 +1,9 @@
 emailjs.init('0Srwr_bwVJqHDTfFz');
 
-// Code for the contact form on the home page
+/**
+ * function for the contact form on the home page
+ * @param {event} e - the event passed into the function when submit event occurs
+ * */ 
 function sendMail(e){
     e.preventDefault();
 
