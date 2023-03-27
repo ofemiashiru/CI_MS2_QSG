@@ -502,7 +502,7 @@ You can clone the repository by:
 7. Press Enter to create your local clone in your chosen folder.
 
 ## Credits
-Images not referenced below are owned by the Developer.
+Images not referenced below are owned by the Developer or created by Developer using CSS3.
 
 ### Media
 
