@@ -506,7 +506,7 @@ Images not referenced below are owned by the Developer or created by Developer u
 
 ### Media
 
-[Cross hair used for cursor](assets/images/crosshair.png), taken from [Flaticon - created by xnimrodx](https://www.flaticon.com/free-icons/crosshair)
+[Cross hair used for cursor](assets/images/crosshair.png), taken from [Flaticon - created by xnimrodx](https://www.flaticon.com/free-icon/focus_865240?term=crosshair&page=1&position=20&origin=tag&related_id=865240)
 
 [QuickShot logo](assets/favicon/android-chrome-512x512.png), taken from [Favicon.io](https://favicon.io/emoji-favicons/direct-hit)
 
