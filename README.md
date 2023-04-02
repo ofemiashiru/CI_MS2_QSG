@@ -271,6 +271,10 @@ custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%
 <img src="docs/validation/js/index_js.png" alt="index script">
 </details>
 
+<details><summary>game.js</summary>
+<img src="docs/validation/js/game_js.png" alt="game script">
+</details>
+
 <details><summary>highScore.js</summary>
 <img src="docs/validation/js/highScore_js.png" alt="highScore script">
 </details>
@@ -279,8 +283,8 @@ custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%
 <img src="docs/validation/js/getHighScore_js.png" alt="gethighScore script">
 </details>
 
-<details><summary>game.js</summary>
-<img src="docs/validation/js/game_js.png" alt="game script">
+<details><summary>quiz.js</summary>
+<img src="docs/validation/js/quiz_js.png" alt="quiz script">
 </details>
 
 <details><summary>contact.js</summary>
