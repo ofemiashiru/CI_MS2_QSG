@@ -249,14 +249,19 @@ function openGameMenu(){
 
                 let howToPlayBtn = document.querySelector('#how-to-play-btn');
                 //toggle text of the button when clicked
-                howToPlayBtn.innerHTML === 'How to play' ? 
-                    howToPlayBtn.innerHTML = 'Hide' : 
+                if(howToPlayBtn.innerHTML === 'How to play'){
+                    howToPlayBtn.innerHTML = 'Hide';
+                } else {
                     howToPlayBtn.innerHTML = 'How to play';
+                }
                 
                 //Toggle aria-label when button is clicked
-                howToPlayBtn.getAttribute('aria-label') === 'Show how to play' ? 
-                    howToPlayBtn.setAttribute('aria-label', 'Hide how to play') :
+                if(howToPlayBtn.getAttribute('aria-label') === 'Show how to play'){
+                    howToPlayBtn.setAttribute('aria-label', 'Hide how to play');
+                } else {
                     howToPlayBtn.setAttribute('aria-label', 'Show how to play');
+                }
+
 
                 //toggle class on instructions to show/hide instructions
                 document.querySelector('#how-to-play').classList.toggle('show-instructions');
