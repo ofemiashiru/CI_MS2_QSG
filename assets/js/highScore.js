@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 
 /**
  * function that saves the score of the current user

@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // add if statement to only generate highScore if the localStorage length is greater than 0
 if(localStorage.length > 0){
 

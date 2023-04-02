@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const gameDisplay = document.querySelector('#game-display');
 const allTargets = document.querySelector('#all-targets');
 let moveTargets;

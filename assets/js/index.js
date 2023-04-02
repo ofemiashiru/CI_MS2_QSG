@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // handles the burger menu on home page
 const openMenu = document.querySelector('#open-menu');
 const closeMenu = document.querySelector('#close-menu');

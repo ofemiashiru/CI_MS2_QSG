@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 emailjs.init('0Srwr_bwVJqHDTfFz');
 
 /**
