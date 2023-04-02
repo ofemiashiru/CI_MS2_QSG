@@ -152,11 +152,11 @@ function getTotalScore(){
 
     let message;
 
-    if(score > 8){
+    if(score >= 7){
         message = 'Well done! You really know your games!';
-    } else if(score > 5 && score <= 7){
+    } else if(score >= 4 && score <= 6){
         message = 'Not bad, not bad!';
-    } else  if(score < 5){
+    } else  if(score < 4){
         message = 'You\'ve got some brushing up to do!';
     }
 
