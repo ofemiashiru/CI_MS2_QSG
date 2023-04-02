@@ -66,10 +66,13 @@ function nextQuestion(count){
 
     // Create the next button if there are more questions
     let nextBtn = document.createElement('input');
+    let newDiv = document.createElement('div');
     nextBtn.setAttribute('type', 'submit');
     nextBtn.setAttribute('value', 'Submit Answer');
+    nextBtn.setAttribute('id', 'submit-answer-btn');
     nextBtn.classList.add('submit-answer');
-    document.querySelector('#answer-display').appendChild(nextBtn);
+    newDiv.appendChild(nextBtn);
+    document.querySelector('#answer-display').appendChild(newDiv);
     
 }
 
