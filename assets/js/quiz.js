@@ -57,7 +57,7 @@ function nextQuestion(count){
     });
 
     document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
-    
+
     // Create the next button if there are more questions
     let nextBtn = document.createElement('input');
     nextBtn.setAttribute('type', 'submit');
@@ -98,6 +98,11 @@ document.querySelector('#answer-display').addEventListener('submit', function(e)
 
     let userAnswer = e.target.elements.all_answers.value;
     checkAnswer(userAnswer ,quiz[questionCount].correct_answer);
+
+    // Disable buttons and inputs while checking answer so user does not resubmit
+    for(let i = 0; i < this.elements.length; i++){
+        this.elements[i].setAttribute('disabled', 'true');
+    }
 
      // Increase question count
     questionCount++;
