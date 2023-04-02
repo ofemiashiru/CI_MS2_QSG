@@ -283,6 +283,8 @@ custom css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%
 </details>
 
 <details><summary>contact.js</summary>
+<p>Initially the variable was called in the HTML file in accordance with the usage of EmailJS, however, I moved it into the JS file as I didn’t want to have any JS displayed in my HTML and wanted to adhere to separation of concerns.</p>
+<p>This is the reason the warning appears about the undefined variable.</p>
 <img src="docs/validation/js/contact_js.png" alt="contact script">
 </details>
 
