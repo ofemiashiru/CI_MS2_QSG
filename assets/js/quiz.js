@@ -7,7 +7,7 @@ async function getQuiz(){
 
     let data;
 
-    const response = await fetch('https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple');
+    const response = await fetch('https://opentdb.com/api.php?amount=10&category=15&type=boolean');
 
     data = await response.json();
 
@@ -29,19 +29,17 @@ document.querySelector('#start-quiz').addEventListener('click', function(){
 
         let quiz = data.results;
         
-        console.log(quiz);
-        
         for(let i = 0; i < quiz.length; i++){
             // Display question number and question
             document.querySelector('.question-number').innerHTML = `${i + 1} / ${quiz.length}`;
             document.querySelector('#quiz-inner-quiz h5').innerHTML = quiz[i].question;
 
-            let allAnswers = [...quiz[i].incorrect_answers]; // get correct answers and spread in new array
             let correctAnswer = quiz[i].correct_answer; // get the correct answer from api response
-            let randNumber = Math.floor(Math.random() * 4); // choose a random number between 0 and 3
+            let allAnswers = [quiz[i].incorrect_answers, correctAnswer]; // get correct answers and spread in new array
+            
+            allAnswers.sort().reverse(); //sort and reverse so True is always first
 
-            allAnswers.splice(randNumber,0, correctAnswer); // choose a random position for the correct answer to go
-
+            //add answers to the dom
             let displayAnswers = allAnswers.map((answer, i) => {
                 return `
                     <div class="each-answer">
@@ -51,6 +49,24 @@ document.querySelector('#start-quiz').addEventListener('click', function(){
             });
 
             document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
+
+            // Create the next button if there are more questions if not then create check score btn
+            if(i < quiz.length - 2){
+                let nextBtn = document.createElement('input');
+                nextBtn.setAttribute('type', 'submit');
+                nextBtn.setAttribute('value', 'Submit Answer');
+                nextBtn.classList.add('submit-answer');
+                document.querySelector('#answer-display').appendChild(nextBtn);
+            } else {
+                let checkScoreBtn = document.createElement('input');
+                checkScoreBtn.setAttribute('type', 'submit');
+                checkScoreBtn.setAttribute('value', 'Check Score');
+                checkScoreBtn.classList.add('submit-answer');
+                document.querySelector('#answer-display').appendChild(checkScoreBtn);
+            }
+
+
+
         }
         
     });

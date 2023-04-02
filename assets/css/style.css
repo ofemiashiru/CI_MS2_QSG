@@ -405,7 +405,8 @@ section p {
 #quiz-inner-quiz .question-number,
 #quiz-inner-quiz .the-question{
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #quiz-inner-quiz .question-number{
@@ -413,8 +414,21 @@ section p {
 }
 
 #answer-display .each-answer{
-    font-size: 1.3rem !important;
+    text-align: center;
+    margin: 5px;
 }
+
+.each-answer label{
+    font-size: 2rem;
+}
+
+.submit-answer{
+    margin-top: 20px;
+    font-size: 10rem;
+    width: 300px;
+}
+
+
 
 #contact-section .fa-paper-plane, 
 #contact-section .fa-envelope{
