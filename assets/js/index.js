@@ -40,7 +40,7 @@ allNavLinks.forEach( function(link) {
 
 // closes menu when on a bigger screen and resets to burger menu
 window.addEventListener('resize', function() {
-    if(window.screen.width > 1144){
+    if(window.screen.width > 1237){
         document.querySelector('#my-nav').classList.remove('show-nav');
         openMenu.classList.remove('hide');
         openMenu.classList.add('show');
