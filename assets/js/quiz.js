@@ -21,21 +21,19 @@ let questionCount = 0;
 document.querySelector('#start-quiz').addEventListener('click', function(){ 
     document.querySelector('#quiz-inner').classList.add('hide');
     document.querySelector('#quiz-inner-quiz').classList.remove('hide');
-    
+
+    getQuiz()
+    .then(data => {
+        quiz = data.results;
+        nextQuestion(questionCount);
+    })
+    .catch((error) => {
+        console.error('Error: ', error);
+    });
+        
 });
 
-getQuiz()
-.then(data => {
-    quiz = data.results;
-})
-.then(() => {
-    nextQuestion();
-})
-.catch((error) => {
-    console.error('Error: ', error);
-});
-
-function nextQuestion(count = 0){
+function nextQuestion(count){
     // Display question number and question
     document.querySelector('.question-number').innerHTML = `${count + 1} / ${quiz.length}`;
     document.querySelector('#quiz-inner-quiz h5').innerHTML = quiz[count].question;
@@ -56,20 +54,49 @@ function nextQuestion(count = 0){
 
     document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
 
-    // Create the next button if there are more questions if not then create check score btn
+    // Create the next button if there are more questions
     let nextBtn = document.createElement('input');
     nextBtn.setAttribute('type', 'submit');
     nextBtn.setAttribute('value', 'Submit Answer');
     nextBtn.classList.add('submit-answer');
     document.querySelector('#answer-display').appendChild(nextBtn);
-
-    // Increase question count
-    questionCount++;
+    
 }
+
+function checkAnswer(user, correct){
+    let message;
+    let answerClass;
+    if(user === correct){
+        message = 'Correct answer';
+        answerClass = 'right-answer';
+    } else {
+        message = 'Inorrect answer';
+        answerClass = 'wrong-answer';
+    }
+
+    document.querySelector('#answer-feedback').innerHTML = message;
+    document.querySelector('#answer-feedback').classList.add(answerClass);
+
+    setTimeout(function(){
+        document.querySelector('#answer-feedback').classList.remove(answerClass);
+    }, 3000)
+}
+
 
 document.querySelector('#answer-display').addEventListener('submit', function(e){
     e.preventDefault();
-    console.log('true', e.target.elements[0].checked);
-    console.log('false', e.target.elements[1].checked);
-    nextQuestion(questionCount);
+
+    let userAnswer = e.target.elements.all_answers.value;
+    
+    checkAnswer(userAnswer ,quiz[questionCount].correct_answer);
+
+     // Increase question count
+    questionCount++;
+
+    setTimeout(function(){
+        nextQuestion(questionCount);
+        document.querySelector('#answer-feedback').innerHTML = '';
+    }, 3000);
+    
 });
+

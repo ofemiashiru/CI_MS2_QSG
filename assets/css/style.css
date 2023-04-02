@@ -417,6 +417,21 @@ section p {
     margin: 5px;
 }
 
+#answer-feedback{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.right-answer{
+    background-color: var(--dark-green);
+}
+
+.wrong-answer{
+    background-color: var(--red);
+}
+
 .each-answer label{
     font-size: 2rem;
 }
