@@ -1,5 +1,9 @@
 /*jshint esversion: 8 */
 
+let quiz;
+let questionCount = 0;
+let score = 0;
+
 /*
 * async function that makes call to the quiz API
 */
@@ -13,10 +17,6 @@ async function getQuiz(){
 
     return data;
 }
-
-let quiz;
-let questionCount = 0;
-let score = 0;
 
 /**
  * function to start the quiz
@@ -39,42 +39,37 @@ function startQuiz(){
 
 }
 
-// Button to start the quiz adds event listener to start the quiz
-document.querySelector('#start-quiz').addEventListener('click', function(){     
-    startQuiz(); 
-});
-
 /**
  * function to take user to the next question
  * @param {number} count - takes the current number of the APIs question 
  */ 
 function nextQuestion(count){
-        // Display question number and question
-        document.querySelector('.question-number').innerHTML = `${count + 1} / ${quiz.length}`;
-        document.querySelector('#quiz-inner-quiz h5').innerHTML = quiz[count].question;
-        
-        let correctAnswer = quiz[count].correct_answer; // get the correct answer from api response
-        let allAnswers = [quiz[count].incorrect_answers, correctAnswer]; // get correct answers and spread in new array
-        
-        allAnswers.sort().reverse(); //sort and reverse so True is always first
+    // Display question number and question
+    document.querySelector('.question-number').innerHTML = `${count + 1} / ${quiz.length}`;
+    document.querySelector('#quiz-inner-quiz h5').innerHTML = quiz[count].question;
+    
+    let correctAnswer = quiz[count].correct_answer; // get the correct answer from api response
+    let allAnswers = [quiz[count].incorrect_answers, correctAnswer]; // get correct answers and spread in new array
+    
+    allAnswers.sort().reverse(); //sort and reverse so True is always first
 
-        //add answers to the DOM
-        let displayAnswers = allAnswers.map((answer, i) => {
-            return `
-                <div class="each-answer">
-                    <input type="radio" id="answer${i}" name="all_answers" value="${answer}" required>
-                    <label for="answer${i}">${answer}</label><br>
-                </div>`;
-        });
+    //add answers to the DOM
+    let displayAnswers = allAnswers.map((answer, i) => {
+        return `
+            <div class="each-answer">
+                <input type="radio" id="answer${i}" name="all_answers" value="${answer}" required>
+                <label for="answer${i}">${answer}</label><br>
+            </div>`;
+    });
 
-        document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
+    document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
 
-        // Create the next button if there are more questions
-        let nextBtn = document.createElement('input');
-        nextBtn.setAttribute('type', 'submit');
-        nextBtn.setAttribute('value', 'Submit Answer');
-        nextBtn.classList.add('submit-answer');
-        document.querySelector('#answer-display').appendChild(nextBtn);
+    // Create the next button if there are more questions
+    let nextBtn = document.createElement('input');
+    nextBtn.setAttribute('type', 'submit');
+    nextBtn.setAttribute('value', 'Submit Answer');
+    nextBtn.classList.add('submit-answer');
+    document.querySelector('#answer-display').appendChild(nextBtn);
     
 }
 
@@ -103,6 +98,34 @@ function checkAnswer(user, correct){
         document.querySelector('#answer-feedback').classList.remove(answerClass);
     }, 2000);
 }
+
+/**
+ * function to get the quiz total score
+*/
+function getTotalScore(){
+    document.querySelector('#quiz-inner-quiz').classList.add('hide');
+    document.querySelector('#answer-feedback').innerHTML = '';
+    document.querySelector('#quiz-final-socre').classList.remove('hide');
+    document.querySelector('#quiz-final-socre h4').innerHTML = score;
+
+    let message;
+
+    if(score >= 7){
+        message = 'Well done! You really know your games!';
+    } else if(score >= 4 && score <= 6){
+        message = 'Not bad, not bad!';
+    } else  if(score < 4){
+        message = 'You\'ve got some brushing up to do!';
+    }
+
+    document.querySelector('#final-feedback').innerHTML = message;
+
+}
+
+// Button to start the quiz adds event listener to start the quiz
+document.querySelector('#start-quiz').addEventListener('click', function(){     
+    startQuiz(); 
+});
 
 // Submit answer after answer is chosen
 document.querySelector('#answer-display').addEventListener('submit', function(e){
@@ -142,26 +165,5 @@ document.querySelector('#answer-display').addEventListener('submit', function(e)
     }
 
 });
-
-
-function getTotalScore(){
-    document.querySelector('#quiz-inner-quiz').classList.add('hide');
-    document.querySelector('#answer-feedback').innerHTML = '';
-    document.querySelector('#quiz-final-socre').classList.remove('hide');
-    document.querySelector('#quiz-final-socre h4').innerHTML = score;
-
-    let message;
-
-    if(score >= 7){
-        message = 'Well done! You really know your games!';
-    } else if(score >= 4 && score <= 6){
-        message = 'Not bad, not bad!';
-    } else  if(score < 4){
-        message = 'You\'ve got some brushing up to do!';
-    }
-
-    document.querySelector('#final-feedback').innerHTML = message;
-
-}
 
 document.querySelector('#restart-quiz').addEventListener('click', startQuiz);
