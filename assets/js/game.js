@@ -247,19 +247,13 @@ function openGameMenu(){
     
             } else if(this.id === 'how-to-play-btn'){
 
-                let howToPlayBtn = document.querySelector('#how-to-play-btn');
-                //toggle text of the button when clicked
-                if(howToPlayBtn.innerHTML === 'How to play'){
-                    howToPlayBtn.innerHTML = 'Hide';
-                } else {
-                    howToPlayBtn.innerHTML = 'How to play';
-                }
+                this.innerHTML = this.innerHTML === 'How to play' ? 'Hide' : 'How to play';
                 
                 //Toggle aria-label when button is clicked
-                if(howToPlayBtn.getAttribute('aria-label') === 'Show how to play'){
-                    howToPlayBtn.setAttribute('aria-label', 'Hide how to play');
+                if(this.getAttribute('aria-label') === 'Show how to play'){
+                    this.setAttribute('aria-label', 'Hide how to play');
                 } else {
-                    howToPlayBtn.setAttribute('aria-label', 'Show how to play');
+                    this.setAttribute('aria-label', 'Show how to play');
                 }
 
 
