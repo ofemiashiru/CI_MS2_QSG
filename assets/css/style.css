@@ -376,7 +376,9 @@ section p {
     text-align: center;
 }
 
-#quiz-inner, #quiz-inner-quiz {
+#quiz-inner, 
+#quiz-inner-quiz,
+#quiz-final-socre {
     padding: 10px;
 }
 
@@ -402,7 +404,8 @@ section p {
 }
 
 #quiz-inner-quiz .question-number,
-#quiz-inner-quiz .the-question{
+#quiz-inner-quiz .the-question,
+#quiz-final-socre{
     color: var(--white);
     font-size: 1.2rem;
     text-align: center;
@@ -417,13 +420,19 @@ section p {
     margin: 5px;
 }
 
-#answer-feedback{
+#answer-feedback,
+#final-feedback{
     font-size: 1rem;
     text-align: center;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
 }
+
+#final-feedback{
+    font-size: 2rem;
+}
+
 .right-answer{
     background-color: var(--dark-green);
 }
@@ -442,6 +451,10 @@ section p {
     width: 300px;
 }
 
+#restart-quiz{
+    padding: 5px;
+    margin: 10px;
+}
 
 
 #contact-section .fa-paper-plane, 
