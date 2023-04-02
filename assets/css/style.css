@@ -385,6 +385,7 @@ section p {
 #quiz-inner > i {
     font-size: 10rem;
     display: block;
+    color: var(--white);
     transition: .3s;
 }
 #quiz-inner h3 {
@@ -1053,6 +1054,12 @@ input[type='submit']:hover,
 
     #about-section div:last-child{
         margin-top: 60px;
+    }
+
+    #quiz-outer{
+        width: 700px;
+        margin: 10px auto 0;
+        transition: .3s;
     }
 
     #quiz-inner > i {
