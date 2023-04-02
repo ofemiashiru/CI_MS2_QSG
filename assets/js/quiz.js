@@ -33,6 +33,10 @@ document.querySelector('#start-quiz').addEventListener('click', function(){
         
 });
 
+/**
+ * function to take user to the next question
+ * @param {number} count - takes the current number of the APIs question 
+ */ 
 function nextQuestion(count){
     // Display question number and question
     document.querySelector('.question-number').innerHTML = `${count + 1} / ${quiz.length}`;
@@ -53,7 +57,7 @@ function nextQuestion(count){
     });
 
     document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
-
+    
     // Create the next button if there are more questions
     let nextBtn = document.createElement('input');
     nextBtn.setAttribute('type', 'submit');
@@ -63,6 +67,12 @@ function nextQuestion(count){
     
 }
 
+/**
+ * function to compare the users answer to the APIs correct answer 
+ * and gives feedback based on whether it is wrong or right
+ * @param {string} user - this is the users choice true or false
+ * @param {string} correct - this is the correct answer from the API called
+ * */ 
 function checkAnswer(user, correct){
     let message;
     let answerClass;
@@ -79,15 +89,14 @@ function checkAnswer(user, correct){
 
     setTimeout(function(){
         document.querySelector('#answer-feedback').classList.remove(answerClass);
-    }, 3000)
+    }, 3000);
 }
 
-
+// Submit answer after answer is chosen
 document.querySelector('#answer-display').addEventListener('submit', function(e){
     e.preventDefault();
 
     let userAnswer = e.target.elements.all_answers.value;
-    
     checkAnswer(userAnswer ,quiz[questionCount].correct_answer);
 
      // Increase question count
