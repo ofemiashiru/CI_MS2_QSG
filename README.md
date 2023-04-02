@@ -172,6 +172,7 @@ The website consists of 6 main pages:
 - Adobe Color
 - Font Awesome
 - Favicon<span>.</span>io
+- Open Trivia DB 
 
 ## Features
 
@@ -511,6 +512,8 @@ Images not referenced below are owned by the Developer or created by Developer u
 [Cross hair used for cursor](assets/images/crosshair.png), taken from [Flaticon - created by xnimrodx](https://www.flaticon.com/free-icon/focus_865240?term=crosshair&page=1&position=20&origin=tag&related_id=865240)
 
 [QuickShot logo](assets/favicon/android-chrome-512x512.png), taken from [Favicon.io](https://favicon.io/emoji-favicons/direct-hit)
+
+[Questions used in Quiz](https://opentdb.com/api.php?amount=10&category=15&type=multiple). API genrated using [Open Trivia Datababse](https://opentdb.com/)
 
 ### Code
 
