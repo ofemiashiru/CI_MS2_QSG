@@ -513,7 +513,7 @@ Images not referenced below are owned by the Developer or created by Developer u
 
 [QuickShot logo](assets/favicon/android-chrome-512x512.png), taken from [Favicon.io](https://favicon.io/emoji-favicons/direct-hit)
 
-[Questions used in Quiz](https://opentdb.com/api.php?amount=10&category=15&type=multiple). API genrated using [Open Trivia Datababse](https://opentdb.com/)
+[Questions used in Quiz](https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple). API genrated using [Open Trivia Datababse](https://opentdb.com/)
 
 ### Code
 

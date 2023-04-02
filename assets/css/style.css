@@ -370,7 +370,8 @@ section p {
     
     border: 5px solid var(--black);
     border-radius: 0.3rem;
-    height: 400px;
+    min-height: 400px;
+    max-height: fit-content;
     margin: 10px 10px 0;
     background-color: var(--brown);
     text-align: center;
@@ -396,6 +397,24 @@ section p {
     border-radius: 5px;
 }
 
+#quiz-inner-quiz{
+    color: var(--white);
+    text-align: left;
+}
+
+#quiz-inner-quiz .question-number,
+#quiz-inner-quiz .the-question{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+#quiz-inner-quiz .question-number{
+    font-size: 1.5rem;
+}
+
+#answer-display .each-answer{
+    font-size: 1.3rem !important;
+}
 
 #contact-section .fa-paper-plane, 
 #contact-section .fa-envelope{
