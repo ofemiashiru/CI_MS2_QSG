@@ -166,4 +166,5 @@ document.querySelector('#answer-display').addEventListener('submit', function(e)
 
 });
 
+// restarts the quiz
 document.querySelector('#restart-quiz').addEventListener('click', startQuiz);
