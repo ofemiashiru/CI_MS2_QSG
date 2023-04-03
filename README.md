@@ -91,6 +91,7 @@
 11. I want users to be able to contact us.
 12. I do not want users to use browser back button if they are looking for a page that does not exist.
 13. Inform users that the game will be coming to App store and Google Play soon
+14. I want users to take a quiz and test their video game knowledge.
 
 ## Scope
 
@@ -217,7 +218,7 @@ The website consists of 6 main pages:
 ### Quiz Section
 - Allows users to play a Video Game related quiz 
 
-![Quiz Section](docs/features/feature-quiz.png)
+![Quiz Section](docs/features/feature-quiz.png) (User story - 14)
 
 ### Contact Section
 - Allows users to send queries and messages to site owner (User story - 4, 7, 11)
