@@ -90,7 +90,7 @@ function checkAnswer(user, correct){
         answerClass = 'right-answer';
         score += 1;
     } else {
-        message = 'Inorrect answer';
+        message = 'Incorrect answer';
         answerClass = 'wrong-answer';
     }
 
