@@ -488,6 +488,16 @@ The website is completely responsive and has been tested on mobile, tablet and d
 <img src="docs/user-story-testing/user-story-13.gif">
 </details>
 
+14. I want users to take a quiz and test their video game knowledge.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz Section | Complete quiz in index.html | Quiz section should ask 10 questions one by one giving feedback for each response and give a total at the end of quiz allowing user to restart | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story-14.gif">
+</details>
+
 
 ## Bugs
 
