@@ -431,6 +431,26 @@ section p {
     border-radius: 5px;
 }
 
+.each-answer input[type='radio']{
+    display: none;
+}
+
+.each-answer label{
+    border: 5px solid var(--black);
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.each-answer label:hover{
+    color: var(--black);
+    background-color: var(--gold);
+}
+
+.chosen{
+    color: var(--black);
+}
+
 #final-feedback{
     font-size: 2rem;
 }

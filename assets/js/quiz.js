@@ -53,8 +53,27 @@ function nextQuestion(count){
     
     allAnswers.sort().reverse(); //sort and reverse so True is always first
 
+    displayAnswers(allAnswers);
+
+    // Create submit answer button
+    let submitBtn = document.createElement('input');
+    let newDiv = document.createElement('div');
+    submitBtn.setAttribute('type', 'submit');
+    submitBtn.setAttribute('value', 'Submit Answer');
+    submitBtn.setAttribute('id', 'submit-answer-btn');
+    submitBtn.classList.add('submit-answer');
+    newDiv.appendChild(submitBtn);
+    document.querySelector('#answer-display').appendChild(newDiv);
+    
+}
+
+/**
+ * function that displays all the possible answers 
+ * @param {array} possibleAnswers - all the possible answers from API call
+ * */ 
+function displayAnswers(possibleAnswers){
     //add answers to the DOM
-    let displayAnswers = allAnswers.map((answer, i) => {
+    let displayAnswers = possibleAnswers.map((answer, i) => {
         return `
             <div class="each-answer">
                 <input type="radio" id="answer${i}" name="all_answers" value="${answer}" required>
@@ -64,16 +83,26 @@ function nextQuestion(count){
 
     document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
 
-    // Create the next button if there are more questions
-    let nextBtn = document.createElement('input');
-    let newDiv = document.createElement('div');
-    nextBtn.setAttribute('type', 'submit');
-    nextBtn.setAttribute('value', 'Submit Answer');
-    nextBtn.setAttribute('id', 'submit-answer-btn');
-    nextBtn.classList.add('submit-answer');
-    newDiv.appendChild(nextBtn);
-    document.querySelector('#answer-display').appendChild(newDiv);
-    
+    // True and false buttons
+    document.querySelectorAll('.each-answer label').forEach((label)=>{
+        label.addEventListener('click', function(){
+            let choice = this.innerHTML;
+            switch (choice) {
+                case 'True':
+                    this.classList.add('good','chosen');
+                    document.querySelectorAll('.each-answer label')[1].classList.remove('good', 'chosen');
+                    break;
+                case 'False':
+                    this.classList.add('good', 'chosen');
+                    document.querySelectorAll('.each-answer label')[0].classList.remove('good', 'chosen');
+                    break;
+                default:
+                    console.error('Error: An error has occurred');
+                    break;
+            }
+        });
+    });
+
 }
 
 /**
