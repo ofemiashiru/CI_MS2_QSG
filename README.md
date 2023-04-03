@@ -349,7 +349,8 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 ### Testing user stories
 
-- Please note that these screen recordings were taken before the play now buttons were added
+- Please note that these screen recordings were taken before the play now buttons and quiz were added
+- However the quiz itself has been added to fulfil user story 14
 
 1. I want to play the QuickShot game.
 
