@@ -91,7 +91,7 @@
 11. I want users to be able to contact us.
 12. I do not want users to use browser back button if they are looking for a page that does not exist.
 13. Inform users that the game will be coming to App store and Google Play soon
-14. I want users to take a quiz and test their video game knowledge.
+14. I want users to take a quiz that tests their video game knowledge, to pass the time.
 
 ## Scope
 
@@ -489,7 +489,7 @@ The website is completely responsive and has been tested on mobile, tablet and d
 <img src="docs/user-story-testing/user-story-13.gif">
 </details>
 
-14. I want users to take a quiz and test their video game knowledge.
+14. I want users to take a quiz that tests their video game knowledge, to pass the time.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
