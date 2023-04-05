@@ -499,6 +499,14 @@ The website is completely responsive and has been tested on mobile, tablet and d
 <img src="docs/user-story-testing/user-story-14.gif">
 </details>
 
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz Section | Choose no value for quiz question | Message should appear informing user to choose a value | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story-14b.gif">
+</details>
+
 
 ## Bugs
 
