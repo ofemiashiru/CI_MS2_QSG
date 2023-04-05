@@ -76,9 +76,10 @@ function displayAnswers(possibleAnswers){
     let displayAnswers = possibleAnswers.map((answer, i) => {
         return `
             <div class="each-answer">
-                <input type="radio" id="answer${i}" name="all_answers" value="${answer}" required>
+                <input type="radio" id="answer${i}" name="all_answers" value="${answer}">
                 <label for="answer${i}">${answer}</label><br>
-            </div>`;
+            </div>
+            `;
     });
 
     document.querySelector('#answer-display').innerHTML = displayAnswers.join('');
@@ -162,9 +163,16 @@ document.querySelector('#start-quiz').addEventListener('click', function(){
 // Submit answer after answer is chosen
 document.querySelector('#answer-display').addEventListener('submit', function(e){
     e.preventDefault();
-    
+
     let userAnswer = e.target.elements.all_answers.value;
 
+    // Handles whether the user has not selected an answer
+    if(!userAnswer){
+        document.querySelector('#answer-feedback').innerHTML = '> Please select True or False! <';
+        return;
+    }
+    
+    
     if(questionCount < quiz.length - 1){
 
         checkAnswer(userAnswer ,quiz[questionCount].correct_answer);
