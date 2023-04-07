@@ -216,9 +216,9 @@ The website consists of 6 main pages:
 ![Leaderboard Section](docs/features/feature-leaderboard.png)
 
 ### Quiz Section
-- Allows users to play a Video Game related quiz 
+- Allows users to play a Video Game related quiz to pass the time (User story - 14)
 
-![Quiz Section](docs/features/feature-quiz.png) (User story - 14)
+![Quiz Section](docs/features/feature-quiz.png)
 
 ### Contact Section
 - Allows users to send queries and messages to site owner (User story - 4, 7, 11)
