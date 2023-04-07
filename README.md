@@ -13,7 +13,7 @@
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
     4. [Scope](#scope)
 3. [Design](#design)
@@ -34,7 +34,7 @@
     5. [Performance](#performance)
     6. [Responsiveness](#responsiveness)
     7. [Device testing](#performing-tests-on-various-devices)
-    8. [Browser compatibility](#browser-compatability)
+    8. [Browser compatibility](#browser-compatibility)
     9. [Testing user stories](#testing-user-stories) 
 7. [Bugs](#Bugs)
 8. [Deployment](#deployment)
@@ -46,7 +46,7 @@
 
 ### User Goals
 - Play QuickShot game.
-- Save Score to the leaderboard.
+- Save Score to the leader board.
 - Contact Quickshot Site Owner.
 
 ### Site Owner Goals
@@ -61,7 +61,7 @@
 - People who are fans of shoot and aim games.
 - People who are competitive and relish a challenge.
 
-### User Requrements and Expectations
+### User Requirements and Expectations
 
 - Easy to use navigation that is responsive.
 - Be able to easily browse between sections of the site and the game.
@@ -75,18 +75,18 @@
 
 #### First-time User 
 1. I want to play the QuickShot game.
-2. I want to save my score on the leaderboard.
-3. I want to see the leaderboard.
+2. I want to save my score on the leader board.
+3. I want to see the leader board.
 4. I want to contact QuickShot game site.
 
 #### Returning User
 5. I want to see all the top ten scores.
-6. I want to be able to see if I can top the leaderboard.
+6. I want to be able to see if I can top the leader board.
 7. I want to be able to contact QuickShot game site.
 
 #### Site Owner 
 8. I want users to be able to play QuickShot game on mobile, tablet and desktop.
-9. I want users to be able to save their score to the leaderboard.
+9. I want users to be able to save their score to the leader board.
 10. I want users to be able to see the top ten scores.
 11. I want users to be able to contact us.
 12. I do not want users to use browser back button if they are looking for a page that does not exist.
@@ -95,12 +95,12 @@
 
 ## Scope
 
-The scope of the project in it’s first release is defined by the following features:
+The scope of the project in its first release is defined by the following features:
 
 - Simple navigation that allows user to navigate between sections of the site and the game. 
-- Game page that allows user to play game, see how to play game, save score to the leaderboard and navigate back to main site.
-- Allow user to see their score on the leaderboard if they have reached the top ten.
-- Allow users to see the top ten players on the leaderboard.
+- Game page that allows user to play game, see how to play game, save score to the leader board and navigate back to main site.
+- Allow user to see their score on the leader board if they have reached the top ten.
+- Allow users to see the top ten players on the leader board.
 - Contact form to allow users to send queries. The form is fully functional using EmailJS and will not submit unless all fields are filled out.
 - An error page (404.html) that appears when visiting a page that does not exist with navigation above.
 - Clear and simple favicon icon to help users identify the site.
@@ -113,17 +113,17 @@ Features to be built in future releases:
 ## Design
 
 ### Design Choices
-QuickShot was designed to have an old school 80s game look that adopted some of the layout from 80s game displays creating a sense of nostalgia. The site is a simple scrolling page as it didn't need to be too complex and is simply made to advertise the game, display the leaderboard and give user the facility to send messages. The game design has a similar look to an old Nintendo game as I was looking to show how modern technology can still give users a sense of nostalgia while playing.
+QuickShot was designed to have an old school 80s game look that adopted some of the layout from 80s game displays creating a sense of nostalgia. The site is a simple scrolling page as it didn't need to be too complex and is simply made to advertise the game, display the leader board and give user the facility to send messages. The game design has a similar look to an old Nintendo game as I was looking to show how modern technology can still give users a sense of nostalgia while playing.
 
 ### Colour
 
-For the colour scheme I opted for an army fatigue palete of greens and browns to match the theme of the game.
+For the colour scheme I opted for an army fatigue palette of greens and browns to match the theme of the game.
 
 ![Colour Scheme](docs/features/colour-scheme.png)
 
 ### Fonts
 
-The main headings of the site and game use Press Start 2P with a fallback of sans-serif to mimick the look of 80s games. This font is also used on the navigation. For the body text of the site I opted for the Oswald font which also has a fallback of sans-serif. Both fonts were imported using Google Fonts API.
+The main headings of the site and game use Press Start 2P with a fallback of sans-serif to mimic the look of 80s games. This font is also used on the navigation. For the body text of the site I opted for the Oswald font which also has a fallback of sans-serif. Both fonts were imported using Google Fonts API.
 
 ### Structure
 The main site is structured with different sections for each page . Both main site and game are responsive in nature and have been tested on the industry standard width of 320px.
@@ -210,10 +210,10 @@ The website consists of 6 main pages:
 
 ![About Section](docs/features/feature-about.png)
 
-### Leaderboard Section
+### Leader board Section
 - Informs users of the top ten players (User story - 3, 10)
 
-![Leaderboard Section](docs/features/feature-leaderboard.png)
+![Leader board Section](docs/features/feature-leaderboard.png)
 
 ### Quiz Section
 - Allows users to play a Video Game related quiz to pass the time (User story - 14)
@@ -231,7 +231,7 @@ The website consists of 6 main pages:
 
 ### Game
 - Allows users to play the Quick Shot Game (User story 1, 6, 8)
-- Allows users to save their score to the leaderboard, if it is a top ten score it will appear on the board (User story 2, 6, 9)
+- Allows users to save their score to the leader board, if it is a top ten score it will appear on the board (User story 2, 6, 9)
 
 <p>Game Home screen</p>
 
@@ -323,11 +323,11 @@ Google Lighthouse Tool was used to test the performance of the website.
 
 ### Performing tests on various devices 
 The website was tested on the following devices:
-- Apple Macbook Pro M1
+- Apple MacBook Pro M1
 - Apple iPhone 11
 - Xiaomi Mi 11 Lite
 
-### Browser compatability
+### Browser compatibility
 The website was tested on the following browsers:
 - Google Chrome
 - Safari
@@ -362,21 +362,21 @@ The website is completely responsive and has been tested on mobile, tablet and d
 <img src="docs/user-story-testing/user-story-1-6-8.gif">
 </details>
 
-2. I want to save my score on the leaderboard.
+2. I want to save my score on the leader board.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game Page | When game over screen appears, enter name and click save | Main page should open and smooth scroll to leaderboard section showing newly added score if it is in the top ten | Works as expected |
+| Game Page | When game over screen appears, enter name and click save | Main page should open and smooth scroll to leader board section showing newly added score if it is in the top ten | Works as expected |
 
 <details><summary>Screen recording</summary>
 <img src="docs/user-story-testing/user-story-2-6-9.gif">
 </details>
 
-3. I want to see the leaderboard.
+3. I want to see the leader board.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Nav | Click leaderboard on Nav in index.html | Main page should smooth scroll to leaderboard section | Works as expected |
+| Nav | Click leader board on Nav in index.html | Main page should smooth scroll to leader board section | Works as expected |
 
 <details><summary>Screen recording</summary>
 <img src="docs/user-story-testing/user-story-3-5-10.gif">
@@ -386,7 +386,7 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are enetered. On clicking send a message should apper beneath informing user of whether or not the message was sent successfully | Works as expected |
+| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are entered. On clicking send a message should appear beneath informing user of whether or not the message was sent successfully | Works as expected |
 
 <details><summary>Screen recording/ Screenshot</summary>
 <img src="docs/user-story-testing/user-story-4-7-11.gif">
@@ -398,13 +398,13 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Nav | Click leaderboard on Nav in index.html | Main page should smooth scroll to leaderboard section | Works as expected |
+| Nav | Click leader board on Nav in index.html | Main page should smooth scroll to leader board section | Works as expected |
 
 <details><summary>Screen recording</summary>
 <img src="docs/user-story-testing/user-story-3-5-10.gif">
 </details>
 
-6. I want to be able to see if I can top the leaderboard.
+6. I want to be able to see if I can top the leader board.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -418,7 +418,7 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are enetered. On clicking send a message should apper beneath informing user of whether or not the message was sent successfully | Works as expected |
+| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are entered. On clicking send a message should appear beneath informing user of whether or not the message was sent successfully | Works as expected |
 
 <details><summary>Screen recording/ Screenshot</summary>
 <img src="docs/user-story-testing/user-story-4-7-11.gif">
@@ -436,11 +436,11 @@ The website is completely responsive and has been tested on mobile, tablet and d
 <img src="docs/user-story-testing/user-story-1-6-8.gif">
 </details>
 
-9. I want users to be able to save their score to the leaderboard.
+9. I want users to be able to save their score to the leader board.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game Page | When game over screen appears, enter name and click save | Main page should open and smooth scroll to leaderboard section showing newly added score if it is in the top ten | Works as expected |
+| Game Page | When game over screen appears, enter name and click save | Main page should open and smooth scroll to leader board section showing newly added score if it is in the top ten | Works as expected |
 
 <details><summary>Screen recording</summary>
 <img src="docs/user-story-testing/user-story-2-6-9.gif">
@@ -450,7 +450,7 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Nav | Click leaderboard on Nav in index.html | Main page should smooth scroll to leaderboard section | Works as expected |
+| Nav | Click leader board on Nav in index.html | Main page should smooth scroll to leader board section | Works as expected |
 
 <details><summary>Screen recording</summary>
 <img src="docs/user-story-testing/user-story-3-5-10.gif">
@@ -460,7 +460,7 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are enetered. On clicking send a message should apper beneath informing user of whether or not the message was sent successfully | Works as expected |
+| Contact Section | Click contact on Nav in index.html, enter details in text boxes and click send button | Page should smooth scroll to contact section, allow user to enter fields and only send if all fields are entered. On clicking send a message should appear beneath informing user of whether or not the message was sent successfully | Works as expected |
 
 <details><summary>Screen recording/ Screenshot</summary>
 <img src="docs/user-story-testing/user-story-4-7-11.gif">
@@ -551,7 +551,7 @@ Images not referenced below are owned by the Developer or created by Developer u
 
 [QuickShot logo](assets/favicon/android-chrome-512x512.png), taken from [Favicon.io](https://favicon.io/emoji-favicons/direct-hit)
 
-[Questions used in Quiz](https://opentdb.com/api.php?amount=10&category=15&type=boolean). API genrated using [Open Trivia Datababse](https://opentdb.com/)
+[Questions used in Quiz](https://opentdb.com/api.php?amount=10&category=15&type=boolean). API generated using [Open Trivia Database](https://opentdb.com/)
 
 ### Code
 
@@ -586,6 +586,6 @@ Images not referenced below are owned by the Developer or created by Developer u
 ## Acknowledgements
 
 I would like to take the opportunity to thank:
-- Mo Shami for coninued mentorship, guidance and support throughout this project. 
+- Mo Shami for continued mentorship, guidance and support throughout this project. 
 - Iris Smok for continued encouragement whilst working on this project.
 - and all the Teaching and Non-teaching Personnel at Code Institute.
