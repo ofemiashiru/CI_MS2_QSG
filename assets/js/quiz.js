@@ -166,7 +166,7 @@ document.querySelector('#answer-display').addEventListener('submit', function(e)
 
     let userAnswer = e.target.elements.all_answers.value;
 
-    // Handles whether the user has not selected an answer
+    // Handles the user has not selecting an answer (non-input)
     if(!userAnswer){
         document.querySelector('#answer-feedback').innerHTML = '> Please select True or False! <';
         return;

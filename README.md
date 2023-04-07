@@ -510,7 +510,16 @@ The website is completely responsive and has been tested on mobile, tablet and d
 
 ## Bugs
 
-- No visible bugs to speak of
+| **Bug** | **Fix** | 
+|-------------|------------|
+|Receiving the error message ```An invalid form control with name='' is not focusable``` when submitting answer without picking true or false|As the element created was set to required the DOM was searching for the element but could not find it as I set it the display property to none - created custom validation within the quiz.js file starting on line 170 to handle non input.|
+
+```
+if(!userAnswer){
+    document.querySelector('#answer-feedback').innerHTML = '> Please select True or False! <';
+    return;
+}
+```
 
 ## Deployment
 
